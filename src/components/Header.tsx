@@ -1,34 +1,34 @@
 import { useCallback, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
-import logo_desktop from "../assets/Images/Header/Our Blooms®.png"
-import logo_mobile from "../assets/Images/Header/O.B.png"
-import menu_icon from "../assets/Images/Header/Hamburger_icon.png"
-import close_icon from "../assets/Images/Header/Cancel_icon.png"
+import logoDesktop from "../assets/Images/Header/Our Blooms®.png"
+import logoMobile from "../assets/Images/Header/O.B.png"
+import menuIcon from "../assets/Images/Header/Hamburger_icon.png"
+import closeIcon from "../assets/Images/Header/Cancel_icon.png"
 
 export function Header() {
-    const [is_menu_open, set_is_menu_open] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const { pathname } = useLocation()
-    const is_home = pathname === "/"
+    const isHome = pathname === "/"
 
-    const close_menu = useCallback(() => {
-        set_is_menu_open(false)
+    const closeMenu = useCallback(() => {
+        setIsMenuOpen(false)
     }, [])
 
-    const toggle_menu = useCallback(() => {
-        set_is_menu_open((current) => !current)
+    const toggleMenu = useCallback(() => {
+        setIsMenuOpen((current) => !current)
     }, [])
 
     return (
         <header className="sticky top-0 z-50 bg-white">
             <div
                 className={`
-        ${is_home
+        ${isHome
                         ? "mx-[40px]"
                         : "mx-[16px] min-[800px]:mx-[20px] min-[1280px]:mx-[40px]"
                     }
 
-        ${is_menu_open
+        ${isMenuOpen
                         ? ""
                         : "border-b border-black/60"
                     }
@@ -46,15 +46,15 @@ export function Header() {
     min-[800px]:px-0
 "
                 >
-                    <Link to="/" onClick={close_menu}>
+                    <Link to="/" onClick={closeMenu}>
                         <picture>
                             <source
                                 media="(min-width: 800px)"
-                                srcSet={logo_desktop}
+                                srcSet={logoDesktop}
                             />
 
                             <img
-                                src={logo_mobile}
+                                src={logoMobile}
                                 alt="Our Blooms"
                                 className="
                                     block
@@ -93,20 +93,20 @@ export function Header() {
 
                     <button
                         type="button"
-                        onClick={toggle_menu}
+                        onClick={toggleMenu}
                         className="min-[800px]:hidden"
-                        aria-expanded={is_menu_open}
+                        aria-expanded={isMenuOpen}
                         aria-label={
-                            is_menu_open
+                            isMenuOpen
                                 ? "Close menu"
                                 : "Open menu"
                         }
                     >
                         <img
                             src={
-                                is_menu_open
-                                    ? close_icon
-                                    : menu_icon
+                                isMenuOpen
+                                    ? closeIcon
+                                    : menuIcon
                             }
                             alt=""
                             className="block h-auto w-[24px]"
@@ -115,7 +115,7 @@ export function Header() {
                 </div>
             </div>
 
-            {is_menu_open && (
+            {isMenuOpen && (
                 <div
                     className="
                         absolute
@@ -130,7 +130,7 @@ export function Header() {
                     <nav
                         className={`
         caption-1
-        ${is_home ? "mx-[40px]" : "mx-[16px]"}
+        ${isHome ? "mx-[40px]" : "mx-[16px]"}
         flex
         flex-col
         items-start
@@ -144,21 +144,21 @@ export function Header() {
                     >
                         <Link
                             to="/gallery"
-                            onClick={close_menu}
+                            onClick={closeMenu}
                         >
                             GALLERY
                         </Link>
 
                         <Link
                             to="/about"
-                            onClick={close_menu}
+                            onClick={closeMenu}
                         >
                             ABOUT
                         </Link>
 
                         <a
                             href="#contact"
-                            onClick={close_menu}
+                            onClick={closeMenu}
                         >
                             CONTACT
                         </a>

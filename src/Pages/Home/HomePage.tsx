@@ -6,13 +6,13 @@ import { HomeAbout } from "./HomeAbout"
 import { ServiceSection } from "../../components/ServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
-import floralInstallation from "../../assets/Images/Home/Floral_installation_home.png"
-import nativePlant from "../../assets/Images/Home/Native_plant_arrangement_home.png"
-import customFloral from "../../assets/Images/Home/Custom_floral_concept_home.png"
+import floralInstallation from "../../assets/Images/Home/Floral_installation_home.webp"
+import nativePlant from "../../assets/Images/Home/Native_plant_arrangement_home.webp"
+import customFloral from "../../assets/Images/Home/Custom_floral_concept_home.webp"
 
-import workDesktop from "../../assets/Images/Home/Work_with_us_desktop.png"
-import workTablet from "../../assets/Images/Home/Work_with_us_tablet.png"
-import workMobile from "../../assets/Images/Home/Work_with_us_mobile.png"
+import workDesktop from "../../assets/Images/Home/Work_with_us_desktop.webp"
+import workTablet from "../../assets/Images/Home/Work_with_us_tablet.webp"
+import workMobile from "../../assets/Images/Home/Work_with_us_mobile.webp"
 
 export function HomePage() {
     return (

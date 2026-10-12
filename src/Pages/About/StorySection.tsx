@@ -1,18 +1,18 @@
-import About_01_desktop from "../../assets/Images/About/About_01_desktop.png"
-import About_01_tablet from "../../assets/Images/About/About_01_tablet.png"
-import About_01_mobile from "../../assets/Images/About/About_01_mobile.png"
+import About_01_desktop from "../../assets/Images/About/About_01_desktop.webp"
+import About_01_tablet from "../../assets/Images/About/About_01_tablet.webp"
+import About_01_mobile from "../../assets/Images/About/About_01_mobile.webp"
 
-import About_02_desktop from "../../assets/Images/About/About_02_desktop.png"
-import About_02_tablet from "../../assets/Images/About/About_02_tablet.png"
-import About_02_mobile from "../../assets/Images/About/About_02_mobile.png"
+import About_02_desktop from "../../assets/Images/About/About_02_desktop.webp"
+import About_02_tablet from "../../assets/Images/About/About_02_tablet.webp"
+import About_02_mobile from "../../assets/Images/About/About_02_mobile.webp"
 
-import About_03_desktop from "../../assets/Images/About/About_03_desktop.png"
-import About_03_tablet from "../../assets/Images/About/About_03_tablet.png"
-import About_03_mobile from "../../assets/Images/About/About_03_mobile.png"
+import About_03_desktop from "../../assets/Images/About/About_03_desktop.webp"
+import About_03_tablet from "../../assets/Images/About/About_03_tablet.webp"
+import About_03_mobile from "../../assets/Images/About/About_03_mobile.webp"
 
-import About_04_desktop from "../../assets/Images/About/About_04_desktop.png"
-import About_04_tablet from "../../assets/Images/About/About_04_tablet.png"
-import About_04_mobile from "../../assets/Images/About/About_04_mobile.png"
+import About_04_desktop from "../../assets/Images/About/About_04_desktop.webp"
+import About_04_tablet from "../../assets/Images/About/About_04_tablet.webp"
+import About_04_mobile from "../../assets/Images/About/About_04_mobile.webp"
 
 export function StorySection() {
     return (

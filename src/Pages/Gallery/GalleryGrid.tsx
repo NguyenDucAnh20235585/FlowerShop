@@ -1,40 +1,40 @@
 import { ImageView } from "../../components/ImageView"
 
-import dawnBloomMobile from "../../assets/Images/Gallery/Dawn-bloom-mobile.png"
-import dawnBloomTablet from "../../assets/Images/Gallery/Dawn-bloom-tablet.png"
-import dawnBloomDesktop from "../../assets/Images/Gallery/Dawn-bloom-desktop.png"
+import dawnBloomMobile from "../../assets/Images/Gallery/Dawn-bloom-mobile.webp"
+import dawnBloomTablet from "../../assets/Images/Gallery/Dawn-bloom-tablet.webp"
+import dawnBloomDesktop from "../../assets/Images/Gallery/Dawn-bloom-desktop.webp"
 
-import solsticeStemsMobile from "../../assets/Images/Gallery/Solstice-stems-mobile.png"
-import solsticeStemsTablet from "../../assets/Images/Gallery/Solstice-stems-tablet.png"
-import solsticeStemsDesktop from "../../assets/Images/Gallery/Solstice-stems-desktop.png"
+import solsticeStemsMobile from "../../assets/Images/Gallery/Solstice-stems-mobile.webp"
+import solsticeStemsTablet from "../../assets/Images/Gallery/Solstice-stems-tablet.webp"
+import solsticeStemsDesktop from "../../assets/Images/Gallery/Solstice-stems-desktop.webp"
 
-import whisperGreensMobile from "../../assets/Images/Gallery/Whisper-greens-mobile.png"
-import whisperGreensTablet from "../../assets/Images/Gallery/Whisper-greens-tablet.png"
-import whisperGreensDesktop from "../../assets/Images/Gallery/Whisper-greens-desktop.png"
+import whisperGreensMobile from "../../assets/Images/Gallery/Whisper-greens-mobile.webp"
+import whisperGreensTablet from "../../assets/Images/Gallery/Whisper-greens-tablet.webp"
+import whisperGreensDesktop from "../../assets/Images/Gallery/Whisper-greens-desktop.webp"
 
-import clarityPetalsMobile from "../../assets/Images/Gallery/Clarity-petals-mobile.png"
-import clarityPetalsTablet from "../../assets/Images/Gallery/Clarity-petals-tablet.png"
-import clarityPetalsDesktop from "../../assets/Images/Gallery/Clarity-petals-desktop.png"
+import clarityPetalsMobile from "../../assets/Images/Gallery/Clarity-petals-mobile.webp"
+import clarityPetalsTablet from "../../assets/Images/Gallery/Clarity-petals-tablet.webp"
+import clarityPetalsDesktop from "../../assets/Images/Gallery/Clarity-petals-desktop.webp"
 
-import riverStoneMobile from "../../assets/Images/Gallery/River-stone-mobile.png"
-import riverStoneTablet from "../../assets/Images/Gallery/River-stone-tablet.png"
-import riverStoneDesktop from "../../assets/Images/Gallery/River-stone-desktop.png"
+import riverStoneMobile from "../../assets/Images/Gallery/River-stone-mobile.webp"
+import riverStoneTablet from "../../assets/Images/Gallery/River-stone-tablet.webp"
+import riverStoneDesktop from "../../assets/Images/Gallery/River-stone-desktop.webp"
 
-import moonlitMeadowMobile from "../../assets/Images/Gallery/Moonlit-meadow-mobile.png"
-import moonlitMeadowTablet from "../../assets/Images/Gallery/Moonlit-meadow-tablet.png"
-import moonlitMeadowDesktop from "../../assets/Images/Gallery/Moonlit-meadow-desktop.png"
+import moonlitMeadowMobile from "../../assets/Images/Gallery/Moonlit-meadow-mobile.webp"
+import moonlitMeadowTablet from "../../assets/Images/Gallery/Moonlit-meadow-tablet.webp"
+import moonlitMeadowDesktop from "../../assets/Images/Gallery/Moonlit-meadow-desktop.webp"
 
-import emberLeafMobile from "../../assets/Images/Gallery/Ember-leaf-mobile.png"
-import emberLeafTablet from "../../assets/Images/Gallery/Ember-leaf-tablet.png"
-import emberLeafDesktop from "../../assets/Images/Gallery/Ember-leaf-desktop.png"
+import emberLeafMobile from "../../assets/Images/Gallery/Ember-leaf-mobile.webp"
+import emberLeafTablet from "../../assets/Images/Gallery/Ember-leaf-tablet.webp"
+import emberLeafDesktop from "../../assets/Images/Gallery/Ember-leaf-desktop.webp"
 
-import skylineBloomMobile from "../../assets/Images/Gallery/Skyline-bloom-mobile.png"
-import skylineBloomTablet from "../../assets/Images/Gallery/Skyline-bloom-tablet.png"
-import skylineBloomDesktop from "../../assets/Images/Gallery/Skyline-bloom-desktop.png"
+import skylineBloomMobile from "../../assets/Images/Gallery/Skyline-bloom-mobile.webp"
+import skylineBloomTablet from "../../assets/Images/Gallery/Skyline-bloom-tablet.webp"
+import skylineBloomDesktop from "../../assets/Images/Gallery/Skyline-bloom-desktop.webp"
 
-import stillWatersMobile from "../../assets/Images/Gallery/Still-waters-mobile.png"
-import stillWatersTablet from "../../assets/Images/Gallery/Still-waters-tablet.png"
-import stillWatersDesktop from "../../assets/Images/Gallery/Still-waters-desktop.png"
+import stillWatersMobile from "../../assets/Images/Gallery/Still-waters-mobile.webp"
+import stillWatersTablet from "../../assets/Images/Gallery/Still-waters-tablet.webp"
+import stillWatersDesktop from "../../assets/Images/Gallery/Still-waters-desktop.webp"
 
 export function GalleryGrid() {
     const flowers = [

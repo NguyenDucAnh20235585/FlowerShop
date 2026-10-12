@@ -1,6 +1,6 @@
-import Lily_smith_desktop from "../../assets/Images/About/Lily_smith_desktop.png"
-import Lily_smith_tablet from "../../assets/Images/About/Lily_smith_tablet.png"
-import Lily_smith_mobile from "../../assets/Images/About/Lily_smith_mobile.png"
+import Lily_smith_desktop from "../../assets/Images/About/Lily_smith_desktop.webp"
+import Lily_smith_tablet from "../../assets/Images/About/Lily_smith_tablet.webp"
+import Lily_smith_mobile from "../../assets/Images/About/Lily_smith_mobile.webp"
 
 export function StoryIntro() {
     return (

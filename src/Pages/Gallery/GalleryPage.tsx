@@ -2,17 +2,17 @@ import { GalleryGrid } from "./GalleryGrid"
 import { ServiceSection } from "../../components/ServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
-import floralInstallationsMobile from "../../assets/Images/Gallery/Floral-installations-gallery-mobile.png"
-import floralInstallationsTablet from "../../assets/Images/Gallery/Floral-installations-gallery-tablet.png"
-import floralInstallationsDesktop from "../../assets/Images/Gallery/Floral-installations-gallery-desktop.png"
+import floralInstallationsMobile from "../../assets/Images/Gallery/Floral-installations-gallery-mobile.webp"
+import floralInstallationsTablet from "../../assets/Images/Gallery/Floral-installations-gallery-tablet.webp"
+import floralInstallationsDesktop from "../../assets/Images/Gallery/Floral-installations-gallery-desktop.webp"
 
-import nativePlantArrangementsMobile from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-mobile.png"
-import nativePlantArrangementsTablet from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-tablet.png"
-import nativePlantArrangementsDesktop from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-desktop.png"
+import nativePlantArrangementsMobile from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-mobile.webp"
+import nativePlantArrangementsTablet from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-tablet.webp"
+import nativePlantArrangementsDesktop from "../../assets/Images/Gallery/Native-plant-arrangements-gallery-desktop.webp"
 
-import customFloralConceptsMobile from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-mobile.png"
-import customFloralConceptsTablet from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-tablet.png"
-import customFloralConceptsDesktop from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-desktop.png"
+import customFloralConceptsMobile from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-mobile.webp"
+import customFloralConceptsTablet from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-tablet.webp"
+import customFloralConceptsDesktop from "../../assets/Images/Gallery/Custom-floral-concepts-gallery-desktop.webp"
 
 export function GalleryPage() {
     return (

@@ -1,8 +1,8 @@
-import flower01 from "../../assets/Images/Home/Flower_wheel_01.png"
-import flower02 from "../../assets/Images/Home/Flower_wheel_02.png"
-import flower03 from "../../assets/Images/Home/Flower_wheel_03.png"
-import flower04 from "../../assets/Images/Home/Flower_wheel_04.png"
-import flower05 from "../../assets/Images/Home/Flower_wheel_05.png"
+import flower01 from "../../assets/Images/Home/Flower_wheel_01.webp"
+import flower02 from "../../assets/Images/Home/Flower_wheel_02.webp"
+import flower03 from "../../assets/Images/Home/Flower_wheel_03.webp"
+import flower04 from "../../assets/Images/Home/Flower_wheel_04.webp"
+import flower05 from "../../assets/Images/Home/Flower_wheel_05.webp"
 
 export function FlowerWheel() {
     const flowers = [

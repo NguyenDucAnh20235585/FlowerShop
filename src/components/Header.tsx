@@ -1,10 +1,10 @@
 import { useCallback, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
-import logoDesktop from "../assets/Images/Header/Our Blooms®.png"
-import logoMobile from "../assets/Images/Header/O.B.png"
-import menuIcon from "../assets/Images/Header/Hamburger_icon.png"
-import closeIcon from "../assets/Images/Header/Cancel_icon.png"
+import logoDesktop from "../assets/Images/Header/our-blooms.png"
+import logoMobile from "../assets/Images/Header/o-b.png"
+import menuIcon from "../assets/Images/Header/hamburger-icon.png"
+import closeIcon from "../assets/Images/Header/cancel-icon.png"
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)

@@ -1,8 +1,8 @@
 import { ImageView } from "./ImageView"
 
-import footerMobile from "../assets/Images/Footer/Footer_mobile.webp"
-import footerTablet from "../assets/Images/Footer/Footer_tablet.webp"
-import footerDesktop from "../assets/Images/Footer/Footer_desktop.webp"
+import footerMobile from "../assets/Images/Footer/footer-mobile.webp"
+import footerTablet from "../assets/Images/Footer/footer-tablet.webp"
+import footerDesktop from "../assets/Images/Footer/footer-desktop.webp"
 
 export function Footer() {
     return (

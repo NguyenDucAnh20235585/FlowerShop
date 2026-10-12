@@ -1,10 +1,10 @@
-import logoDesktop from "../../assets/Images/Home/Logo_image_desktop.png"
-import logoTablet from "../../assets/Images/Home/Logo_image_tablet.png"
-import logoMobile from "../../assets/Images/Home/Logo_image_mobile.png"
+import logoDesktop from "../../assets/Images/Home/logo-image-desktop.png"
+import logoTablet from "../../assets/Images/Home/logo-image-tablet.png"
+import logoMobile from "../../assets/Images/Home/logo-image-mobile.png"
 
-import heroDesktop from "../../assets/Images/Home/Hero_image_desktop.webp"
-import heroTablet from "../../assets/Images/Home/Hero_image_tablet.webp"
-import heroMobile from "../../assets/Images/Home/Hero_image_mobile.webp"
+import heroDesktop from "../../assets/Images/Home/hero-image-desktop.webp"
+import heroTablet from "../../assets/Images/Home/hero-image-tablet.webp"
+import heroMobile from "../../assets/Images/Home/hero-image-mobile.webp"
 
 export function HeroSection() {
     return (

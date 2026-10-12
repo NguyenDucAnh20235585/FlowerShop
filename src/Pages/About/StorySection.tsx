@@ -1,18 +1,18 @@
-import About_01_desktop from "../../assets/Images/About/About_01_desktop.webp"
-import About_01_tablet from "../../assets/Images/About/About_01_tablet.webp"
-import About_01_mobile from "../../assets/Images/About/About_01_mobile.webp"
+import about01Desktop from "../../assets/Images/About/about-01-desktop.webp"
+import about01Tablet from "../../assets/Images/About/about-01-tablet.webp"
+import about01Mobile from "../../assets/Images/About/about-01-mobile.webp"
 
-import About_02_desktop from "../../assets/Images/About/About_02_desktop.webp"
-import About_02_tablet from "../../assets/Images/About/About_02_tablet.webp"
-import About_02_mobile from "../../assets/Images/About/About_02_mobile.webp"
+import about02Desktop from "../../assets/Images/About/about-02-desktop.webp"
+import about02Tablet from "../../assets/Images/About/about-02-tablet.webp"
+import about02Mobile from "../../assets/Images/About/about-02-mobile.webp"
 
-import About_03_desktop from "../../assets/Images/About/About_03_desktop.webp"
-import About_03_tablet from "../../assets/Images/About/About_03_tablet.webp"
-import About_03_mobile from "../../assets/Images/About/About_03_mobile.webp"
+import about03Desktop from "../../assets/Images/About/about-03-desktop.webp"
+import about03Tablet from "../../assets/Images/About/about-03-tablet.webp"
+import about03Mobile from "../../assets/Images/About/about-03-mobile.webp"
 
-import About_04_desktop from "../../assets/Images/About/About_04_desktop.webp"
-import About_04_tablet from "../../assets/Images/About/About_04_tablet.webp"
-import About_04_mobile from "../../assets/Images/About/About_04_mobile.webp"
+import about04Desktop from "../../assets/Images/About/about-04-desktop.webp"
+import about04Tablet from "../../assets/Images/About/about-04-tablet.webp"
+import about04Mobile from "../../assets/Images/About/about-04-mobile.webp"
 
 export function StorySection() {
     return (
@@ -53,16 +53,16 @@ export function StorySection() {
                             <picture>
                                 <source
                                     media="(min-width: 1280px)"
-                                    srcSet={About_01_desktop}
+                                    srcSet={about01Desktop}
                                 />
 
                                 <source
                                     media="(min-width: 800px)"
-                                    srcSet={About_01_tablet}
+                                    srcSet={about01Tablet}
                                 />
 
                                 <img
-                                    src={About_01_mobile}
+                                    src={about01Mobile}
                                     alt=""
                                     className="block h-auto w-full"
                                 />
@@ -73,16 +73,16 @@ export function StorySection() {
                             <picture>
                                 <source
                                     media="(min-width: 1280px)"
-                                    srcSet={About_02_desktop}
+                                    srcSet={about02Desktop}
                                 />
 
                                 <source
                                     media="(min-width: 800px)"
-                                    srcSet={About_02_tablet}
+                                    srcSet={about02Tablet}
                                 />
 
                                 <img
-                                    src={About_02_mobile}
+                                    src={about02Mobile}
                                     alt=""
                                     className="block h-auto w-full"
                                 />
@@ -93,16 +93,16 @@ export function StorySection() {
                             <picture>
                                 <source
                                     media="(min-width: 1280px)"
-                                    srcSet={About_03_desktop}
+                                    srcSet={about03Desktop}
                                 />
 
                                 <source
                                     media="(min-width: 800px)"
-                                    srcSet={About_03_tablet}
+                                    srcSet={about03Tablet}
                                 />
 
                                 <img
-                                    src={About_03_mobile}
+                                    src={about03Mobile}
                                     alt=""
                                     className="block h-auto w-full"
                                 />
@@ -157,16 +157,16 @@ export function StorySection() {
                         <picture>
                             <source
                                 media="(min-width: 1280px)"
-                                srcSet={About_04_desktop}
+                                srcSet={about04Desktop}
                             />
 
                             <source
                                 media="(min-width: 800px)"
-                                srcSet={About_04_tablet}
+                                srcSet={about04Tablet}
                             />
 
                             <img
-                                src={About_04_mobile}
+                                src={about04Mobile}
                                 alt="Flowers"
                                 className="block h-auto w-full"
                             />

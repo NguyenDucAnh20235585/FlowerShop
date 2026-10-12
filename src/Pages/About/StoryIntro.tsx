@@ -1,6 +1,6 @@
-import Lily_smith_desktop from "../../assets/Images/About/Lily_smith_desktop.webp"
-import Lily_smith_tablet from "../../assets/Images/About/Lily_smith_tablet.webp"
-import Lily_smith_mobile from "../../assets/Images/About/Lily_smith_mobile.webp"
+import lilySmithDesktop from "../../assets/Images/About/lily-smith-desktop.webp"
+import lilySmithTablet from "../../assets/Images/About/lily-smith-tablet.webp"
+import lilySmithMobile from "../../assets/Images/About/lily-smith-mobile.webp"
 
 export function StoryIntro() {
     return (
@@ -50,16 +50,16 @@ export function StoryIntro() {
                 <picture>
                     <source
                         media="(min-width: 1280px)"
-                        srcSet={Lily_smith_desktop}
+                        srcSet={lilySmithDesktop}
                     />
 
                     <source
                         media="(min-width: 800px)"
-                        srcSet={Lily_smith_tablet}
+                        srcSet={lilySmithTablet}
                     />
 
                     <img
-                        src={Lily_smith_mobile}
+                        src={lilySmithMobile}
                         alt="Lily Smith"
                         className="block h-auto w-full"
                     />

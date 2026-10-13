@@ -4,7 +4,6 @@ import flower03 from "../../assets/Images/Home/flower-wheel-03.webp"
 import flower04 from "../../assets/Images/Home/flower-wheel-04.webp"
 import flower05 from "../../assets/Images/Home/flower-wheel-05.webp"
 
-
 const FLOWERS = [
     {
         src: flower01,
@@ -28,7 +27,6 @@ const FLOWERS = [
     },
 ]
 export function FlowerWheel() {
-
 
     return (
         <section

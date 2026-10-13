@@ -26,11 +26,11 @@ export function WorkWithUs({
                         mt-[70px]
                         px-[10%]
 
-                        min-[800px]:mt-[70px]
-                        min-[800px]:px-[5%]
+                        tablet:mt-[70px]
+                        tablet:px-[5%]
 
-                        min-[1280px]:mt-[80px]
-                        min-[1280px]:px-[3%]
+                        desktop:mt-[80px]
+                        desktop:px-[3%]
                     "
                 >
                     <ImageView
@@ -60,11 +60,11 @@ export function WorkWithUs({
                             [&>img]:h-full
                             [&>img]:object-cover
 
-                            min-[800px]:aspect-auto
-                            min-[800px]:rounded-[28px]
-                            min-[800px]:[&>img]:h-auto
+                            tablet:aspect-auto
+                            tablet:rounded-[28px]
+                            tablet:[&>img]:h-auto
 
-                            min-[1280px]:rounded-[30px]
+                            desktop:rounded-[30px]
                         "
                     />
                 </div>
@@ -81,19 +81,19 @@ export function WorkWithUs({
                             pt-[130px]
                             pb-[135px]
 
-                            min-[800px]:pt-[150px]
-                            min-[800px]:pb-[150px]
+                            tablet:pt-[150px]
+                            tablet:pb-[150px]
 
-                            min-[1280px]:pt-[180px]
-                            min-[1280px]:pb-[200px]
+                            desktop:pt-[180px]
+                            desktop:pb-[200px]
                         `
                         : `
                             py-[90px]
 
-                            min-[800px]:py-[110px]
+                            tablet:py-[110px]
 
-                            min-[1280px]:pt-[170px]
-                            min-[1280px]:pb-[160px]
+                            desktop:pt-[170px]
+                            desktop:pb-[160px]
                         `
                     }
                 `}

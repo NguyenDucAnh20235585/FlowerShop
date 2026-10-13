@@ -31,7 +31,7 @@ export function Header() {
                 className={`
         ${isHome
                         ? "mx-[40px]"
-                        : "mx-[16px] min-[800px]:mx-[20px] min-[1280px]:mx-[40px]"
+                        : "mx-[16px] tablet:mx-[20px] desktop:mx-[40px]"
                     }
 
         ${isMenuOpen
@@ -48,8 +48,8 @@ export function Header() {
     justify-between
     px-[16px]
 
-    min-[800px]:h-[80px]
-    min-[800px]:px-0
+    tablet:h-[80px]
+    tablet:px-0
 "
                 >
                     <Link to="/" onClick={closeMenu}>
@@ -67,7 +67,7 @@ export function Header() {
                             alt=""
                             className="
         w-[40px]
-        min-[800px]:w-[200px]
+        tablet:w-[200px]
     "
                         />
                     </Link>
@@ -78,7 +78,7 @@ export function Header() {
         hidden
         items-center
         gap-[50px]
-        min-[800px]:flex
+        tablet:flex
     "
                     >
                         {NAV_LINKS.map((link) => (
@@ -95,7 +95,7 @@ export function Header() {
                     <button
                         type="button"
                         onClick={toggleMenu}
-                        className="min-[800px]:hidden"
+                        className="tablet:hidden"
                         aria-expanded={isMenuOpen}
                         aria-label={
                             isMenuOpen
@@ -123,7 +123,7 @@ export function Header() {
                         top-[70px]
                         bg-white
 
-                        min-[800px]:hidden
+                        tablet:hidden
                     "
                 >
                     <nav

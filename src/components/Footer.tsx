@@ -20,13 +20,13 @@ export function Footer() {
                     overflow-hidden
                     rounded-t-[30px]
 
-                    min-[800px]:h-[570px]
-                    min-[800px]:w-[82%]
-                    min-[800px]:max-w-[660px]
+                    tablet:h-[570px]
+                    tablet:w-[82%]
+                    tablet:max-w-[660px]
 
-                    min-[1280px]:h-[560px]
-                    min-[1280px]:w-[90%]
-                    min-[1280px]:max-w-[1160px]
+                    desktop:h-[560px]
+                    desktop:w-[90%]
+                    desktop:max-w-[1160px]
                 "
             >
                 <ImageView
@@ -85,10 +85,10 @@ export function Footer() {
                             font-medium
                             leading-none
 
-                            min-[800px]:bottom-[25px]
-                            min-[800px]:text-[22px]
+                            tablet:bottom-[25px]
+                            tablet:text-[22px]
 
-                            min-[1280px]:bottom-[27px]
+                            desktop:bottom-[27px]
                         "
                     >
                         Miami, FL
@@ -106,10 +106,10 @@ export function Footer() {
                             font-medium
                             leading-none
 
-                            min-[800px]:bottom-[25px]
-                            min-[800px]:text-[22px]
+                            tablet:bottom-[25px]
+                            tablet:text-[22px]
 
-                            min-[1280px]:bottom-[27px]
+                            desktop:bottom-[27px]
                         "
                     >
                         Contact

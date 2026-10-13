@@ -36,8 +36,8 @@ export function FlowerWheel() {
                 w-[295px]
                 overflow-x-auto
 
-                min-[800px]:w-[720px]
-                min-[1280px]:w-[1200px]
+                tablet:w-[720px]
+                desktop:w-[1200px]
             "
         >
             <div
@@ -46,7 +46,7 @@ export function FlowerWheel() {
                     w-max
                     gap-[12px]
 
-                    min-[800px]:gap-[20px]
+                    tablet:gap-[20px]
                 "
             >
                 {flowers.map((flower, index) => (
@@ -59,10 +59,10 @@ export function FlowerWheel() {
             overflow-hidden
             rounded-[20px]
 
-            min-[800px]:w-[300px]
-            min-[800px]:rounded-[28px]
+            tablet:w-[300px]
+            tablet:rounded-[28px]
 
-            ${index === 0 ? "min-[1280px]:ml-[-200px]" : ""}
+            ${index === 0 ? "desktop:ml-[-200px]" : ""}
         `}
                     >
                         <img

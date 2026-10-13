@@ -13,8 +13,8 @@ export function HeroSection() {
         <section
             className="
                 pt-[54px]
-min-[800px]:pt-[58px]
-min-[1280px]:pt-[62px]
+tablet:pt-[58px]
+desktop:pt-[62px]
             "
         >
             <ImageView
@@ -37,8 +37,8 @@ min-[1280px]:pt-[62px]
                 className="
         mx-auto
         w-[67%]
-        min-[800px]:w-[80%]
-        min-[1280px]:w-[88%]
+        tablet:w-[80%]
+        desktop:w-[88%]
     "
             />
 
@@ -65,11 +65,11 @@ min-[1280px]:pt-[62px]
         w-[73%]
         rounded-[20px]
 
-        min-[800px]:w-[80%]
-        min-[800px]:rounded-[28px]
+        tablet:w-[80%]
+        tablet:rounded-[28px]
 
-        min-[1280px]:w-[88%]
-        min-[1280px]:rounded-[30px]
+        desktop:w-[88%]
+        desktop:rounded-[30px]
     "
             />
         </section>

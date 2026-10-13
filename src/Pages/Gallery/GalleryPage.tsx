@@ -22,10 +22,10 @@ export function GalleryPage() {
                     mx-[4%]
                     pt-[52px]
 
-                    min-[800px]:mx-[3%]
-                    min-[800px]:pt-[45px]
+                    tablet:mx-[3%]
+                    tablet:pt-[45px]
 
-                    min-[1280px]:pt-[55px]
+                    desktop:pt-[55px]
                 "
             >
                 <h1 className="heading-1">
@@ -40,13 +40,13 @@ export function GalleryPage() {
                     mx-[4%]
                     mt-[70px]
 
-                    min-[800px]:mx-[3%]
-                    min-[800px]:mt-[90px]
+                    tablet:mx-[3%]
+                    tablet:mt-[90px]
 
-                    min-[1280px]:mt-[100px]
-                    min-[1280px]:grid
-                    min-[1280px]:grid-cols-[180px_minmax(0,1fr)]
-                    min-[1280px]:gap-x-[24px]
+                    desktop:mt-[100px]
+                    desktop:grid
+                    desktop:grid-cols-[180px_minmax(0,1fr)]
+                    desktop:gap-x-[24px]
                 "
             >
                 <p
@@ -55,11 +55,11 @@ export function GalleryPage() {
         mb-[28px]
         text-muted
 
-        min-[800px]:mb-[30px]
+        tablet:mb-[30px]
 
-        min-[1280px]:mb-0
-        min-[1280px]:pt-[10px]
-        min-[1280px]:text-black
+        desktop:mb-0
+        desktop:pt-[10px]
+        desktop:text-black
     "
                 >
                     SERVICES

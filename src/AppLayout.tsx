@@ -11,8 +11,8 @@ export function AppLayout() {
                 rounded-[16px]
                 bg-white
 
-                min-[800px]:rounded-[16px]
-                min-[1280px]:rounded-[16px]
+                tablet:rounded-[16px]
+                desktop:rounded-[16px]
             "
         >
             <Header />

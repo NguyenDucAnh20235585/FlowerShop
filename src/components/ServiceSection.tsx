@@ -30,25 +30,25 @@ export function ServiceSection({
                 className="
         py-[28px]
 
-        min-[800px]:grid
-        min-[800px]:grid-cols-2
-        min-[800px]:items-start
-        min-[800px]:gap-[30px]
-        min-[800px]:py-[30px]
+        tablet:grid
+        tablet:grid-cols-2
+        tablet:items-start
+        tablet:gap-[30px]
+        tablet:py-[30px]
 
-        min-[1280px]:gap-[60px]
+        desktop:gap-[60px]
     "
             >
                 <div
                     className="
                         pb-[24px]
 
-                        min-[800px]:pb-0
-                        min-[800px]:pt-[6px]
-                        min-[800px]:pr-[10px]
+                        tablet:pb-0
+                        tablet:pt-[6px]
+                        tablet:pr-[10px]
 
-                        min-[1280px]:pt-[10px]
-                        min-[1280px]:pr-[20px]
+                        desktop:pt-[10px]
+                        desktop:pr-[20px]
                     "
                 >
                     <h2 className="heading-1 max-w-[500px]">
@@ -61,8 +61,8 @@ export function ServiceSection({
         textbox-body
         mt-[20px]
 
-        min-[800px]:mt-[22px]
-        min-[1280px]:mt-[24px]
+        tablet:mt-[22px]
+        desktop:mt-[24px]
     "
                     >
                         {description}
@@ -98,8 +98,8 @@ export function ServiceSection({
                     className="
         w-full
         rounded-[20px]
-        min-[800px]:rounded-[24px]
-        min-[1280px]:rounded-[28px]
+        tablet:rounded-[24px]
+        desktop:rounded-[28px]
     "
                 />
             </section>
@@ -119,22 +119,22 @@ export function ServiceSection({
                 pb-[85px]
                 text-center
 
-                min-[800px]:mx-[10%]
-                min-[800px]:pb-[80px]
+                tablet:mx-[10%]
+                tablet:pb-[80px]
 
-                min-[1280px]:mx-[6%]
-                min-[1280px]:pb-[90px]
+                desktop:mx-[6%]
+                desktop:pb-[90px]
 
                 ${number === "1"
                     ? `
                             pt-[95px]
-                            min-[800px]:pt-[95px]
-                            min-[1280px]:pt-[95px]
+                            tablet:pt-[95px]
+                            desktop:pt-[95px]
                         `
                     : `
                             pt-[40px]
-                            min-[800px]:pt-[40px]
-                            min-[1280px]:pt-[40px]
+                            tablet:pt-[40px]
+                            desktop:pt-[40px]
                         `
                 }
             `}

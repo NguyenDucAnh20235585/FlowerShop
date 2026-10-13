@@ -119,20 +119,20 @@ export function GalleryGrid() {
                 mt-[65px]
                 pb-[70px]
 
-                min-[800px]:mx-[20px]
-                min-[800px]:mt-[80px]
-                min-[800px]:pb-[90px]
+                tablet:mx-[20px]
+                tablet:mt-[80px]
+                tablet:pb-[90px]
 
-                min-[1280px]:mx-[3%]
-                min-[1280px]:mt-[80px]
-                min-[1280px]:pb-[100px]
+                desktop:mx-[3%]
+                desktop:mt-[80px]
+                desktop:pb-[100px]
             "
         >
             <div
                 className="
-                    min-[1280px]:grid
-                    min-[1280px]:grid-cols-[150px_minmax(0,1fr)]
-                    min-[1280px]:gap-x-[20px]
+                    desktop:grid
+                    desktop:grid-cols-[150px_minmax(0,1fr)]
+                    desktop:gap-x-[20px]
                 "
             >
                 <div
@@ -141,10 +141,10 @@ export function GalleryGrid() {
                         mb-[40px]
                         text-muted
 
-                        min-[800px]:mb-[45px]
-                        min-[800px]:text-[14px]
+                        tablet:mb-[45px]
+                        tablet:text-[14px]
 
-                        min-[1280px]:mb-0
+                        desktop:mb-0
                     "
                 >
                     SEASONAL ARRANGEMENTS
@@ -157,11 +157,11 @@ export function GalleryGrid() {
                         gap-x-[20px]
                         gap-y-[18px]
 
-                        min-[800px]:grid-cols-2
-                        min-[800px]:gap-y-[60px]
+                        tablet:grid-cols-2
+                        tablet:gap-y-[60px]
 
-                        min-[1280px]:grid-cols-3
-                        min-[1280px]:gap-y-[55px]
+                        desktop:grid-cols-3
+                        desktop:gap-y-[55px]
                     "
                 >
                     {flowers.map((flower, index) => (
@@ -169,7 +169,7 @@ export function GalleryGrid() {
                             key={flower.name}
                             className={
                                 index === flowers.length - 1
-                                    ? "min-[800px]:col-span-2 min-[1280px]:col-span-1"
+                                    ? "tablet:col-span-2 desktop:col-span-1"
                                     : ""
                             }
                         >
@@ -180,7 +180,7 @@ export function GalleryGrid() {
                                     items-baseline
                                     gap-[6px]
 
-                                    min-[1280px]:mb-[14px]
+                                    desktop:mb-[14px]
                                 "
                             >
                                 <h2 className="caption-2 whitespace-nowrap">

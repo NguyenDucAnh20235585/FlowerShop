@@ -9,8 +9,8 @@ export function HomeAbout() {
         pt-[115px]
         text-center
 
-        min-[800px]:pt-[115px]
-        min-[1280px]:pt-[125px]
+        tablet:pt-[115px]
+        desktop:pt-[125px]
     "
         >
 

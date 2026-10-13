@@ -28,8 +28,8 @@ export function Button(props: ButtonProps) {
         bg-primary
         px-[12px]
         py-[6px]
-        min-[1280px]:px-[14px]
-        min-[1280px]:py-[8px]
+        desktop:px-[14px]
+        desktop:py-[8px]
         ${className}
     `
 

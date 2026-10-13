@@ -66,30 +66,6 @@ export function StoryIntro() {
             >
                 <h2
                     className="
-                        font-outfit
-                        text-[16px]
-                        font-bold
-                        leading-[1.4]
-
-                        tablet:text-[16px]
-                        desktop:text-[18px]
-                    "
-                >
-                    LILY SMITH
-                </h2>
-                <h2
-                    className="
-        font-outfit
-        text-[16px]
-        font-bold
-        leading-[1.4]
-
-        desktop:text-[18px]
-    "
-                >
-                    LILY SMITH
-                </h2><h2
-                    className="
         font-outfit
         text-[16px]
         font-bold

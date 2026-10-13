@@ -58,7 +58,6 @@ export function ServiceSection({
                     <p
                         className="
         paragraph-1
-        textbox-body
         mt-[20px]
 
         tablet:mt-[22px]
@@ -126,16 +125,8 @@ export function ServiceSection({
                 desktop:pb-[90px]
 
                 ${number === "1"
-                    ? `
-                            pt-[95px]
-                            tablet:pt-[95px]
-                            desktop:pt-[95px]
-                        `
-                    : `
-                            pt-[40px]
-                            tablet:pt-[40px]
-                            desktop:pt-[40px]
-                        `
+                    ? "pt-[95px]"
+                    : "pt-[40px]"
                 }
             `}
         >
@@ -178,7 +169,6 @@ export function ServiceSection({
             <p
                 className="
         paragraph-1 home-service-textbox mx-auto
-        textbox-body
         mt-[var(--service-title-text)]
     "
             >

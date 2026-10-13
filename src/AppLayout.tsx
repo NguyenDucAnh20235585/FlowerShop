@@ -10,9 +10,6 @@ export function AppLayout() {
                 overflow-clip
                 rounded-[16px]
                 bg-white
-
-                tablet:rounded-[16px]
-                desktop:rounded-[16px]
             "
         >
             <Header />

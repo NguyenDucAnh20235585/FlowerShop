@@ -9,11 +9,8 @@ export function WhatWeDo() {
                 pt-[45px]
                 pb-[42px]
                 text-center
-
-                tablet:mx-[3%]
                 tablet:pt-[55px]
                 tablet:pb-[50px]
-
                 desktop:pt-[55px]
                 desktop:pb-[55px]
             "
@@ -25,7 +22,6 @@ export function WhatWeDo() {
             <p
                 className="
         paragraph-1
-        paragraph-limit
         mx-auto
         mt-[28px]
 

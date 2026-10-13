@@ -130,7 +130,7 @@ export function StorySection() {
                     tablet:grid-cols-[18%_minmax(0,1fr)]
                     tablet:gap-x-[20px]
 
-                    desktop:grid-cols-[120px_minmax(0,1fr)]
+                    desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
                 <div className="hidden tablet:block" />

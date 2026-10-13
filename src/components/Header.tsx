@@ -1,5 +1,5 @@
 import { ImageView } from "./ImageView"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 
 import logoDesktop from "../assets/Images/Header/our-blooms.png"
@@ -24,6 +24,26 @@ export function Header() {
     const toggleMenu = () => {
         setIsMenuOpen((current) => !current)
     }
+
+    useEffect(() => {
+        if (!isMenuOpen) return
+
+        const previousOverflow = document.body.style.overflow
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setIsMenuOpen(false)
+            }
+        }
+
+        document.body.style.overflow = "hidden"
+        document.addEventListener("keydown", handleKeyDown)
+
+        return () => {
+            document.body.style.overflow = previousOverflow
+            document.removeEventListener("keydown", handleKeyDown)
+        }
+    }, [isMenuOpen])
 
     return (
         <header className="sticky top-0 z-50 bg-white">

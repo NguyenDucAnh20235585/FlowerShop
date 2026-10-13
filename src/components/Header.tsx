@@ -7,6 +7,10 @@ import logoMobile from "../assets/Images/Header/o-b.png"
 import menuIcon from "../assets/Images/Header/hamburger-icon.png"
 import closeIcon from "../assets/Images/Header/cancel-icon.png"
 
+const NAV_LINKS = [
+    { to: "/gallery", label: "GALLERY" },
+    { to: "/about", label: "ABOUT" },
+]
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -74,21 +78,18 @@ export function Header() {
         hidden
         items-center
         gap-[50px]
-
         min-[800px]:flex
     "
                     >
-                        <Link to="/gallery">
-                            GALLERY
-                        </Link>
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
 
-                        <Link to="/about">
-                            ABOUT
-                        </Link>
-
-                        <a href="#contact">
-                            CONTACT
-                        </a>
                     </nav>
 
                     <button
@@ -140,26 +141,16 @@ export function Header() {
         pb-[65px]
     `}
                     >
-                        <Link
-                            to="/gallery"
-                            onClick={closeMenu}
-                        >
-                            GALLERY
-                        </Link>
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                                onClick={closeMenu}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
 
-                        <Link
-                            to="/about"
-                            onClick={closeMenu}
-                        >
-                            ABOUT
-                        </Link>
-
-                        <a
-                            href="#contact"
-                            onClick={closeMenu}
-                        >
-                            CONTACT
-                        </a>
                     </nav>
                 </div>
             )}

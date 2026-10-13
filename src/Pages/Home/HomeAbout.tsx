@@ -8,8 +8,6 @@ export function HomeAbout() {
         px-[4%]
         pt-[115px]
         text-center
-
-        tablet:pt-[115px]
         desktop:pt-[125px]
     "
         >

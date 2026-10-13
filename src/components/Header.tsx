@@ -125,7 +125,6 @@ export function Header() {
                     >
                         <img
                             src={isMenuOpen ? closeIcon : menuIcon}
-                            alt="Hamburger menu"
                             width={60}
                             height={60}
                             className="block h-auto w-[24px]"

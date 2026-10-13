@@ -47,7 +47,6 @@ export function Footer() {
                     }}
                     alt="Orange Flower"
                     loading="lazy"
-                    className="..."
                 />
 
                 <div

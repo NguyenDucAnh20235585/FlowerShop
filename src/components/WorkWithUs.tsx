@@ -50,7 +50,7 @@ export function WorkWithUs({
                             height: 1504,
                         }}
                         alt={alt}
-                        loading={"lazy"}
+                        loading="lazy"
                         className="
                             mx-auto
                             aspect-[295/400]

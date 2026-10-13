@@ -112,8 +112,6 @@ const FLOWERS = [
 ]
 
 export function GalleryGrid() {
-
-
     return (
         <section
             className="
@@ -189,7 +187,7 @@ export function GalleryGrid() {
                                     {flower.name}
                                 </h2>
 
-                                <span className="heading-4 whitespace-nowrap text-[#666666]">
+                                <span className="heading-4 whitespace-nowrap text-muted">
                                     {flower.price}
                                 </span>
                             </div>

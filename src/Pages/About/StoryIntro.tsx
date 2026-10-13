@@ -76,6 +76,18 @@ export function StoryIntro() {
                     "
                 >
                     LILY SMITH
+                </h2>
+                <h2
+                    className="
+        font-outfit
+        text-[16px]
+        font-bold
+        leading-[1.4]
+
+        desktop:text-[18px]
+    "
+                >
+                    LILY SMITH
                 </h2><h2
                     className="
         font-outfit
@@ -96,7 +108,7 @@ export function StoryIntro() {
         text-[14px]
         font-medium
         leading-[1.4]
-        text-muted]
+        text-muted
     "
                 >
                     Owner

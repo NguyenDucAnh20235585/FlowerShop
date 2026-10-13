@@ -11,7 +11,6 @@ export function WhatWeDo() {
                 text-center
                 tablet:pt-[55px]
                 tablet:pb-[50px]
-                desktop:pt-[55px]
                 desktop:pb-[55px]
             "
         >

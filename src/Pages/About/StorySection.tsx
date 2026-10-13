@@ -1,4 +1,5 @@
 import { ImageView } from "../../components/ImageView"
+import { Button } from "../../components/Button"
 
 import about01Desktop from "../../assets/Images/About/about-01-desktop.webp"
 import about01Tablet from "../../assets/Images/About/about-01-tablet.webp"
@@ -206,23 +207,12 @@ export function StorySection() {
                             next event.
                         </p>
 
-                        <a
+                        <Button
                             href="#contact"
-                            className="
-                                heading-4
-                                mt-[var(--about-ending-button)]
-                                inline-block
-                                rounded-[4px]
-                                bg-[#ffc400]
-                                px-[10px]
-                                py-[5px]
-
-                                min-[1280px]:px-[18px]
-                                min-[1280px]:py-[10px]
-                            "
+                            className="mt-[var(--about-ending-button)]"
                         >
                             • &nbsp; BOOK A CONSULTATION
-                        </a>
+                        </Button>
                     </div>
                 </div>
             </section>

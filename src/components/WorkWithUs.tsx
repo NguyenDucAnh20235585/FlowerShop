@@ -1,5 +1,5 @@
 import { ImageView } from "./ImageView"
-import { Link } from "react-router-dom"
+import { Button } from "./Button"
 
 type WorkWithUsProps = {
     mobileImage?: string
@@ -118,23 +118,13 @@ export function WorkWithUs({
                     natural beauty to your next event.
                 </h2>
 
-                <Link
+                <Button
                     to="/about"
-                    className="
-                        heading-4
-                        mt-[var(--title-button-gap)]
-                        inline-block
-                        rounded-[4px]
-                        bg-[#ffc400]
-                        px-[12px]
-                        py-[6px]
-
-                        min-[1280px]:px-[14px]
-                        min-[1280px]:py-[8px]
-                    "
+                    className="mt-[var(--title-button-gap)]"
                 >
                     • &nbsp; ABOUT US
-                </Link>
+                </Button>
+
             </div>
         </section>
     )

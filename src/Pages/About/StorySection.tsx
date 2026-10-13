@@ -33,9 +33,8 @@ export function StorySection() {
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
-                <div className="hidden tablet:block" />
 
-                <div>
+                <div className="tablet:col-start-2">
                     <h2 className="heading-2 max-w-[980px]">
                         Our Blooms was founded in honor of Lily Smith’s loving
                         aunts, Teresa and Beth.
@@ -133,9 +132,9 @@ export function StorySection() {
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
-                <div className="hidden tablet:block" />
 
-                <div>
+                <div className="tablet:col-start-2">
+
                     <div className="paragraph-2 about-story-textbox">
                         <p>
                             Lily's journey with flowers began in the heart of Oregon,

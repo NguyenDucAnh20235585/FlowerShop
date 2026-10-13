@@ -36,81 +36,83 @@ import stillWatersMobile from "../../assets/Images/Gallery/still-waters-mobile.w
 import stillWatersTablet from "../../assets/Images/Gallery/still-waters-tablet.webp"
 import stillWatersDesktop from "../../assets/Images/Gallery/still-waters-desktop.webp"
 
+const FLOWERS = [
+    {
+        name: "DAWN BLOOM",
+        price: "$55/Bunch",
+        alt: "Sun flowers",
+        mobileImage: dawnBloomMobile,
+        tabletImage: dawnBloomTablet,
+        desktopImage: dawnBloomDesktop,
+    },
+    {
+        name: "SOLSTICE STEMS",
+        price: "$30/Bunch",
+        alt: "Bouquette of lilies and carnations",
+        mobileImage: solsticeStemsMobile,
+        tabletImage: solsticeStemsTablet,
+        desktopImage: solsticeStemsDesktop,
+    },
+    {
+        name: "WHISPER GREENS",
+        price: "$120/Bunch",
+        alt: "Bouquette of tulips",
+        mobileImage: whisperGreensMobile,
+        tabletImage: whisperGreensTablet,
+        desktopImage: whisperGreensDesktop,
+    },
+    {
+        name: "CLARITY PETALS",
+        price: "$55/Bunch",
+        alt: "Pink flowers",
+        mobileImage: clarityPetalsMobile,
+        tabletImage: clarityPetalsTablet,
+        desktopImage: clarityPetalsDesktop,
+    },
+    {
+        name: "RIVER STONE",
+        price: "$30/Bunch",
+        alt: "Bouquette of peonies",
+        mobileImage: riverStoneMobile,
+        tabletImage: riverStoneTablet,
+        desktopImage: riverStoneDesktop,
+    },
+    {
+        name: "MOONLIT MEADOW",
+        price: "$120/Bunch",
+        alt: "Bouquette of lilies and carnations",
+        mobileImage: moonlitMeadowMobile,
+        tabletImage: moonlitMeadowTablet,
+        desktopImage: moonlitMeadowDesktop,
+    },
+    {
+        name: "EMBER LEAF",
+        price: "$55/Bunch",
+        alt: "White tulips",
+        mobileImage: emberLeafMobile,
+        tabletImage: emberLeafTablet,
+        desktopImage: emberLeafDesktop,
+    },
+    {
+        name: "SKYLINE BLOOM",
+        price: "$75/Bunch",
+        alt: "Purple flower",
+        mobileImage: skylineBloomMobile,
+        tabletImage: skylineBloomTablet,
+        desktopImage: skylineBloomDesktop,
+    },
+    {
+        name: "STILL WATERS",
+        price: "$250/Bunch",
+        alt: "Pink tulip",
+        mobileImage: stillWatersMobile,
+        tabletImage: stillWatersTablet,
+        desktopImage: stillWatersDesktop,
+    },
+]
+
 export function GalleryGrid() {
-    const flowers = [
-        {
-            name: "DAWN BLOOM",
-            price: "$55/Bunch",
-            alt: "Sun flowers",
-            mobileImage: dawnBloomMobile,
-            tabletImage: dawnBloomTablet,
-            desktopImage: dawnBloomDesktop,
-        },
-        {
-            name: "SOLSTICE STEMS",
-            price: "$30/Bunch",
-            alt: "Bouquette of lilies and carnations",
-            mobileImage: solsticeStemsMobile,
-            tabletImage: solsticeStemsTablet,
-            desktopImage: solsticeStemsDesktop,
-        },
-        {
-            name: "WHISPER GREENS",
-            price: "$120/Bunch",
-            alt: "Bouquette of tulips",
-            mobileImage: whisperGreensMobile,
-            tabletImage: whisperGreensTablet,
-            desktopImage: whisperGreensDesktop,
-        },
-        {
-            name: "CLARITY PETALS",
-            price: "$55/Bunch",
-            alt: "Pink flowers",
-            mobileImage: clarityPetalsMobile,
-            tabletImage: clarityPetalsTablet,
-            desktopImage: clarityPetalsDesktop,
-        },
-        {
-            name: "RIVER STONE",
-            price: "$30/Bunch",
-            alt: "Bouquette of peonies",
-            mobileImage: riverStoneMobile,
-            tabletImage: riverStoneTablet,
-            desktopImage: riverStoneDesktop,
-        },
-        {
-            name: "MOONLIT MEADOW",
-            price: "$120/Bunch",
-            alt: "Bouquette of lilies and carnations",
-            mobileImage: moonlitMeadowMobile,
-            tabletImage: moonlitMeadowTablet,
-            desktopImage: moonlitMeadowDesktop,
-        },
-        {
-            name: "EMBER LEAF",
-            price: "$55/Bunch",
-            alt: "White tulips",
-            mobileImage: emberLeafMobile,
-            tabletImage: emberLeafTablet,
-            desktopImage: emberLeafDesktop,
-        },
-        {
-            name: "SKYLINE BLOOM",
-            price: "$75/Bunch",
-            alt: "Purple flower",
-            mobileImage: skylineBloomMobile,
-            tabletImage: skylineBloomTablet,
-            desktopImage: skylineBloomDesktop,
-        },
-        {
-            name: "STILL WATERS",
-            price: "$250/Bunch",
-            alt: "Pink tulip",
-            mobileImage: stillWatersMobile,
-            tabletImage: stillWatersTablet,
-            desktopImage: stillWatersDesktop,
-        },
-    ]
+
 
     return (
         <section
@@ -164,11 +166,11 @@ export function GalleryGrid() {
                         desktop:gap-y-[55px]
                     "
                 >
-                    {flowers.map((flower, index) => (
+                    {FLOWERS.map((flower, index) => (
                         <article
                             key={flower.name}
                             className={
-                                index === flowers.length - 1
+                                index === FLOWERS.length - 1
                                     ? "tablet:col-span-2 desktop:col-span-1"
                                     : ""
                             }
@@ -200,7 +202,7 @@ export function GalleryGrid() {
                                 }}
                                 tablet={{
                                     src: flower.tabletImage,
-                                    width: index === flowers.length - 1 ? 1520 : 740,
+                                    width: index === FLOWERS.length - 1 ? 1520 : 740,
                                     height: 637,
                                 }}
                                 desktop={{

@@ -1,5 +1,5 @@
 import { ImageView } from "./ImageView"
-import { useCallback, useState } from "react"
+import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
 import logoDesktop from "../assets/Images/Header/our-blooms.png"
@@ -17,13 +17,13 @@ export function Header() {
     const { pathname } = useLocation()
     const isHome = pathname === "/"
 
-    const closeMenu = useCallback(() => {
+    const closeMenu = () => {
         setIsMenuOpen(false)
-    }, [])
+    }
 
-    const toggleMenu = useCallback(() => {
+    const toggleMenu = () => {
         setIsMenuOpen((current) => !current)
-    }, [])
+    }
 
     return (
         <header className="sticky top-0 z-50 bg-white">

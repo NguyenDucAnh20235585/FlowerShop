@@ -10,26 +10,15 @@ export function AboutPage() {
         pt-[40px]
         pb-[55px]
 
-        min-[800px]:mx-[3%]
-        min-[800px]:pt-[45px]
-        min-[800px]:pb-[75px]
+        tablet:mx-[3%]
+        tablet:pt-[45px]
+        tablet:pb-[75px]
 
-        min-[1280px]:pt-[55px]
-        min-[1280px]:pb-[90px]
+        desktop:pt-[55px]
+        desktop:pb-[90px]
     "
             >
-                <h1
-                    className="
-                        font-outfit
-                        text-[36px]
-                        font-bold
-                        leading-[1.1]
-                        tracking-[-0.02em]
-
-                        min-[800px]:text-[45px]
-                        min-[1280px]:text-[50px]
-                    "
-                >
+                <h1 className="heading-1">
                     ABOUT
                 </h1>
             </section>

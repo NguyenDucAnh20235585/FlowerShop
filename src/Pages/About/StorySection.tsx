@@ -1,18 +1,21 @@
-import About_01_desktop from "../../assets/Images/About/About_01_desktop.png"
-import About_01_tablet from "../../assets/Images/About/About_01_tablet.png"
-import About_01_mobile from "../../assets/Images/About/About_01_mobile.png"
+import { ImageView } from "../../components/ImageView"
+import { Button } from "../../components/Button"
 
-import About_02_desktop from "../../assets/Images/About/About_02_desktop.png"
-import About_02_tablet from "../../assets/Images/About/About_02_tablet.png"
-import About_02_mobile from "../../assets/Images/About/About_02_mobile.png"
+import about01Desktop from "../../assets/Images/About/about-01-desktop.webp"
+import about01Tablet from "../../assets/Images/About/about-01-tablet.webp"
+import about01Mobile from "../../assets/Images/About/about-01-mobile.webp"
 
-import About_03_desktop from "../../assets/Images/About/About_03_desktop.png"
-import About_03_tablet from "../../assets/Images/About/About_03_tablet.png"
-import About_03_mobile from "../../assets/Images/About/About_03_mobile.png"
+import about02Desktop from "../../assets/Images/About/about-02-desktop.webp"
+import about02Tablet from "../../assets/Images/About/about-02-tablet.webp"
+import about02Mobile from "../../assets/Images/About/about-02-mobile.webp"
 
-import About_04_desktop from "../../assets/Images/About/About_04_desktop.png"
-import About_04_tablet from "../../assets/Images/About/About_04_tablet.png"
-import About_04_mobile from "../../assets/Images/About/About_04_mobile.png"
+import about03Desktop from "../../assets/Images/About/about-03-desktop.webp"
+import about03Tablet from "../../assets/Images/About/about-03-tablet.webp"
+import about03Mobile from "../../assets/Images/About/about-03-mobile.webp"
+
+import about04Desktop from "../../assets/Images/About/about-04-desktop.webp"
+import about04Tablet from "../../assets/Images/About/about-04-tablet.webp"
+import about04Mobile from "../../assets/Images/About/about-04-mobile.webp"
 
 export function StorySection() {
     return (
@@ -22,17 +25,16 @@ export function StorySection() {
                     mx-[4%]
                     pb-[var(--about-founded-story)]
 
-                    min-[800px]:mx-[3%]
-                    min-[800px]:grid
-                    min-[800px]:grid-cols-[18%_minmax(0,1fr)]
-                    min-[800px]:gap-x-[20px]
+                    tablet:mx-[3%]
+                    tablet:grid
+                    tablet:grid-cols-[18%_minmax(0,1fr)]
+                    tablet:gap-x-[20px]
 
-                    min-[1280px]:grid-cols-[125px_minmax(0,1fr)]
+                    desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
-                <div className="hidden min-[800px]:block" />
 
-                <div>
+                <div className="tablet:col-start-2">
                     <h2 className="heading-2 max-w-[980px]">
                         Our Blooms was founded in honor of Lily Smith’s loving
                         aunts, Teresa and Beth.
@@ -45,68 +47,74 @@ export function StorySection() {
                             grid-cols-1
                             gap-[10px]
 
-                            min-[800px]:grid-cols-3
-                            min-[800px]:gap-[20px]
+                            tablet:grid-cols-3
+                            tablet:gap-[20px]
                         "
                     >
-                        <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={About_01_desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={About_01_tablet}
-                                />
-
-                                <img
-                                    src={About_01_mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                            <ImageView
+                                mobile={{
+                                    src: about01Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about01Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about01Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="Bouquette of peonies"
+                                loading="lazy"
+                            />
                         </div>
 
-                        <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={About_02_desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={About_02_tablet}
-                                />
-
-                                <img
-                                    src={About_02_mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                            <ImageView
+                                mobile={{
+                                    src: about02Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about02Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about02Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="Pink flower"
+                                loading="lazy"
+                            />
                         </div>
 
-                        <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={About_03_desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={About_03_tablet}
-                                />
-
-                                <img
-                                    src={About_03_mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                            <ImageView
+                                mobile={{
+                                    src: about03Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about03Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about03Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="White flower"
+                                loading="lazy"
+                            />
                         </div>
                     </div>
                 </div>
@@ -116,17 +124,17 @@ export function StorySection() {
                 className="
                     mx-[4%]
 
-                    min-[800px]:mx-[3%]
-                    min-[800px]:grid
-                    min-[800px]:grid-cols-[18%_minmax(0,1fr)]
-                    min-[800px]:gap-x-[20px]
+                    tablet:mx-[3%]
+                    tablet:grid
+                    tablet:grid-cols-[18%_minmax(0,1fr)]
+                    tablet:gap-x-[20px]
 
-                    min-[1280px]:grid-cols-[120px_minmax(0,1fr)]
+                    desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
-                <div className="hidden min-[800px]:block" />
 
-                <div>
+                <div className="tablet:col-start-2">
+
                     <div className="paragraph-2 about-story-textbox">
                         <p>
                             Lily's journey with flowers began in the heart of Oregon,
@@ -151,26 +159,28 @@ export function StorySection() {
                             overflow-hidden
                             rounded-[20px]
 
-                            min-[800px]:rounded-[28px]
+                            tablet:rounded-[28px]
                         "
                     >
-                        <picture>
-                            <source
-                                media="(min-width: 1280px)"
-                                srcSet={About_04_desktop}
-                            />
-
-                            <source
-                                media="(min-width: 800px)"
-                                srcSet={About_04_tablet}
-                            />
-
-                            <img
-                                src={About_04_mobile}
-                                alt="Flowers"
-                                className="block h-auto w-full"
-                            />
-                        </picture>
+                        <ImageView
+                            mobile={{
+                                src: about04Mobile,
+                                width: 379,
+                                height: 451,
+                            }}
+                            tablet={{
+                                src: about04Tablet,
+                                width: 672,
+                                height: 800,
+                            }}
+                            desktop={{
+                                src: about04Desktop,
+                                width: 686,
+                                height: 800,
+                            }}
+                            alt="A floral bouquet"
+                            loading="lazy"
+                        />
                     </div>
 
                     <div
@@ -196,23 +206,12 @@ export function StorySection() {
                             next event.
                         </p>
 
-                        <a
+                        <Button
                             href="#contact"
-                            className="
-                                heading-4
-                                mt-[var(--about-ending-button)]
-                                inline-block
-                                rounded-[4px]
-                                bg-[#ffc400]
-                                px-[10px]
-                                py-[5px]
-
-                                min-[1280px]:px-[18px]
-                                min-[1280px]:py-[10px]
-                            "
+                            className="mt-[var(--about-ending-button)]"
                         >
                             • &nbsp; BOOK A CONSULTATION
-                        </a>
+                        </Button>
                     </div>
                 </div>
             </section>

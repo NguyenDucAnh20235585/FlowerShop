@@ -6,13 +6,13 @@ import { HomeAbout } from "./HomeAbout"
 import { ServiceSection } from "../../components/ServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
-import floralInstallation from "../../assets/Images/Home/Floral_installation_home.png"
-import nativePlant from "../../assets/Images/Home/Native_plant_arrangement_home.png"
-import customFloral from "../../assets/Images/Home/Custom_floral_concept_home.png"
+import floralInstallation from "../../assets/Images/Home/floral-installation-home.webp"
+import nativePlant from "../../assets/Images/Home/native-plant-arrangement-home.webp"
+import customFloral from "../../assets/Images/Home/custom-floral-concept-home.webp"
 
-import workDesktop from "../../assets/Images/Home/Work_with_us_desktop.png"
-import workTablet from "../../assets/Images/Home/Work_with_us_tablet.png"
-import workMobile from "../../assets/Images/Home/Work_with_us_mobile.png"
+import workDesktop from "../../assets/Images/Home/work-with-us-desktop.webp"
+import workTablet from "../../assets/Images/Home/work-with-us-tablet.webp"
+import workMobile from "../../assets/Images/Home/work-with-us-mobile.webp"
 
 export function HomePage() {
     return (
@@ -30,7 +30,7 @@ export function HomePage() {
                 title="FLORAL INSTALLATIONS"
                 description="Living art for homes, businesses, and events."
                 image={floralInstallation}
-                alt="Floral installation"
+                alt="Person with Bouquette of flowers"
             />
 
             <ServiceSection
@@ -38,7 +38,7 @@ export function HomePage() {
                 title="NATIVE PLANT ARRANGEMENTS"
                 description="Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={nativePlant}
-                alt="Native plant arrangement"
+                alt="Person making a Bouquette of flowers"
             />
 
             <ServiceSection
@@ -46,14 +46,14 @@ export function HomePage() {
                 title="CUSTOM FLORAL CONCEPTS"
                 description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={customFloral}
-                alt="Custom floral concept"
+                alt="Pink tulips"
             />
 
             <WorkWithUs
                 mobileImage={workMobile}
                 tabletImage={workTablet}
                 desktopImage={workDesktop}
-                alt="Blue flowers"
+                alt="Purple flowers"
             />
         </>
     )

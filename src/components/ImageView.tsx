@@ -1,37 +1,52 @@
+type ImageSource = {
+    src: string
+    width: number
+    height: number
+}
+
 type ImageViewProps = {
-    mobileSrc: string
-    tabletSrc?: string
-    desktopSrc?: string
+    mobile: ImageSource
+    tablet?: ImageSource
+    desktop?: ImageSource
     alt: string
     className?: string
+    loading?: "lazy" | "eager"
 }
 
 export function ImageView({
-    mobileSrc,
-    tabletSrc,
-    desktopSrc,
+    mobile,
+    tablet,
+    desktop,
     alt,
     className = "",
+    loading = "eager",
 }: ImageViewProps) {
     return (
-        <picture className={`block ${className}`}>
-            {desktopSrc && (
+        <picture className={`block overflow-hidden ${className}`}>
+            {desktop && (
                 <source
                     media="(min-width: 1280px)"
-                    srcSet={desktopSrc}
+                    srcSet={desktop.src}
+                    width={desktop.width}
+                    height={desktop.height}
                 />
             )}
 
-            {tabletSrc && (
+            {tablet && (
                 <source
                     media="(min-width: 800px)"
-                    srcSet={tabletSrc}
+                    srcSet={tablet.src}
+                    width={tablet.width}
+                    height={tablet.height}
                 />
             )}
 
             <img
-                src={mobileSrc}
+                src={mobile.src}
                 alt={alt}
+                width={mobile.width}
+                height={mobile.height}
+                loading={loading}
                 className="block h-auto w-full"
             />
         </picture>

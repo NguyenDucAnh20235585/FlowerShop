@@ -1,34 +1,60 @@
-import { useCallback, useState } from "react"
+import { ImageView } from "./ImageView"
+import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 
-import logo_desktop from "../assets/Images/Header/Our Blooms®.png"
-import logo_mobile from "../assets/Images/Header/O.B.png"
-import menu_icon from "../assets/Images/Header/Hamburger_icon.png"
-import close_icon from "../assets/Images/Header/Cancel_icon.png"
+import logoDesktop from "../assets/Images/Header/our-blooms.png"
+import logoMobile from "../assets/Images/Header/o-b.png"
+import menuIcon from "../assets/Images/Header/hamburger-icon.png"
+import closeIcon from "../assets/Images/Header/cancel-icon.png"
+
+const NAV_LINKS = [
+    { to: "/gallery", label: "GALLERY" },
+    { to: "/about", label: "ABOUT" },
+]
 
 export function Header() {
-    const [is_menu_open, set_is_menu_open] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const { pathname } = useLocation()
-    const is_home = pathname === "/"
+    const isHome = pathname === "/"
 
-    const close_menu = useCallback(() => {
-        set_is_menu_open(false)
-    }, [])
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+    }
 
-    const toggle_menu = useCallback(() => {
-        set_is_menu_open((current) => !current)
-    }, [])
+    const toggleMenu = () => {
+        setIsMenuOpen((current) => !current)
+    }
+
+    useEffect(() => {
+        if (!isMenuOpen) return
+
+        const previousOverflow = document.body.style.overflow
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setIsMenuOpen(false)
+            }
+        }
+
+        document.body.style.overflow = "hidden"
+        document.addEventListener("keydown", handleKeyDown)
+
+        return () => {
+            document.body.style.overflow = previousOverflow
+            document.removeEventListener("keydown", handleKeyDown)
+        }
+    }, [isMenuOpen])
 
     return (
         <header className="sticky top-0 z-50 bg-white">
             <div
                 className={`
-        ${is_home
+        ${isHome
                         ? "mx-[40px]"
-                        : "mx-[16px] min-[800px]:mx-[20px] min-[1280px]:mx-[40px]"
+                        : "mx-[16px] tablet:mx-[20px] desktop:mx-[40px]"
                     }
 
-        ${is_menu_open
+        ${isMenuOpen
                         ? ""
                         : "border-b border-black/60"
                     }
@@ -42,80 +68,72 @@ export function Header() {
     justify-between
     px-[16px]
 
-    min-[800px]:h-[80px]
-    min-[800px]:px-0
+    tablet:h-[80px]
+    tablet:px-0
 "
                 >
-                    <Link to="/" onClick={close_menu}>
-                        <picture>
-                            <source
-                                media="(min-width: 800px)"
-                                srcSet={logo_desktop}
-                            />
-
-                            <img
-                                src={logo_mobile}
-                                alt="Our Blooms"
-                                className="
-                                    block
-                                    h-auto
-                                    w-[40px]
-
-                                    min-[800px]:w-[200px]
-                                "
-                            />
-                        </picture>
+                    <Link to="/" onClick={closeMenu}>
+                        <ImageView
+                            mobile={{
+                                src: logoMobile,
+                                width: 78,
+                                height: 29,
+                            }}
+                            tablet={{
+                                src: logoDesktop,
+                                width: 384,
+                                height: 49,
+                            }}
+                            alt=""
+                            className="
+        w-[40px]
+        tablet:w-[200px]
+    "
+                        />
                     </Link>
 
-                    {/* Desktop / tablet */}
                     <nav
                         className="
         caption-1
         hidden
         items-center
         gap-[50px]
-
-        min-[800px]:flex
+        tablet:flex
     "
                     >
-                        <Link to="/gallery">
-                            GALLERY
-                        </Link>
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
 
-                        <Link to="/about">
-                            ABOUT
-                        </Link>
-
-                        <a href="#contact">
-                            CONTACT
-                        </a>
                     </nav>
 
                     <button
                         type="button"
-                        onClick={toggle_menu}
-                        className="min-[800px]:hidden"
-                        aria-expanded={is_menu_open}
+                        onClick={toggleMenu}
+                        className="tablet:hidden"
+                        aria-expanded={isMenuOpen}
                         aria-label={
-                            is_menu_open
+                            isMenuOpen
                                 ? "Close menu"
                                 : "Open menu"
                         }
                     >
                         <img
-                            src={
-                                is_menu_open
-                                    ? close_icon
-                                    : menu_icon
-                            }
-                            alt=""
+                            src={isMenuOpen ? closeIcon : menuIcon}
+                            width={60}
+                            height={60}
                             className="block h-auto w-[24px]"
                         />
                     </button>
                 </div>
             </div>
 
-            {is_menu_open && (
+            {isMenuOpen && (
                 <div
                     className="
                         absolute
@@ -124,13 +142,13 @@ export function Header() {
                         top-[70px]
                         bg-white
 
-                        min-[800px]:hidden
+                        tablet:hidden
                     "
                 >
                     <nav
                         className={`
         caption-1
-        ${is_home ? "mx-[40px]" : "mx-[16px]"}
+        ${isHome ? "mx-[40px]" : "mx-[16px]"}
         flex
         flex-col
         items-start
@@ -142,26 +160,16 @@ export function Header() {
         pb-[65px]
     `}
                     >
-                        <Link
-                            to="/gallery"
-                            onClick={close_menu}
-                        >
-                            GALLERY
-                        </Link>
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                                onClick={closeMenu}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
 
-                        <Link
-                            to="/about"
-                            onClick={close_menu}
-                        >
-                            ABOUT
-                        </Link>
-
-                        <a
-                            href="#contact"
-                            onClick={close_menu}
-                        >
-                            CONTACT
-                        </a>
                     </nav>
                 </div>
             )}

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { ImageView } from "./ImageView"
+import { Button } from "./Button"
 
 type WorkWithUsProps = {
     mobileImage?: string
@@ -13,68 +14,59 @@ export function WorkWithUs({
     desktopImage,
     alt = "",
 }: WorkWithUsProps) {
-    const fallbackImage =
-        mobileImage || tabletImage || desktopImage
-
-    const hasImage = Boolean(fallbackImage)
+    const hasImage = Boolean(
+        mobileImage && tabletImage && desktopImage
+    )
 
     return (
         <section>
-            {hasImage && (
+            {hasImage && mobileImage && tabletImage && desktopImage && (
                 <div
                     className="
                         mt-[70px]
                         px-[10%]
 
-                        min-[800px]:mt-[70px]
-                        min-[800px]:px-[5%]
+                        tablet:mt-[70px]
+                        tablet:px-[5%]
 
-                        min-[1280px]:mt-[80px]
-                        min-[1280px]:px-[3%]
+                        desktop:mt-[80px]
+                        desktop:px-[3%]
                     "
                 >
-                    <picture
+                    <ImageView
+                        mobile={{
+                            src: mobileImage,
+                            width: 295,
+                            height: 400,
+                        }}
+                        tablet={{
+                            src: tabletImage,
+                            width: 1440,
+                            height: 902,
+                        }}
+                        desktop={{
+                            src: desktopImage,
+                            width: 2400,
+                            height: 1504,
+                        }}
+                        alt={alt}
+                        loading="lazy"
                         className="
                             mx-auto
-                            block
                             aspect-[295/400]
                             w-full
-                            overflow-hidden
                             rounded-[20px]
 
-                            min-[800px]:aspect-auto
-                            min-[800px]:rounded-[28px]
+                            [&>img]:h-full
+                            [&>img]:object-cover
 
-                            min-[1280px]:rounded-[30px]
+                            tablet:aspect-auto
+                            tablet:rounded-[28px]
+                            tablet:[&>img]:h-auto
+
+                            desktop:rounded-[30px]
                         "
-                    >
-                        {desktopImage && (
-                            <source
-                                media="(min-width: 1280px)"
-                                srcSet={desktopImage}
-                            />
-                        )}
-
-                        {tabletImage && (
-                            <source
-                                media="(min-width: 800px)"
-                                srcSet={tabletImage}
-                            />
-                        )}
-
-                        <img
-                            src={fallbackImage}
-                            alt={alt}
-                            className="
-                                block
-                                h-full
-                                w-full
-                                object-cover
-
-                                min-[800px]:h-auto
-                            "
-                        />
-                    </picture>
+                    />
                 </div>
             )}
 
@@ -86,27 +78,27 @@ export function WorkWithUs({
 
                     ${hasImage
                         ? `
-                                pt-[130px]
-                                pb-[135px]
+                            pt-[130px]
+                            pb-[135px]
 
-                                min-[800px]:pt-[150px]
-                                min-[800px]:pb-[150px]
+                            tablet:pt-[150px]
+                            tablet:pb-[150px]
 
-                                min-[1280px]:pt-[180px]
-                                min-[1280px]:pb-[200px]
-                            `
+                            desktop:pt-[180px]
+                            desktop:pb-[200px]
+                        `
                         : `
-                                py-[90px]
+                            py-[90px]
 
-                                min-[800px]:py-[110px]
+                            tablet:py-[110px]
 
-                                min-[1280px]:pt-[170px]
-                                min-[1280px]:pb-[160px]
-                            `
+                            desktop:pt-[170px]
+                            desktop:pb-[160px]
+                        `
                     }
                 `}
             >
-                <p className="heading-3 text-[#555555]">
+                <p className="heading-3 text-muted">
                     WORK WITH US
                 </p>
 
@@ -126,23 +118,13 @@ export function WorkWithUs({
                     natural beauty to your next event.
                 </h2>
 
-                <Link
+                <Button
                     to="/about"
-                    className="
-                        heading-4
-                        mt-[var(--title-button-gap)]
-                        inline-block
-                        rounded-[4px]
-                        bg-[#ffc400]
-                        px-[12px]
-                        py-[6px]
-
-                        min-[1280px]:px-[14px]
-                        min-[1280px]:py-[8px]
-                    "
+                    className="mt-[var(--title-button-gap)]"
                 >
                     • &nbsp; ABOUT US
-                </Link>
+                </Button>
+
             </div>
         </section>
     )

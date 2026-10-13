@@ -1,22 +1,55 @@
+import type { ReactNode } from "react"
 import { Link } from "react-router-dom"
 
-type ButtonProps = {
-    children: React.ReactNode
-    to: string
-    className?: string
-}
+type ButtonProps =
+    | {
+        children: ReactNode
+        to: string
+        href?: never
+        className?: string
+    }
+    | {
+        children: ReactNode
+        href: string
+        to?: never
+        className?: string
+    }
 
-export function Button({
-    children,
-    to,
-    className = "",
-}: ButtonProps) {
+export function Button(props: ButtonProps) {
+    const {
+        children,
+        className = "",
+    } = props
+
+    const styles = `
+        heading-4
+        inline-block
+        rounded-[5px]
+        bg-primary
+        px-[12px]
+        py-[6px]
+        desktop:px-[14px]
+        desktop:py-[8px]
+        ${className}
+    `
+
+    if (props.to !== undefined) {
+        return (
+            <Link
+                to={props.to}
+                className={styles}
+            >
+                {children}
+            </Link>
+        )
+    }
+
     return (
-        <Link
-            to={to}
-            className={`inline-block rounded-[5px] bg-[#ffc400] px-[12px] py-[6px] font-bold ${className}`}
+        <a
+            href={props.href}
+            className={styles}
         >
             {children}
-        </Link>
+        </a>
     )
 }

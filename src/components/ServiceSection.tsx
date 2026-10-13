@@ -8,6 +8,7 @@ type ServiceSectionProps = {
     tabletImage?: string
     desktopImage?: string
     alt: string
+    imageSize?: number
     variant?: "stacked" | "split"
 }
 
@@ -19,36 +20,35 @@ export function ServiceSection({
     tabletImage,
     desktopImage,
     alt,
+    imageSize = 432,
     variant = "stacked",
 }: ServiceSectionProps) {
-    /*
-        GALLERY
-    */
+
     if (variant === "split") {
         return (
             <section
                 className="
         py-[28px]
 
-        min-[800px]:grid
-        min-[800px]:grid-cols-2
-        min-[800px]:items-start
-        min-[800px]:gap-[30px]
-        min-[800px]:py-[30px]
+        tablet:grid
+        tablet:grid-cols-2
+        tablet:items-start
+        tablet:gap-[30px]
+        tablet:py-[30px]
 
-        min-[1280px]:gap-[60px]
+        desktop:gap-[60px]
     "
             >
                 <div
                     className="
                         pb-[24px]
 
-                        min-[800px]:pb-0
-                        min-[800px]:pt-[6px]
-                        min-[800px]:pr-[10px]
+                        tablet:pb-0
+                        tablet:pt-[6px]
+                        tablet:pr-[10px]
 
-                        min-[1280px]:pt-[10px]
-                        min-[1280px]:pr-[20px]
+                        desktop:pt-[10px]
+                        desktop:pr-[20px]
                     "
                 >
                     <h2 className="heading-1 max-w-[500px]">
@@ -58,11 +58,10 @@ export function ServiceSection({
                     <p
                         className="
         paragraph-1
-        textbox-body
         mt-[20px]
 
-        min-[800px]:mt-[22px]
-        min-[1280px]:mt-[24px]
+        tablet:mt-[22px]
+        desktop:mt-[24px]
     "
                     >
                         {description}
@@ -70,25 +69,42 @@ export function ServiceSection({
                 </div>
 
                 <ImageView
-                    mobileSrc={image}
-                    tabletSrc={tabletImage}
-                    desktopSrc={desktopImage}
+                    mobile={{
+                        src: image,
+                        width: 686,
+                        height: 592,
+                    }}
+                    tablet={
+                        tabletImage
+                            ? {
+                                src: tabletImage,
+                                width: 740,
+                                height: 1237,
+                            }
+                            : undefined
+                    }
+                    desktop={
+                        desktopImage
+                            ? {
+                                src: desktopImage,
+                                width: 977,
+                                height: 842,
+                            }
+                            : undefined
+                    }
+                    loading="lazy"
                     alt={alt}
                     className="
-                        w-full
-                        rounded-[20px]
-
-                        min-[800px]:rounded-[24px]
-                        min-[1280px]:rounded-[28px]
-                    "
+        w-full
+        rounded-[20px]
+        tablet:rounded-[24px]
+        desktop:rounded-[28px]
+    "
                 />
             </section>
         )
     }
 
-    /*
-        HOME
-    */
     return (
         <section
             className={`
@@ -102,23 +118,15 @@ export function ServiceSection({
                 pb-[85px]
                 text-center
 
-                min-[800px]:mx-[10%]
-                min-[800px]:pb-[80px]
+                tablet:mx-[10%]
+                tablet:pb-[80px]
 
-                min-[1280px]:mx-[6%]
-                min-[1280px]:pb-[90px]
+                desktop:mx-[6%]
+                desktop:pb-[90px]
 
                 ${number === "1"
-                    ? `
-                            pt-[95px]
-                            min-[800px]:pt-[95px]
-                            min-[1280px]:pt-[95px]
-                        `
-                    : `
-                            pt-[40px]
-                            min-[800px]:pt-[40px]
-                            min-[1280px]:pt-[40px]
-                        `
+                    ? "pt-[95px]"
+                    : "pt-[40px]"
                 }
             `}
         >
@@ -140,6 +148,9 @@ export function ServiceSection({
                 <img
                     src={image}
                     alt={alt}
+                    width={imageSize}
+                    height={imageSize}
+                    loading="lazy"
                     className="h-full w-full object-cover"
                 />
             </div>
@@ -158,7 +169,6 @@ export function ServiceSection({
             <p
                 className="
         paragraph-1 home-service-textbox mx-auto
-        textbox-body
         mt-[var(--service-title-text)]
     "
             >

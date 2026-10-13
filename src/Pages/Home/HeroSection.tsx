@@ -1,82 +1,77 @@
-import logoDesktop from "../../assets/Images/Home/Logo_image_desktop.png"
-import logoTablet from "../../assets/Images/Home/Logo_image_tablet.png"
-import logoMobile from "../../assets/Images/Home/Logo_image_mobile.png"
+import { ImageView } from "../../components/ImageView"
 
-import heroDesktop from "../../assets/Images/Home/Hero_image_desktop.png"
-import heroTablet from "../../assets/Images/Home/Hero_image_tablet.png"
-import heroMobile from "../../assets/Images/Home/Hero_image_mobile.png"
+import logoDesktop from "../../assets/Images/Home/logo-image-desktop.png"
+import logoTablet from "../../assets/Images/Home/logo-image-tablet.png"
+import logoMobile from "../../assets/Images/Home/logo-image-mobile.png"
+
+import heroDesktop from "../../assets/Images/Home/hero-image-desktop.webp"
+import heroTablet from "../../assets/Images/Home/hero-image-tablet.webp"
+import heroMobile from "../../assets/Images/Home/hero-image-mobile.webp"
 
 export function HeroSection() {
     return (
         <section
             className="
                 pt-[54px]
-min-[800px]:pt-[58px]
-min-[1280px]:pt-[62px]
+tablet:pt-[58px]
+desktop:pt-[62px]
             "
         >
-            <picture
+            <ImageView
+                mobile={{
+                    src: logoMobile,
+                    width: 526,
+                    height: 71,
+                }}
+                tablet={{
+                    src: logoTablet,
+                    width: 1280,
+                    height: 172,
+                }}
+                desktop={{
+                    src: logoDesktop,
+                    width: 2240,
+                    height: 300,
+                }}
+                alt=""
                 className="
-                    mx-auto
-                    block
-                    w-[67%]
+        mx-auto
+        w-[67%]
+        tablet:w-[80%]
+        desktop:w-[88%]
+    "
+            />
 
-                    min-[800px]:w-[80%]
-
-                    min-[1280px]:w-[88%]
-                "
-            >
-                <source
-                    media="(min-width: 1280px)"
-                    srcSet={logoDesktop}
-                />
-
-                <source
-                    media="(min-width: 800px)"
-                    srcSet={logoTablet}
-                />
-
-                <img
-                    src={logoMobile}
-                    alt="Our Blooms"
-                    className="block h-auto w-full"
-                />
-            </picture>
-
-            <picture
+            <ImageView
+                mobile={{
+                    src: heroMobile,
+                    width: 526,
+                    height: 1140,
+                }}
+                tablet={{
+                    src: heroTablet,
+                    width: 1280,
+                    height: 1140,
+                }}
+                desktop={{
+                    src: heroDesktop,
+                    width: 2240,
+                    height: 1140,
+                }}
+                alt="Rose"
                 className="
         mx-auto
         mt-[40px]
-        block
         w-[73%]
-        overflow-hidden
         rounded-[20px]
 
-        min-[800px]:mt-[40px]
-        min-[800px]:w-[80%]
-        min-[800px]:rounded-[28px]
+        tablet:w-[80%]
+        tablet:rounded-[28px]
 
-        min-[1280px]:mt-[40px]
-        min-[1280px]:w-[88%]
-        min-[1280px]:rounded-[30px]
+        desktop:w-[88%]
+        desktop:rounded-[30px]
     "
-            >
-                <source
-                    media="(min-width: 1280px)"
-                    srcSet={heroDesktop}
-                />
-
-                <source
-                    media="(min-width: 800px)"
-                    srcSet={heroTablet}
-                />
-
-                <img
-                    src={heroMobile}
-                    alt="Flower"
-                    className="block h-auto w-full"
-                />
-            </picture>
+            />
         </section>
     )
 }

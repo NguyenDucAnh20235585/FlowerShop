@@ -1,8 +1,8 @@
 import { ImageView } from "./ImageView"
 
-import footerMobile from "../assets/Images/Footer/Footer_mobile.png"
-import footerTablet from "../assets/Images/Footer/Footer_tablet.png"
-import footerDesktop from "../assets/Images/Footer/Footer_desktop.png"
+import footerMobile from "../assets/Images/Footer/footer-mobile.webp"
+import footerTablet from "../assets/Images/Footer/footer-tablet.webp"
+import footerDesktop from "../assets/Images/Footer/footer-desktop.webp"
 
 export function Footer() {
     return (
@@ -20,28 +20,33 @@ export function Footer() {
                     overflow-hidden
                     rounded-t-[30px]
 
-                    min-[800px]:h-[570px]
-                    min-[800px]:w-[82%]
-                    min-[800px]:max-w-[660px]
+                    tablet:h-[570px]
+                    tablet:w-[82%]
+                    tablet:max-w-[660px]
 
-                    min-[1280px]:h-[560px]
-                    min-[1280px]:w-[90%]
-                    min-[1280px]:max-w-[1160px]
+                    desktop:h-[560px]
+                    desktop:w-[90%]
+                    desktop:max-w-[1160px]
                 "
             >
                 <ImageView
-                    mobileSrc={footerMobile}
-                    tabletSrc={footerTablet}
-                    desktopSrc={footerDesktop}
-                    alt=""
-                    className="
-                        h-full
-                        w-full
-
-                        [&>img]:h-full
-                        [&>img]:w-full
-                        [&>img]:object-cover
-                    "
+                    mobile={{
+                        src: footerMobile,
+                        width: 526,
+                        height: 1146,
+                    }}
+                    tablet={{
+                        src: footerTablet,
+                        width: 1280,
+                        height: 1158,
+                    }}
+                    desktop={{
+                        src: footerDesktop,
+                        width: 2240,
+                        height: 1164,
+                    }}
+                    alt="Orange Flower"
+                    loading="lazy"
                 />
 
                 <div
@@ -79,10 +84,10 @@ export function Footer() {
                             font-medium
                             leading-none
 
-                            min-[800px]:bottom-[25px]
-                            min-[800px]:text-[22px]
+                            tablet:bottom-[25px]
+                            tablet:text-[22px]
 
-                            min-[1280px]:bottom-[27px]
+                            desktop:bottom-[27px]
                         "
                     >
                         Miami, FL
@@ -100,10 +105,10 @@ export function Footer() {
                             font-medium
                             leading-none
 
-                            min-[800px]:bottom-[25px]
-                            min-[800px]:text-[22px]
+                            tablet:bottom-[25px]
+                            tablet:text-[22px]
 
-                            min-[1280px]:bottom-[27px]
+                            desktop:bottom-[27px]
                         "
                     >
                         Contact

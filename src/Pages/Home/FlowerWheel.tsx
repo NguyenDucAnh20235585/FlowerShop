@@ -49,6 +49,9 @@ export function FlowerWheel() {
                     tablet:gap-[20px]
                 "
             >
+
+                {/* First card intentionally overflows on desktop to match figma's design */}
+
                 {flowers.map((flower, index) => (
                     <div
                         key={flower.src}
@@ -76,6 +79,6 @@ export function FlowerWheel() {
                     </div>
                 ))}
             </div>
-        </section>
+        </section >
     )
 }

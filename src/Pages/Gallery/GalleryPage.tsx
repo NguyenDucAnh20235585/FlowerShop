@@ -28,18 +28,7 @@ export function GalleryPage() {
                     min-[1280px]:pt-[55px]
                 "
             >
-                <h1
-                    className="
-                        font-outfit
-                        text-[36px]
-                        font-bold
-                        leading-[1.1]
-                        tracking-[-0.02em]
-
-                        min-[800px]:text-[45px]
-                        min-[1280px]:text-[50px]
-                    "
-                >
+                <h1 className="heading-1">
                     GALLERY
                 </h1>
             </section>
@@ -62,21 +51,16 @@ export function GalleryPage() {
             >
                 <p
                     className="
-                        mb-[28px]
-                        font-outfit
-                        text-[12px]
-                        font-bold
-                        leading-[1.4]
-                        tracking-[0.02em]
-                        text-[#555555]
+        heading-3
+        mb-[28px]
+        text-[#555555]
 
-                        min-[800px]:mb-[30px]
-                        min-[800px]:text-[14px]
+        min-[800px]:mb-[30px]
 
-                        min-[1280px]:mb-0
-                        min-[1280px]:pt-[10px]
-                        min-[1280px]:text-black
-                    "
+        min-[1280px]:mb-0
+        min-[1280px]:pt-[10px]
+        min-[1280px]:text-black
+    "
                 >
                     SERVICES
                 </p>

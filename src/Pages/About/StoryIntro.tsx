@@ -22,21 +22,7 @@ export function StoryIntro() {
                 min-[1280px]:pb-[100px]
             "
         >
-            <p
-                className="
-                    mb-[46px]
-                    font-outfit
-                    text-[12px]
-                    font-bold
-                    leading-[1.4]
-                    tracking-[0.02em]
-                    text-[#555555]
-
-                    min-[800px]:mb-0
-                    min-[800px]:pt-[5px]
-                    min-[800px]:text-[14px]
-                "
-            >
+            <p className="heading-3 text-muted">
                 OUR STORY
             </p>
 
@@ -90,19 +76,28 @@ export function StoryIntro() {
                     "
                 >
                     LILY SMITH
+                </h2><h2
+                    className="
+        font-outfit
+        text-[16px]
+        font-bold
+        leading-[1.4]
+
+        min-[1280px]:text-[18px]
+    "
+                >
+                    LILY SMITH
                 </h2>
 
                 <p
                     className="
-                        mt-[2px]
-                        font-outfit
-                        text-[14px]
-                        font-medium
-                        leading-[1.4]
-                        text-[#555555]
-
-                        min-[800px]:text-[14px]
-                    "
+        mt-[2px]
+        font-outfit
+        text-[14px]
+        font-medium
+        leading-[1.4]
+        text-[#555555]
+    "
                 >
                     Owner
                 </p>

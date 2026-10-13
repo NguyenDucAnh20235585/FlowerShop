@@ -41,6 +41,7 @@ export function GalleryGrid() {
         {
             name: "DAWN BLOOM",
             price: "$55/Bunch",
+            alt: "Sun flowers",
             mobileImage: dawnBloomMobile,
             tabletImage: dawnBloomTablet,
             desktopImage: dawnBloomDesktop,
@@ -48,6 +49,7 @@ export function GalleryGrid() {
         {
             name: "SOLSTICE STEMS",
             price: "$30/Bunch",
+            alt: "Bouquette of lilies and carnations",
             mobileImage: solsticeStemsMobile,
             tabletImage: solsticeStemsTablet,
             desktopImage: solsticeStemsDesktop,
@@ -55,6 +57,7 @@ export function GalleryGrid() {
         {
             name: "WHISPER GREENS",
             price: "$120/Bunch",
+            alt: "Bouquette of tulips",
             mobileImage: whisperGreensMobile,
             tabletImage: whisperGreensTablet,
             desktopImage: whisperGreensDesktop,
@@ -62,6 +65,7 @@ export function GalleryGrid() {
         {
             name: "CLARITY PETALS",
             price: "$55/Bunch",
+            alt: "Pink flowers",
             mobileImage: clarityPetalsMobile,
             tabletImage: clarityPetalsTablet,
             desktopImage: clarityPetalsDesktop,
@@ -69,6 +73,7 @@ export function GalleryGrid() {
         {
             name: "RIVER STONE",
             price: "$30/Bunch",
+            alt: "Bouquette of peonies",
             mobileImage: riverStoneMobile,
             tabletImage: riverStoneTablet,
             desktopImage: riverStoneDesktop,
@@ -76,6 +81,7 @@ export function GalleryGrid() {
         {
             name: "MOONLIT MEADOW",
             price: "$120/Bunch",
+            alt: "Bouquette of lilies and carnations",
             mobileImage: moonlitMeadowMobile,
             tabletImage: moonlitMeadowTablet,
             desktopImage: moonlitMeadowDesktop,
@@ -83,6 +89,7 @@ export function GalleryGrid() {
         {
             name: "EMBER LEAF",
             price: "$55/Bunch",
+            alt: "White tulips",
             mobileImage: emberLeafMobile,
             tabletImage: emberLeafTablet,
             desktopImage: emberLeafDesktop,
@@ -90,6 +97,7 @@ export function GalleryGrid() {
         {
             name: "SKYLINE BLOOM",
             price: "$75/Bunch",
+            alt: "Purple flower",
             mobileImage: skylineBloomMobile,
             tabletImage: skylineBloomTablet,
             desktopImage: skylineBloomDesktop,
@@ -97,6 +105,7 @@ export function GalleryGrid() {
         {
             name: "STILL WATERS",
             price: "$250/Bunch",
+            alt: "Pink tulip",
             mobileImage: stillWatersMobile,
             tabletImage: stillWatersTablet,
             desktopImage: stillWatersDesktop,
@@ -184,11 +193,24 @@ export function GalleryGrid() {
                             </div>
 
                             <ImageView
-                                mobileSrc={flower.mobileImage}
-                                tabletSrc={flower.tabletImage}
-                                desktopSrc={flower.desktopImage}
-                                alt={flower.name}
+                                mobile={{
+                                    src: flower.mobileImage,
+                                    width: 686,
+                                    height: 637,
+                                }}
+                                tablet={{
+                                    src: flower.tabletImage,
+                                    width: index === flowers.length - 1 ? 1520 : 740,
+                                    height: 637,
+                                }}
+                                desktop={{
+                                    src: flower.desktopImage,
+                                    width: 660,
+                                    height: 637,
+                                }}
+                                alt={flower.alt}
                                 className="w-full"
+                                loading="lazy"
                             />
                         </article>
                     ))}

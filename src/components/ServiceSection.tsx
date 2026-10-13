@@ -8,6 +8,7 @@ type ServiceSectionProps = {
     tabletImage?: string
     desktopImage?: string
     alt: string
+    imageSize?: number
     variant?: "stacked" | "split"
 }
 
@@ -19,11 +20,10 @@ export function ServiceSection({
     tabletImage,
     desktopImage,
     alt,
+    imageSize = 432,
     variant = "stacked",
 }: ServiceSectionProps) {
-    /*
-        GALLERY
-    */
+
     if (variant === "split") {
         return (
             <section
@@ -70,25 +70,42 @@ export function ServiceSection({
                 </div>
 
                 <ImageView
-                    mobileSrc={image}
-                    tabletSrc={tabletImage}
-                    desktopSrc={desktopImage}
+                    mobile={{
+                        src: image,
+                        width: 686,
+                        height: 592,
+                    }}
+                    tablet={
+                        tabletImage
+                            ? {
+                                src: tabletImage,
+                                width: 740,
+                                height: 1237,
+                            }
+                            : undefined
+                    }
+                    desktop={
+                        desktopImage
+                            ? {
+                                src: desktopImage,
+                                width: 977,
+                                height: 842,
+                            }
+                            : undefined
+                    }
+                    loading="lazy"
                     alt={alt}
                     className="
-                        w-full
-                        rounded-[20px]
-
-                        min-[800px]:rounded-[24px]
-                        min-[1280px]:rounded-[28px]
-                    "
+        w-full
+        rounded-[20px]
+        min-[800px]:rounded-[24px]
+        min-[1280px]:rounded-[28px]
+    "
                 />
             </section>
         )
     }
 
-    /*
-        HOME
-    */
     return (
         <section
             className={`
@@ -140,6 +157,9 @@ export function ServiceSection({
                 <img
                     src={image}
                     alt={alt}
+                    width={imageSize}
+                    height={imageSize}
+                    loading="lazy"
                     className="h-full w-full object-cover"
                 />
             </div>

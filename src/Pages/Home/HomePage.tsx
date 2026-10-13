@@ -30,7 +30,7 @@ export function HomePage() {
                 title="FLORAL INSTALLATIONS"
                 description="Living art for homes, businesses, and events."
                 image={floralInstallation}
-                alt="Floral installation"
+                alt="Person with Bouquette of flowers"
             />
 
             <ServiceSection
@@ -38,7 +38,7 @@ export function HomePage() {
                 title="NATIVE PLANT ARRANGEMENTS"
                 description="Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={nativePlant}
-                alt="Native plant arrangement"
+                alt="Person making a Bouquette of flowers"
             />
 
             <ServiceSection
@@ -46,14 +46,14 @@ export function HomePage() {
                 title="CUSTOM FLORAL CONCEPTS"
                 description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={customFloral}
-                alt="Custom floral concept"
+                alt="Pink tulips"
             />
 
             <WorkWithUs
                 mobileImage={workMobile}
                 tabletImage={workTablet}
                 desktopImage={workDesktop}
-                alt="Blue flowers"
+                alt="Purple flowers"
             />
         </>
     )

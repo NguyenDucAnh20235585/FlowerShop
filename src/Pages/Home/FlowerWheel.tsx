@@ -6,11 +6,26 @@ import flower05 from "../../assets/Images/Home/flower-wheel-05.webp"
 
 export function FlowerWheel() {
     const flowers = [
-        flower01,
-        flower02,
-        flower03,
-        flower04,
-        flower05,
+        {
+            src: flower01,
+            alt: "Pink roses - image 1 out of 5",
+        },
+        {
+            src: flower02,
+            alt: "White rose - image 2 out of 5",
+        },
+        {
+            src: flower03,
+            alt: "Pink roses - image 3 out of 5",
+        },
+        {
+            src: flower04,
+            alt: "White tulips - image 4 out of 5",
+        },
+        {
+            src: flower05,
+            alt: "Orchid - image 5 out of 5",
+        },
     ]
 
     return (
@@ -36,7 +51,7 @@ export function FlowerWheel() {
             >
                 {flowers.map((flower, index) => (
                     <div
-                        key={index}
+                        key={flower.src}
                         className={`
             aspect-square
             w-[200px]
@@ -51,8 +66,11 @@ export function FlowerWheel() {
         `}
                     >
                         <img
-                            src={flower}
-                            alt=""
+                            src={flower.src}
+                            alt={flower.alt}
+                            width={600}
+                            height={600}
+                            loading="lazy"
                             className="h-full w-full object-cover"
                         />
                     </div>

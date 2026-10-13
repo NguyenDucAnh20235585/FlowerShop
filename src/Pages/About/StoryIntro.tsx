@@ -1,3 +1,5 @@
+import { ImageView } from "../../components/ImageView"
+
 import lilySmithDesktop from "../../assets/Images/About/lily-smith-desktop.webp"
 import lilySmithTablet from "../../assets/Images/About/lily-smith-tablet.webp"
 import lilySmithMobile from "../../assets/Images/About/lily-smith-mobile.webp"
@@ -47,23 +49,25 @@ export function StoryIntro() {
                     min-[800px]:rounded-[28px]
                 "
             >
-                <picture>
-                    <source
-                        media="(min-width: 1280px)"
-                        srcSet={lilySmithDesktop}
-                    />
-
-                    <source
-                        media="(min-width: 800px)"
-                        srcSet={lilySmithTablet}
-                    />
-
-                    <img
-                        src={lilySmithMobile}
-                        alt="Lily Smith"
-                        className="block h-auto w-full"
-                    />
-                </picture>
+                <ImageView
+                    mobile={{
+                        src: lilySmithMobile,
+                        width: 632,
+                        height: 709,
+                    }}
+                    tablet={{
+                        src: lilySmithTablet,
+                        width: 686,
+                        height: 769,
+                    }}
+                    desktop={{
+                        src: lilySmithDesktop,
+                        width: 893,
+                        height: 1000,
+                    }}
+                    alt="Person carrying flowers"
+                    loading="lazy"
+                />
             </div>
 
             <div

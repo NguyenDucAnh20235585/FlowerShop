@@ -1,3 +1,5 @@
+import { ImageView } from "../../components/ImageView"
+
 import about01Desktop from "../../assets/Images/About/about-01-desktop.webp"
 import about01Tablet from "../../assets/Images/About/about-01-tablet.webp"
 import about01Mobile from "../../assets/Images/About/about-01-mobile.webp"
@@ -50,63 +52,69 @@ export function StorySection() {
                         "
                     >
                         <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={about01Desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={about01Tablet}
-                                />
-
-                                <img
-                                    src={about01Mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                            <ImageView
+                                mobile={{
+                                    src: about01Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about01Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about01Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="Bouquette of peonies"
+                                loading="lazy"
+                            />
                         </div>
 
                         <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={about02Desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={about02Tablet}
-                                />
-
-                                <img
-                                    src={about02Mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                            <ImageView
+                                mobile={{
+                                    src: about02Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about02Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about02Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="Pink flower"
+                                loading="lazy"
+                            />
                         </div>
 
                         <div className="overflow-hidden rounded-[20px] min-[800px]:rounded-[28px]">
-                            <picture>
-                                <source
-                                    media="(min-width: 1280px)"
-                                    srcSet={about03Desktop}
-                                />
-
-                                <source
-                                    media="(min-width: 800px)"
-                                    srcSet={about03Tablet}
-                                />
-
-                                <img
-                                    src={about03Mobile}
-                                    alt=""
-                                    className="block h-auto w-full"
-                                />
-                            </picture>
+                            <ImageView
+                                mobile={{
+                                    src: about03Mobile,
+                                    width: 379,
+                                    height: 451,
+                                }}
+                                tablet={{
+                                    src: about03Tablet,
+                                    width: 672,
+                                    height: 800,
+                                }}
+                                desktop={{
+                                    src: about03Desktop,
+                                    width: 686,
+                                    height: 800,
+                                }}
+                                alt="White flower"
+                                loading="lazy"
+                            />
                         </div>
                     </div>
                 </div>
@@ -154,23 +162,25 @@ export function StorySection() {
                             min-[800px]:rounded-[28px]
                         "
                     >
-                        <picture>
-                            <source
-                                media="(min-width: 1280px)"
-                                srcSet={about04Desktop}
-                            />
-
-                            <source
-                                media="(min-width: 800px)"
-                                srcSet={about04Tablet}
-                            />
-
-                            <img
-                                src={about04Mobile}
-                                alt="Flowers"
-                                className="block h-auto w-full"
-                            />
-                        </picture>
+                        <ImageView
+                            mobile={{
+                                src: about04Mobile,
+                                width: 379,
+                                height: 451,
+                            }}
+                            tablet={{
+                                src: about04Tablet,
+                                width: 672,
+                                height: 800,
+                            }}
+                            desktop={{
+                                src: about04Desktop,
+                                width: 686,
+                                height: 800,
+                            }}
+                            alt="A floral bouquet"
+                            loading="lazy"
+                        />
                     </div>
 
                     <div

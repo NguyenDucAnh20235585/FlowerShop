@@ -96,7 +96,7 @@ export function GalleryPage() {
                         image={floralInstallationsMobile}
                         tabletImage={floralInstallationsTablet}
                         desktopImage={floralInstallationsDesktop}
-                        alt="Floral installation"
+                        alt="Person making Bouquette"
                     />
 
                     <ServiceSection
@@ -106,7 +106,7 @@ export function GalleryPage() {
                         image={nativePlantArrangementsMobile}
                         tabletImage={nativePlantArrangementsTablet}
                         desktopImage={nativePlantArrangementsDesktop}
-                        alt="Native plant arrangement"
+                        alt="Person making Bouquette"
                     />
 
                     <ServiceSection
@@ -116,7 +116,7 @@ export function GalleryPage() {
                         image={customFloralConceptsMobile}
                         tabletImage={customFloralConceptsTablet}
                         desktopImage={customFloralConceptsDesktop}
-                        alt="Custom floral concept"
+                        alt="Pink tulips"
                     />
                 </div>
             </section>

@@ -30,18 +30,24 @@ export function Footer() {
                 "
             >
                 <ImageView
-                    mobileSrc={footerMobile}
-                    tabletSrc={footerTablet}
-                    desktopSrc={footerDesktop}
-                    alt=""
-                    className="
-                        h-full
-                        w-full
-
-                        [&>img]:h-full
-                        [&>img]:w-full
-                        [&>img]:object-cover
-                    "
+                    mobile={{
+                        src: footerMobile,
+                        width: 526,
+                        height: 1146,
+                    }}
+                    tablet={{
+                        src: footerTablet,
+                        width: 1280,
+                        height: 1158,
+                    }}
+                    desktop={{
+                        src: footerDesktop,
+                        width: 2240,
+                        height: 1164,
+                    }}
+                    alt="Orange Flower"
+                    loading="lazy"
+                    className="..."
                 />
 
                 <div

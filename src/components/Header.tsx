@@ -1,3 +1,4 @@
+import { ImageView } from "./ImageView"
 import { useCallback, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
@@ -5,6 +6,7 @@ import logoDesktop from "../assets/Images/Header/our-blooms.png"
 import logoMobile from "../assets/Images/Header/o-b.png"
 import menuIcon from "../assets/Images/Header/hamburger-icon.png"
 import closeIcon from "../assets/Images/Header/cancel-icon.png"
+
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -47,27 +49,25 @@ export function Header() {
 "
                 >
                     <Link to="/" onClick={closeMenu}>
-                        <picture>
-                            <source
-                                media="(min-width: 800px)"
-                                srcSet={logoDesktop}
-                            />
-
-                            <img
-                                src={logoMobile}
-                                alt="Our Blooms"
-                                className="
-                                    block
-                                    h-auto
-                                    w-[40px]
-
-                                    min-[800px]:w-[200px]
-                                "
-                            />
-                        </picture>
+                        <ImageView
+                            mobile={{
+                                src: logoMobile,
+                                width: 78,
+                                height: 29,
+                            }}
+                            tablet={{
+                                src: logoDesktop,
+                                width: 384,
+                                height: 49,
+                            }}
+                            alt=""
+                            className="
+        w-[40px]
+        min-[800px]:w-[200px]
+    "
+                        />
                     </Link>
 
-                    {/* Desktop / tablet */}
                     <nav
                         className="
         caption-1
@@ -103,12 +103,10 @@ export function Header() {
                         }
                     >
                         <img
-                            src={
-                                isMenuOpen
-                                    ? closeIcon
-                                    : menuIcon
-                            }
-                            alt=""
+                            src={isMenuOpen ? closeIcon : menuIcon}
+                            alt="Hamburger menu"
+                            width={60}
+                            height={60}
                             className="block h-auto w-[24px]"
                         />
                     </button>

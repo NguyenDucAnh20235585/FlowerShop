@@ -96,7 +96,7 @@ export function StoryIntro() {
         text-[14px]
         font-medium
         leading-[1.4]
-        text-[#555555]
+        text-muted]
     "
                 >
                     Owner

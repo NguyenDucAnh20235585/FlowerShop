@@ -139,7 +139,7 @@ export function GalleryGrid() {
                     className="
                         heading-3
                         mb-[40px]
-                        text-[#555555]
+                        text-muted
 
                         min-[800px]:mb-[45px]
                         min-[800px]:text-[14px]

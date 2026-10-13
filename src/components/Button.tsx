@@ -25,7 +25,7 @@ export function Button(props: ButtonProps) {
         heading-4
         inline-block
         rounded-[5px]
-        bg-[#ffc400]
+        bg-primary
         px-[12px]
         py-[6px]
         min-[1280px]:px-[14px]

@@ -98,7 +98,7 @@ export function WorkWithUs({
                     }
                 `}
             >
-                <p className="heading-3 text-[#555555]">
+                <p className="heading-3 text-muted">
                     WORK WITH US
                 </p>
 

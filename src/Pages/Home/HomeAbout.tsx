@@ -14,7 +14,7 @@ export function HomeAbout() {
     "
         >
 
-            <p className="heading-3 text-[#555555]">
+            <p className="heading-3 text-muted">
                 WHO WE ARE
             </p>
 

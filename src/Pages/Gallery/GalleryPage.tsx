@@ -53,7 +53,7 @@ export function GalleryPage() {
                     className="
         heading-3
         mb-[28px]
-        text-[#555555]
+        text-muted
 
         min-[800px]:mb-[30px]
 

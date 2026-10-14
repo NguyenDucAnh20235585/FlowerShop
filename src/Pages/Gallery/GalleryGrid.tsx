@@ -119,26 +119,26 @@ export function GalleryGrid() {
                 mt-[65px]
                 pb-[70px]
 
-                tablet:mx-[20px]
-                tablet:mt-[80px]
+                tablet:mx-5
+                tablet:mt-20
                 tablet:pb-[90px]
 
                 desktop:mx-[3%]
-                desktop:mt-[80px]
-                desktop:pb-[100px]
+                desktop:mt-20
+                desktop:pb-25
             "
         >
             <div
                 className="
                     desktop:grid
                     desktop:grid-cols-[150px_minmax(0,1fr)]
-                    desktop:gap-x-[20px]
+                    desktop:gap-x-5
                 "
             >
                 <div
                     className="
                         heading-3
-                        mb-[40px]
+                        mb-10
                         text-muted
 
                         tablet:mb-[45px]
@@ -154,11 +154,11 @@ export function GalleryGrid() {
                     className="
                         grid
                         grid-cols-1
-                        gap-x-[20px]
+                        gap-x-5
                         gap-y-[18px]
 
                         tablet:grid-cols-2
-                        tablet:gap-y-[60px]
+                        tablet:gap-y-15
 
                         desktop:grid-cols-3
                         desktop:gap-y-[55px]
@@ -175,7 +175,7 @@ export function GalleryGrid() {
                         >
                             <div
                                 className="
-                                    mb-[16px]
+                                    mb-4
                                     flex
                                     items-baseline
                                     gap-[6px]

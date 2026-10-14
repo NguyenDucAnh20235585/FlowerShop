@@ -21,7 +21,7 @@ export function GalleryServiceSection({
     return (
         <section
             className="
-        py-[28px]
+        py-7
 
         tablet:grid
         tablet:grid-cols-2
@@ -29,19 +29,19 @@ export function GalleryServiceSection({
         tablet:gap-[30px]
         tablet:py-[30px]
 
-        desktop:gap-[60px]
+        desktop:gap-15
     "
         >
             <div
                 className="
-                        pb-[24px]
+                        pb-6
 
                         tablet:pb-0
                         tablet:pt-[6px]
                         tablet:pr-[10px]
 
                         desktop:pt-[10px]
-                        desktop:pr-[20px]
+                        desktop:pr-5
                     "
             >
                 <h2 className="heading-1 max-w-[500px]">
@@ -51,10 +51,10 @@ export function GalleryServiceSection({
                 <p
                     className="
         paragraph-1
-        mt-[20px]
+        mt-5
 
         tablet:mt-[22px]
-        desktop:mt-[24px]
+        desktop:mt-6
     "
                 >
                     {description}
@@ -89,12 +89,11 @@ export function GalleryServiceSection({
                 alt={alt}
                 className="
         w-full
-        rounded-[20px]
-        tablet:rounded-[24px]
-        desktop:rounded-[28px]
+        rounded-5
+        tablet:rounded-6
+        desktop:rounded-7
     "
             />
         </section>
     )
-
 }

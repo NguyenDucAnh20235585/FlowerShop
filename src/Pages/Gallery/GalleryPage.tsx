@@ -20,7 +20,7 @@ export function GalleryPage() {
             <section
                 className="
                     mx-[4%]
-                    pt-[52px]
+                    pt-13
 
                     tablet:mx-[3%]
                     tablet:pt-[45px]
@@ -43,16 +43,16 @@ export function GalleryPage() {
                     tablet:mx-[3%]
                     tablet:mt-[90px]
 
-                    desktop:mt-[100px]
+                    desktop:mt-25
                     desktop:grid
                     desktop:grid-cols-[180px_minmax(0,1fr)]
-                    desktop:gap-x-[24px]
+                    desktop:gap-x-6
                 "
             >
                 <p
                     className="
         heading-3
-        mb-[28px]
+        mb-7
         text-muted
 
         tablet:mb-[30px]
@@ -107,7 +107,7 @@ export function GalleryPage() {
         py-[90px]
         tablet:py-[110px]
         desktop:pt-[170px]
-        desktop:pb-[160px]
+        desktop:pb-40
     "
                 textClassName="gallery-work-textbox"
             />

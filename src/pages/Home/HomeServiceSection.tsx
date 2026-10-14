@@ -5,6 +5,7 @@ type HomeServiceSectionProps = {
     image: string
     alt: string
     imageSize?: number
+    className?: string
 }
 
 export function HomeServiceSection({
@@ -14,6 +15,7 @@ export function HomeServiceSection({
     image,
     alt,
     imageSize = 432,
+    className = "pt-10",
 }: HomeServiceSectionProps) {
     return (
         <section
@@ -27,15 +29,11 @@ export function HomeServiceSection({
                 border-black/60
                 pb-[85px]
                 text-center
-
                 tablet:mx-[10%]
                 tablet:pb-20
-
                 desktop:mx-[6%]
                 desktop:pb-[90px]
-
-                pt-10
-                first:pt-[95px]
+                ${className}
             `}
         >
             {number && (

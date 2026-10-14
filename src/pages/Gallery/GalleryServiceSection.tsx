@@ -1,10 +1,9 @@
 import { ImageView } from "../../components/ImageView"
 
 type GalleryServiceSectionProps = {
-    number?: string
     title: string
     description: string
-    image: string
+    mobileImage: string
     tabletImage?: string
     desktopImage?: string
     alt: string
@@ -14,16 +13,14 @@ type GalleryServiceSectionProps = {
 export function GalleryServiceSection({
     title,
     description,
-    image,
+    mobileImage,
     tabletImage,
     desktopImage,
     alt,
 }: GalleryServiceSectionProps) {
-
-    {
-        return (
-            <section
-                className="
+    return (
+        <section
+            className="
         py-[28px]
 
         tablet:grid
@@ -34,9 +31,9 @@ export function GalleryServiceSection({
 
         desktop:gap-[60px]
     "
-            >
-                <div
-                    className="
+        >
+            <div
+                className="
                         pb-[24px]
 
                         tablet:pb-0
@@ -46,58 +43,58 @@ export function GalleryServiceSection({
                         desktop:pt-[10px]
                         desktop:pr-[20px]
                     "
-                >
-                    <h2 className="heading-1 max-w-[500px]">
-                        {title}
-                    </h2>
+            >
+                <h2 className="heading-1 max-w-[500px]">
+                    {title}
+                </h2>
 
-                    <p
-                        className="
+                <p
+                    className="
         paragraph-1
         mt-[20px]
 
         tablet:mt-[22px]
         desktop:mt-[24px]
     "
-                    >
-                        {description}
-                    </p>
-                </div>
+                >
+                    {description}
+                </p>
+            </div>
 
-                <ImageView
-                    mobile={{
-                        src: image,
-                        width: 686,
-                        height: 592,
-                    }}
-                    tablet={
-                        tabletImage
-                            ? {
-                                src: tabletImage,
-                                width: 740,
-                                height: 1237,
-                            }
-                            : undefined
-                    }
-                    desktop={
-                        desktopImage
-                            ? {
-                                src: desktopImage,
-                                width: 977,
-                                height: 842,
-                            }
-                            : undefined
-                    }
-                    loading="lazy"
-                    alt={alt}
-                    className="
+            <ImageView
+                mobile={{
+                    src: mobileImage,
+                    width: 686,
+                    height: 592,
+                }}
+                tablet={
+                    tabletImage
+                        ? {
+                            src: tabletImage,
+                            width: 740,
+                            height: 1237,
+                        }
+                        : undefined
+                }
+                desktop={
+                    desktopImage
+                        ? {
+                            src: desktopImage,
+                            width: 977,
+                            height: 842,
+                        }
+                        : undefined
+                }
+                loading="lazy"
+                alt={alt}
+                className="
         w-full
         rounded-[20px]
         tablet:rounded-[24px]
         desktop:rounded-[28px]
     "
-                />
-            </section>
-        )
-    }
+            />
+        </section>
+    )
+
 }

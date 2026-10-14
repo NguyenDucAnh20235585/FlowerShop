@@ -68,6 +68,7 @@ export function Header() {
     justify-between
     px-4
     tablet:h-[80px]
+    desktop:h-[82px]
     tablet:px-0
 "
                 >
@@ -96,7 +97,7 @@ export function Header() {
         caption-1
         hidden
         items-center
-        gap-[42px]
+        gap-10
         tablet:flex
     "
                     >

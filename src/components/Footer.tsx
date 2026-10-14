@@ -20,9 +20,9 @@ export function Footer() {
                     tablet:h-[570px]
                     tablet:w-[82%]
                     tablet:max-w-[660px]
-                    desktop:h-[560px]
-                    desktop:w-[90%]
-                    desktop:max-w-[1160px]
+                    desktop:h-[582px]
+                    desktop:w-[87.5%]
+                    desktop:max-w-[1120px]
                 "
             >
                 <ImageView

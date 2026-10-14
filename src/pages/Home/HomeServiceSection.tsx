@@ -15,7 +15,7 @@ export function HomeServiceSection({
     image,
     alt,
     imageSize = 432,
-    className = "pt-10",
+    className = "pt-10 desktop:pt-11",
 }: HomeServiceSectionProps) {
     return (
         <section
@@ -32,7 +32,7 @@ export function HomeServiceSection({
                 tablet:mx-[10%]
                 tablet:pb-20
                 desktop:mx-[6%]
-                desktop:pb-[90px]
+                desktop:pb-21
                 ${className}
             `}
         >

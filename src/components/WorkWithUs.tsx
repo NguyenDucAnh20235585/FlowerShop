@@ -27,8 +27,8 @@ export function WorkWithUs({
                         px-[10%]
                         tablet:mt-[70px]
                         tablet:px-[5%]
-                        desktop:mt-20
-                        desktop:px-[3%]
+                        desktop:mt-25
+                        desktop:px-10
                     "
                 >
                     <ImageView
@@ -54,14 +54,11 @@ export function WorkWithUs({
                             aspect-[295/400]
                             w-full
                             rounded-[20px]
-
                             [&>img]:h-full
                             [&>img]:object-cover
-
                             tablet:aspect-auto
                             tablet:rounded-[28px]
                             tablet:[&>img]:h-auto
-
                             desktop:rounded-[30px]
                         "
                     />

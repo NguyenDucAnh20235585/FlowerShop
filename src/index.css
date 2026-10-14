@@ -41,10 +41,8 @@ body {
   .about-spacing {
     --about-founded-images: 24px;
     --about-founded-story: 55px;
-
     --about-story-paragraph: 26px;
     --about-story-image: 35px;
-
     --about-image-ending: 35px;
     --about-ending-paragraph: 26px;
     --about-ending-button: 35px;
@@ -55,10 +53,8 @@ body {
     .about-spacing {
       --about-founded-images: 50px;
       --about-founded-story: 70px;
-
       --about-story-paragraph: 32px;
       --about-story-image: 60px;
-
       --about-image-ending: 55px;
       --about-ending-paragraph: 32px;
       --about-ending-button: 45px;
@@ -69,10 +65,8 @@ body {
     .about-spacing {
       --about-founded-images: 95px;
       --about-founded-story: 80px;
-
       --about-story-paragraph: 38px;
       --about-story-image: 75px;
-
       --about-image-ending: 70px;
       --about-ending-paragraph: 38px;
       --about-ending-button: 70px;
@@ -119,7 +113,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
   }
 
   @media (min-width: 800px) {
@@ -188,7 +182,6 @@ body {
     }
   }
 
-
   .paragraph-1 {
     font-family: var(--font-outfit);
     font-size: 16px;
@@ -202,7 +195,6 @@ body {
       font-size: 17px;
     }
   }
-
 
   .paragraph-2 {
     font-family: var(--font-outfit);
@@ -224,7 +216,6 @@ body {
     }
   }
 
-
   .caption-1 {
     font-family: var(--font-outfit);
     font-size: 12px;
@@ -238,7 +229,6 @@ body {
       font-size: 14px;
     }
   }
-
 
   .caption-2 {
     font-family: var(--font-outfit);
@@ -261,7 +251,7 @@ body {
 
   @media (min-width: 1280px) {
     .home-about-textbox {
-      max-width: 760px;
+      max-width: 740px;
     }
   }
 
@@ -317,9 +307,9 @@ body {
 
   @media (min-width: 1280px) {
     .home-service-spacing {
-      --service-number-image: 85px;
-      --service-image-title: 80px;
-      --service-title-text: 24px;
+      --service-number-image: 84px;
+      --service-image-title: 84px;
+      --service-title-text: 34px;
     }
   }
 
@@ -354,8 +344,8 @@ body {
 
   @media (min-width: 1280px) {
     .cta-stack {
-      --label-title-gap: 30px;
-      --title-button-gap: 46px;
+      --label-title-gap: 34px;
+      --title-button-gap: 44px;
     }
   }
 

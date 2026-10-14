@@ -4,25 +4,24 @@ export function HomeAbout() {
     return (
         <section
             className="
-        cta-stack
-        px-[4%]
-        pt-[115px]
-        text-center
-        desktop:pt-[125px]
-    "
+                cta-stack
+                px-[4%]
+                pt-[115px]
+                text-center
+                desktop:pt-31
+            "
         >
-
             <p className="heading-3 text-muted">
                 WHO WE ARE
             </p>
 
             <h2
                 className="
-    heading-2
-    home-about-textbox
-    mx-auto
-    mt-[var(--label-title-gap)]
-"
+                    heading-2
+                    home-about-textbox
+                    mx-auto
+                    mt-[var(--label-title-gap)]
+                "
             >
                 We're Our Blooms® and we're here to help
                 you find your floral story.
@@ -30,7 +29,7 @@ export function HomeAbout() {
 
             <Button
                 to="/about"
-                className="mt-[var(--title-button-gap)] desktop:mt-8"
+                className="mt-[var(--title-button-gap)]"
             >
                 • &nbsp; ABOUT US
             </Button>

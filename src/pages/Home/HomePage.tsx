@@ -31,7 +31,7 @@ export function HomePage() {
                 description="Living art for homes, businesses, and events."
                 image={floralInstallation}
                 alt="Person with Bouquette of flowers"
-                className="pt-[95px]"
+                className="pt-[95px] desktop:pt-26"
             />
 
             <HomeServiceSection
@@ -62,8 +62,8 @@ export function HomePage() {
                     pb-[135px]
                     tablet:pt-[150px]
                     tablet:pb-[150px]
-                    desktop:pt-[180px]
-                    desktop:pb-[200px]
+                    desktop:pt-51
+                    desktop:pb-50
                 "
                 textClassName="work-textbox"
             />

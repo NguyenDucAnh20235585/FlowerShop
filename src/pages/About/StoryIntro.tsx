@@ -29,7 +29,7 @@ export function StoryIntro() {
                 className="
                     w-full
                     overflow-hidden
-                    rounded-5
+                    rounded-[20px]
 
                     tablet:rounded-[28px]
                 "

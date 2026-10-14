@@ -89,9 +89,9 @@ export function GalleryServiceSection({
                 alt={alt}
                 className="
         w-full
-        rounded-5
-        tablet:rounded-6
-        desktop:rounded-7
+        rounded-[20px]
+        tablet:rounded-[24px]
+        desktop:rounded-[28px]
     "
             />
         </section>

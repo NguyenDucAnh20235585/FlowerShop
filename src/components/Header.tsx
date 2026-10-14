@@ -110,6 +110,14 @@ export function Header() {
                             </Link>
                         ))}
 
+                        <a
+                            href="mailto:hello@figma.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            CONTACT
+                        </a>
+
                     </nav>
 
                     <button
@@ -169,6 +177,15 @@ export function Header() {
                                 {link.label}
                             </Link>
                         ))}
+
+                        <a
+                            href="mailto:hello@figma.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={closeMenu}
+                        >
+                            CONTACT
+                        </a>
 
                     </nav>
                 </div>

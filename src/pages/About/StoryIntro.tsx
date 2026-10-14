@@ -10,7 +10,6 @@ export function StoryIntro() {
             className="
                 mx-[4%]
                 pb-20
-
                 tablet:mx-[3%]
                 tablet:grid
                 tablet:grid-cols-[18%_40%_minmax(0,1fr)]
@@ -30,7 +29,6 @@ export function StoryIntro() {
                     w-full
                     overflow-hidden
                     rounded-[20px]
-
                     tablet:rounded-[28px]
                 "
             >
@@ -58,7 +56,6 @@ export function StoryIntro() {
             <div
                 className="
                     mt-[18px]
-
                     tablet:mt-0
                     tablet:pt-[5px]
                 "
@@ -69,7 +66,6 @@ export function StoryIntro() {
         text-[16px]
         font-bold
         leading-[1.4]
-
         desktop:text-[18px]
     "
                 >

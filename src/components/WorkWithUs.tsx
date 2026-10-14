@@ -25,10 +25,8 @@ export function WorkWithUs({
                     className="
                         mt-[70px]
                         px-[10%]
-
                         tablet:mt-[70px]
                         tablet:px-[5%]
-
                         desktop:mt-20
                         desktop:px-[3%]
                     "

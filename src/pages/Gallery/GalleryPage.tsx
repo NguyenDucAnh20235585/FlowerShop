@@ -21,10 +21,8 @@ export function GalleryPage() {
                 className="
                     mx-[4%]
                     pt-13
-
                     tablet:mx-[3%]
                     tablet:pt-[45px]
-
                     desktop:pt-[55px]
                 "
             >
@@ -39,10 +37,8 @@ export function GalleryPage() {
                 className="
                     mx-[4%]
                     mt-[70px]
-
                     tablet:mx-[3%]
                     tablet:mt-[90px]
-
                     desktop:mt-25
                     desktop:grid
                     desktop:grid-cols-[180px_minmax(0,1fr)]
@@ -54,9 +50,7 @@ export function GalleryPage() {
         heading-3
         mb-7
         text-muted
-
         tablet:mb-[30px]
-
         desktop:mb-0
         desktop:pt-[10px]
         desktop:text-black

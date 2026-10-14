@@ -158,24 +158,23 @@ export function StorySection() {
                             mt-[var(--about-story-image)]
                             overflow-hidden
                             rounded-[20px]
-
                             tablet:rounded-[28px]
                         "
                     >
                         <ImageView
                             mobile={{
                                 src: about04Mobile,
-                                width: 379,
-                                height: 451,
+                                width: 686,
+                                height: 800,
                             }}
                             tablet={{
                                 src: about04Tablet,
-                                width: 672,
+                                width: 1216,
                                 height: 800,
                             }}
                             desktop={{
                                 src: about04Desktop,
-                                width: 686,
+                                width: 2096,
                                 height: 800,
                             }}
                             alt="A floral bouquet"

@@ -34,10 +34,8 @@ export function HomeServiceSection({
                 desktop:mx-[6%]
                 desktop:pb-[90px]
 
-                ${number === 1
-                    ? "pt-[95px]"
-                    : "pt-[40px]"
-                }
+                pt-[40px]
+first:pt-[95px]
             `}
         >
             {number && (

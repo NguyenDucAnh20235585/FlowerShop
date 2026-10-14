@@ -9,17 +9,15 @@ export function StoryIntro() {
         <section
             className="
                 mx-[4%]
-                pb-[80px]
-
+                pb-20
                 tablet:mx-[3%]
                 tablet:grid
                 tablet:grid-cols-[18%_40%_minmax(0,1fr)]
                 tablet:items-start
-                tablet:gap-x-[20px]
-                tablet:pb-[80px]
-
+                tablet:gap-x-5
+                tablet:pb-20
                 desktop:grid-cols-[125px_460px_minmax(0,1fr)]
-                desktop:pb-[100px]
+                desktop:pb-25
             "
         >
             <p className="heading-3 text-muted">
@@ -31,7 +29,6 @@ export function StoryIntro() {
                     w-full
                     overflow-hidden
                     rounded-[20px]
-
                     tablet:rounded-[28px]
                 "
             >
@@ -59,7 +56,6 @@ export function StoryIntro() {
             <div
                 className="
                     mt-[18px]
-
                     tablet:mt-0
                     tablet:pt-[5px]
                 "
@@ -70,7 +66,6 @@ export function StoryIntro() {
         text-[16px]
         font-bold
         leading-[1.4]
-
         desktop:text-[18px]
     "
                 >

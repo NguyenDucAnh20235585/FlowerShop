@@ -2,54 +2,52 @@ import { ImageView } from "./ImageView"
 import { Button } from "./Button"
 
 type WorkWithUsProps = {
-    mobileImage?: string
-    tabletImage?: string
-    desktopImage?: string
-    alt?: string
+    image?: {
+        mobile: string
+        tablet: string
+        desktop: string
+        alt: string
+    }
+    className?: string
+    textClassName?: string
 }
 
 export function WorkWithUs({
-    mobileImage,
-    tabletImage,
-    desktopImage,
-    alt = "",
+    image,
+    className = "",
+    textClassName = ""
 }: WorkWithUsProps) {
-    const hasImage = Boolean(
-        mobileImage && tabletImage && desktopImage
-    )
 
     return (
         <section>
-            {hasImage && mobileImage && tabletImage && desktopImage && (
+            {image && (
                 <div
                     className="
                         mt-[70px]
                         px-[10%]
-
                         tablet:mt-[70px]
                         tablet:px-[5%]
-
-                        desktop:mt-[80px]
+                        desktop:mt-20
                         desktop:px-[3%]
                     "
                 >
                     <ImageView
                         mobile={{
-                            src: mobileImage,
+                            src: image.mobile,
                             width: 295,
                             height: 400,
                         }}
                         tablet={{
-                            src: tabletImage,
+                            src: image.tablet,
                             width: 1440,
                             height: 902,
                         }}
                         desktop={{
-                            src: desktopImage,
+                            src: image.desktop,
                             width: 2400,
                             height: 1504,
                         }}
-                        alt={alt}
+                        alt={image.alt}
                         loading="lazy"
                         className="
                             mx-auto
@@ -75,27 +73,7 @@ export function WorkWithUs({
                     cta-stack
                     px-[5%]
                     text-center
-
-                    ${hasImage
-                        ? `
-                            pt-[130px]
-                            pb-[135px]
-
-                            tablet:pt-[150px]
-                            tablet:pb-[150px]
-
-                            desktop:pt-[180px]
-                            desktop:pb-[200px]
-                        `
-                        : `
-                            py-[90px]
-
-                            tablet:py-[110px]
-
-                            desktop:pt-[170px]
-                            desktop:pb-[160px]
-                        `
-                    }
+                    ${className}
                 `}
             >
                 <p className="heading-3 text-muted">
@@ -107,11 +85,8 @@ export function WorkWithUs({
                         heading-2
                         mx-auto
                         mt-[var(--label-title-gap)]
+                        ${textClassName}
 
-                        ${hasImage
-                            ? "work-textbox"
-                            : "gallery-work-textbox"
-                        }
                     `}
                 >
                     Discover how we can add a touch of

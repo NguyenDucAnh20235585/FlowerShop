@@ -11,19 +11,15 @@ export function Footer() {
                 className="
                     relative
                     mx-auto
-                    mt-[40px]
-
+                    mt-10
                     h-[560px]
-
                     w-[80%]
                     max-w-[300px]
                     overflow-hidden
                     rounded-t-[30px]
-
                     tablet:h-[570px]
                     tablet:w-[82%]
                     tablet:max-w-[660px]
-
                     desktop:h-[560px]
                     desktop:w-[90%]
                     desktop:max-w-[1160px]
@@ -51,7 +47,6 @@ export function Footer() {
 
                 <div
                     className="
-                        pointer-events-none
                         absolute
                         inset-0
                         text-white
@@ -62,7 +57,6 @@ export function Footer() {
                             absolute
                             inset-x-0
                             top-[380px]
-
                             text-center
                             font-caprasimo
                             text-[112px]
@@ -75,44 +69,40 @@ export function Footer() {
                     <span
                         className="
                             absolute
-                            bottom-[24px]
+                            bottom-6
                             left-[30px]
-
                             whitespace-nowrap
                             font-outfit
                             text-[18px]
                             font-medium
                             leading-none
-
                             tablet:bottom-[25px]
                             tablet:text-[22px]
-
                             desktop:bottom-[27px]
                         "
                     >
                         Miami, FL
                     </span>
 
-                    <span
+                    <a href="https://www.figma.com/sites/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             absolute
                             right-[30px]
-                            bottom-[24px]
-
+                            bottom-6
                             whitespace-nowrap
                             font-outfit
                             text-[18px]
                             font-medium
                             leading-none
-
                             tablet:bottom-[25px]
                             tablet:text-[22px]
-
                             desktop:bottom-[27px]
                         "
                     >
                         Contact
-                    </span>
+                    </a>
                 </div>
             </div>
         </footer>

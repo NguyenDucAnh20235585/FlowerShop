@@ -28,7 +28,7 @@ export function StorySection() {
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-[20px]
+                    tablet:gap-x-5
 
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
@@ -48,7 +48,7 @@ export function StorySection() {
                             gap-[10px]
 
                             tablet:grid-cols-3
-                            tablet:gap-[20px]
+                            tablet:gap-5
                         "
                     >
                         <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
@@ -127,7 +127,7 @@ export function StorySection() {
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-[20px]
+                    tablet:gap-x-5
 
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
@@ -158,24 +158,23 @@ export function StorySection() {
                             mt-[var(--about-story-image)]
                             overflow-hidden
                             rounded-[20px]
-
                             tablet:rounded-[28px]
                         "
                     >
                         <ImageView
                             mobile={{
                                 src: about04Mobile,
-                                width: 379,
-                                height: 451,
+                                width: 686,
+                                height: 800,
                             }}
                             tablet={{
                                 src: about04Tablet,
-                                width: 672,
+                                width: 1216,
                                 height: 800,
                             }}
                             desktop={{
                                 src: about04Desktop,
-                                width: 686,
+                                width: 2096,
                                 height: 800,
                             }}
                             alt="A floral bouquet"
@@ -207,8 +206,10 @@ export function StorySection() {
                         </p>
 
                         <Button
-                            href="#contact"
+                            href="https://www.figma.com/sites/"
                             className="mt-[var(--about-ending-button)]"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             • &nbsp; BOOK A CONSULTATION
                         </Button>

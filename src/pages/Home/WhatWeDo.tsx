@@ -22,10 +22,10 @@ export function WhatWeDo() {
                 className="
         paragraph-1
         mx-auto
-        mt-[28px]
+        mt-7
 
-        tablet:mt-[30px]
-        desktop:mt-[32px]
+        tablet:mt-7.5
+        desktop:mt-8
     "
             >
                 We bring a touch of that simple magic into your world.

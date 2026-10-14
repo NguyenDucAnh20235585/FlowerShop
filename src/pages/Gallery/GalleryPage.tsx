@@ -1,5 +1,5 @@
 import { GalleryGrid } from "./GalleryGrid"
-import { ServiceSection } from "../../components/ServiceSection"
+import { GalleryServiceSection } from "./GalleryServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
 import floralInstallationsMobile from "../../assets/Images/Gallery/floral-installations-gallery-mobile.webp"
@@ -20,11 +20,9 @@ export function GalleryPage() {
             <section
                 className="
                     mx-[4%]
-                    pt-[52px]
-
+                    pt-13
                     tablet:mx-[3%]
                     tablet:pt-[45px]
-
                     desktop:pt-[55px]
                 "
             >
@@ -39,24 +37,20 @@ export function GalleryPage() {
                 className="
                     mx-[4%]
                     mt-[70px]
-
                     tablet:mx-[3%]
                     tablet:mt-[90px]
-
-                    desktop:mt-[100px]
+                    desktop:mt-25
                     desktop:grid
                     desktop:grid-cols-[180px_minmax(0,1fr)]
-                    desktop:gap-x-[24px]
+                    desktop:gap-x-6
                 "
             >
                 <p
                     className="
         heading-3
-        mb-[28px]
+        mb-7
         text-muted
-
         tablet:mb-[30px]
-
         desktop:mb-0
         desktop:pt-[10px]
         desktop:text-black
@@ -73,31 +67,28 @@ export function GalleryPage() {
                         divide-black/60
                     "
                 >
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title="FLORAL INSTALLATIONS"
                         description="We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events."
-                        image={floralInstallationsMobile}
+                        mobileImage={floralInstallationsMobile}
                         tabletImage={floralInstallationsTablet}
                         desktopImage={floralInstallationsDesktop}
                         alt="Person making Bouquette"
                     />
 
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title="NATIVE PLANT ARRANGEMENTS"
                         description="Our selection of locally sourced flora brings natural resilience and effortless elegance to your home."
-                        image={nativePlantArrangementsMobile}
+                        mobileImage={nativePlantArrangementsMobile}
                         tabletImage={nativePlantArrangementsTablet}
                         desktopImage={nativePlantArrangementsDesktop}
                         alt="Person making Bouquette"
                     />
 
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title={"CUSTOM\u00A0FLORAL CONCEPTS"}
                         description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple."
-                        image={customFloralConceptsMobile}
+                        mobileImage={customFloralConceptsMobile}
                         tabletImage={customFloralConceptsTablet}
                         desktopImage={customFloralConceptsDesktop}
                         alt="Pink tulips"
@@ -105,7 +96,15 @@ export function GalleryPage() {
                 </div>
             </section>
 
-            <WorkWithUs />
+            <WorkWithUs
+                className="
+        py-[90px]
+        tablet:py-[110px]
+        desktop:pt-[170px]
+        desktop:pb-40
+    "
+                textClassName="gallery-work-textbox"
+            />
         </>
     )
 }

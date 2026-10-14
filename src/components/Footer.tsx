@@ -11,7 +11,7 @@ export function Footer() {
                 className="
                     relative
                     mx-auto
-                    mt-[40px]
+                    mt-10
 
                     h-[560px]
 
@@ -74,7 +74,7 @@ export function Footer() {
                     <span
                         className="
                             absolute
-                            bottom-[24px]
+                            bottom-6
                             left-[30px]
 
                             whitespace-nowrap
@@ -98,7 +98,7 @@ export function Footer() {
                         className="
                             absolute
                             right-[30px]
-                            bottom-[24px]
+                            bottom-6
 
                             whitespace-nowrap
                             font-outfit

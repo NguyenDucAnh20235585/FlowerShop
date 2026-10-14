@@ -28,10 +28,10 @@ export function Button(props: ButtonProps) {
         inline-block
         rounded-[5px]
         bg-primary
-        px-[12px]
-        py-[6px]
-        desktop:px-[14px]
-        desktop:py-[8px]
+        px-3
+        py-1.5
+        desktop:px-3.5
+        desktop:py-2
         ${className}
     `
 

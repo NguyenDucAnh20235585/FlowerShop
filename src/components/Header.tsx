@@ -50,8 +50,8 @@ export function Header() {
             <div
                 className={`
         ${isHome
-                        ? "mx-[40px]"
-                        : "mx-[16px] tablet:mx-[20px] desktop:mx-[40px]"
+                        ? "mx-10"
+                        : "mx-4 tablet:mx-5 desktop:mx-10"
                     }
 
         ${isMenuOpen
@@ -66,7 +66,7 @@ export function Header() {
     h-[70px]
     items-center
     justify-between
-    px-[16px]
+    px-4
 
     tablet:h-[80px]
     tablet:px-0
@@ -86,7 +86,7 @@ export function Header() {
                             }}
                             alt=""
                             className="
-        w-[40px]
+        w-10
         tablet:w-[200px]
     "
                         />
@@ -135,7 +135,7 @@ export function Header() {
                             src={isMenuOpen ? closeIcon : menuIcon}
                             width={60}
                             height={60}
-                            className="block h-auto w-[24px]"
+                            className="block h-auto w-6"
                         />
                     </button>
                 </div>
@@ -156,14 +156,14 @@ export function Header() {
                     <nav
                         className={`
         caption-1
-        ${isHome ? "mx-[40px]" : "mx-[16px]"}
+        ${isHome ? "mx-10" : "mx-4"}
         flex
         flex-col
         items-start
         gap-[38px]
         border-b
         border-black/60
-        px-[16px]
+        px-4
         pt-[45px]
         pb-[65px]
     `}

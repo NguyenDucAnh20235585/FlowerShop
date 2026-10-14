@@ -29,7 +29,7 @@ export function WorkWithUs({
                         tablet:mt-[70px]
                         tablet:px-[5%]
 
-                        desktop:mt-[80px]
+                        desktop:mt-20
                         desktop:px-[3%]
                     "
                 >

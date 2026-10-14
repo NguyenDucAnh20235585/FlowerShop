@@ -44,9 +44,9 @@ export function FlowerWheel() {
                 className="
                     flex
                     w-max
-                    gap-[12px]
+                    gap-3
 
-                    tablet:gap-[20px]
+                    tablet:gap-5
                 "
             >
 

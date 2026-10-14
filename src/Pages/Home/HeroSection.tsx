@@ -61,7 +61,7 @@ desktop:pt-[62px]
                 alt="Rose"
                 className="
         mx-auto
-        mt-[40px]
+        mt-10
         w-[73%]
         rounded-[20px]
 

@@ -29,13 +29,13 @@ export function HomeServiceSection({
                 text-center
 
                 tablet:mx-[10%]
-                tablet:pb-[80px]
+                tablet:pb-20
 
                 desktop:mx-[6%]
                 desktop:pb-[90px]
 
-                pt-[40px]
-first:pt-[95px]
+                pt-10
+                first:pt-[95px]
             `}
         >
             {number && (

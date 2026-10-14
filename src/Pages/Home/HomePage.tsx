@@ -57,13 +57,14 @@ export function HomePage() {
                     alt: "Purple flowers"
                 }}
                 className="
-        pt-[130px]
-        pb-[135px]
-        tablet:pt-[150px]
-        tablet:pb-[150px]
-        desktop:pt-[180px]
-        desktop:pb-[200px]
-    "
+                    pt-[130px]
+                    pb-[135px]
+                    tablet:pt-[150px]
+                    tablet:pb-[150px]
+                    desktop:pt-[180px]
+                    desktop:pb-[200px]
+                "
+                textClassName="work-textbox"
             />
         </>
     )

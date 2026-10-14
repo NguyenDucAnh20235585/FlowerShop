@@ -1,5 +1,5 @@
 import { GalleryGrid } from "./GalleryGrid"
-import { ServiceSection } from "../../components/ServiceSection"
+import { GalleryServiceSection } from "./GalleryServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
 import floralInstallationsMobile from "../../assets/Images/Gallery/floral-installations-gallery-mobile.webp"
@@ -73,31 +73,28 @@ export function GalleryPage() {
                         divide-black/60
                     "
                 >
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title="FLORAL INSTALLATIONS"
                         description="We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events."
-                        image={floralInstallationsMobile}
+                        mobileImage={floralInstallationsMobile}
                         tabletImage={floralInstallationsTablet}
                         desktopImage={floralInstallationsDesktop}
                         alt="Person making Bouquette"
                     />
 
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title="NATIVE PLANT ARRANGEMENTS"
                         description="Our selection of locally sourced flora brings natural resilience and effortless elegance to your home."
-                        image={nativePlantArrangementsMobile}
+                        mobileImage={nativePlantArrangementsMobile}
                         tabletImage={nativePlantArrangementsTablet}
                         desktopImage={nativePlantArrangementsDesktop}
                         alt="Person making Bouquette"
                     />
 
-                    <ServiceSection
-                        variant="split"
+                    <GalleryServiceSection
                         title={"CUSTOM\u00A0FLORAL CONCEPTS"}
                         description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple."
-                        image={customFloralConceptsMobile}
+                        mobileImage={customFloralConceptsMobile}
                         tabletImage={customFloralConceptsTablet}
                         desktopImage={customFloralConceptsDesktop}
                         alt="Pink tulips"
@@ -107,13 +104,13 @@ export function GalleryPage() {
 
             <WorkWithUs
                 className="
-        pt-[130px]
-        pb-[135px]
-        tablet:pt-[150px]
-        tablet:pb-[150px]
-        desktop:pt-[180px]
-        desktop:pb-[200px]
-    " />
+        py-[90px]
+        tablet:py-[110px]
+        desktop:pt-[170px]
+        desktop:pb-[160px]
+    "
+                textClassName="gallery-work-textbox"
+            />
         </>
     )
 }

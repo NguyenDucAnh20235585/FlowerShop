@@ -9,11 +9,13 @@ type WorkWithUsProps = {
         alt: string
     }
     className?: string
+    textClassName?: string
 }
 
 export function WorkWithUs({
     image,
-    className = ""
+    className = "",
+    textClassName = ""
 }: WorkWithUsProps) {
 
     return (
@@ -85,11 +87,8 @@ export function WorkWithUs({
                         heading-2
                         mx-auto
                         mt-[var(--label-title-gap)]
+                        ${textClassName}
 
-                        ${image
-                            ? "work-textbox"
-                            : "gallery-work-textbox"
-                        }
                     `}
                 >
                     Discover how we can add a touch of

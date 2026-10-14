@@ -26,19 +26,21 @@ const FLOWERS = [
         alt: "Orchid - image 5 out of 5",
     },
 ]
-export function FlowerWheel() {
 
+export function FlowerWheel() {
     return (
         <section
-            className="
-                mx-auto
-                mt-[120px]
-                w-[295px]
-                overflow-x-auto
 
-                tablet:w-[720px]
-                desktop:w-[1200px]
-            "
+            className="
+        flower-wheel-scroll
+        mx-auto
+        mt-30
+        w-[295px]
+        overflow-x-auto
+
+        tablet:w-[720px]
+        desktop:w-[1200px]
+    "
         >
             <div
                 className="
@@ -49,24 +51,23 @@ export function FlowerWheel() {
                     tablet:gap-5
                 "
             >
-
                 {/* First card intentionally overflows on desktop to match figma's design */}
 
                 {FLOWERS.map((flower, index) => (
                     <div
                         key={flower.src}
                         className={`
-            aspect-square
-            w-[200px]
-            shrink-0
-            overflow-hidden
-            rounded-[20px]
+                            aspect-square
+                            w-[200px]
+                            shrink-0
+                            overflow-hidden
+                            rounded-[20px]
 
-            tablet:w-[300px]
-            tablet:rounded-[28px]
+                            tablet:w-[300px]
+                            tablet:rounded-[28px]
 
-            ${index === 0 ? "desktop:ml-[-200px]" : ""}
-        `}
+                            ${index === 0 ? "desktop:ml-[-200px]" : ""}
+                        `}
                     >
                         <img
                             src={flower.src}
@@ -79,6 +80,6 @@ export function FlowerWheel() {
                     </div>
                 ))}
             </div>
-        </section >
+        </section>
     )
 }

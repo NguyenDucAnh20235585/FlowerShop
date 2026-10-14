@@ -358,4 +358,12 @@ body {
       --title-button-gap: 46px;
     }
   }
+
+  .flower-wheel-scroll {
+    scrollbar-width: none;
+  }
+
+  .flower-wheel-scroll::-webkit-scrollbar {
+    display: none;
+  }
 }

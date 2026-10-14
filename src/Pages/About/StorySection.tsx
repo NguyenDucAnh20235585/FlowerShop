@@ -207,8 +207,10 @@ export function StorySection() {
                         </p>
 
                         <Button
-                            href="#contact"
+                            href="https://www.figma.com/sites/"
                             className="mt-[var(--about-ending-button)]"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             • &nbsp; BOOK A CONSULTATION
                         </Button>

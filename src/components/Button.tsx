@@ -13,6 +13,8 @@ type ButtonProps =
         href: string
         to?: never
         className?: string
+        target?: "_blank"
+        rel?: string
     }
 
 export function Button(props: ButtonProps) {
@@ -47,7 +49,9 @@ export function Button(props: ButtonProps) {
     return (
         <a
             href={props.href}
+            target={props.target}
             className={styles}
+            rel={props.rel}
         >
             {children}
         </a>

@@ -1,5 +1,5 @@
 type HomeServiceSectionProps = {
-    number?: string
+    number?: number
     title: string
     description: string
     image: string
@@ -34,7 +34,7 @@ export function HomeServiceSection({
                 desktop:mx-[6%]
                 desktop:pb-[90px]
 
-                ${number === "1"
+                ${number === 1
                     ? "pt-[95px]"
                     : "pt-[40px]"
                 }

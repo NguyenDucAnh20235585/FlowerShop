@@ -105,7 +105,15 @@ export function GalleryPage() {
                 </div>
             </section>
 
-            <WorkWithUs />
+            <WorkWithUs
+                className="
+        pt-[130px]
+        pb-[135px]
+        tablet:pt-[150px]
+        tablet:pb-[150px]
+        desktop:pt-[180px]
+        desktop:pb-[200px]
+    " />
         </>
     )
 }

@@ -8,10 +8,12 @@ type WorkWithUsProps = {
         desktop: string
         alt: string
     }
+    className?: string
 }
 
 export function WorkWithUs({
     image,
+    className = ""
 }: WorkWithUsProps) {
 
     return (
@@ -71,27 +73,7 @@ export function WorkWithUs({
                     cta-stack
                     px-[5%]
                     text-center
-
-                    ${image
-                        ? `
-                            pt-[130px]
-                            pb-[135px]
-
-                            tablet:pt-[150px]
-                            tablet:pb-[150px]
-
-                            desktop:pt-[180px]
-                            desktop:pb-[200px]
-                        `
-                        : `
-                            py-[90px]
-
-                            tablet:py-[110px]
-
-                            desktop:pt-[170px]
-                            desktop:pb-[160px]
-                        `
-                    }
+                    ${className}
                 `}
             >
                 <p className="heading-3 text-muted">

@@ -7,7 +7,7 @@ export function AboutPage() {
             <section
                 className="
         mx-[4%]
-        pt-[40px]
+        pt-10
         pb-[55px]
 
         tablet:mx-[3%]

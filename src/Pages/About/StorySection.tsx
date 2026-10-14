@@ -28,7 +28,7 @@ export function StorySection() {
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-[20px]
+                    tablet:gap-x-5
 
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
@@ -48,7 +48,7 @@ export function StorySection() {
                             gap-[10px]
 
                             tablet:grid-cols-3
-                            tablet:gap-[20px]
+                            tablet:gap-5
                         "
                     >
                         <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
@@ -127,7 +127,7 @@ export function StorySection() {
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-[20px]
+                    tablet:gap-x-5
 
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "

@@ -3,7 +3,7 @@ import { FlowerWheel } from "./FlowerWheel"
 import { WhatWeDo } from "./WhatWeDo"
 import { HomeAbout } from "./HomeAbout"
 
-import { ServiceSection } from "../../components/ServiceSection"
+import { HomeServiceSection } from "./HomeServiceSection"
 import { WorkWithUs } from "../../components/WorkWithUs"
 
 import floralInstallation from "../../assets/Images/Home/floral-installation-home.webp"
@@ -25,24 +25,24 @@ export function HomePage() {
 
             <WhatWeDo />
 
-            <ServiceSection
-                number="1"
+            <HomeServiceSection
+                number={1}
                 title="FLORAL INSTALLATIONS"
                 description="Living art for homes, businesses, and events."
                 image={floralInstallation}
                 alt="Person with Bouquette of flowers"
             />
 
-            <ServiceSection
-                number="2"
+            <HomeServiceSection
+                number={2}
                 title="NATIVE PLANT ARRANGEMENTS"
                 description="Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={nativePlant}
                 alt="Person making a Bouquette of flowers"
             />
 
-            <ServiceSection
-                number="3"
+            <HomeServiceSection
+                number={3}
                 title="CUSTOM FLORAL CONCEPTS"
                 description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
                 image={customFloral}
@@ -50,10 +50,12 @@ export function HomePage() {
             />
 
             <WorkWithUs
-                mobileImage={workMobile}
-                tabletImage={workTablet}
-                desktopImage={workDesktop}
-                alt="Purple flowers"
+                image={{
+                    mobile: workMobile,
+                    tablet: workTablet,
+                    desktop: workDesktop,
+                    alt: "Purple flowers"
+                }}
             />
         </>
     )

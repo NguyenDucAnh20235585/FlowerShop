@@ -2,25 +2,21 @@ import { ImageView } from "./ImageView"
 import { Button } from "./Button"
 
 type WorkWithUsProps = {
-    mobileImage?: string
-    tabletImage?: string
-    desktopImage?: string
-    alt?: string
+    image?: {
+        mobile: string
+        tablet: string
+        desktop: string
+        alt: string
+    }
 }
 
 export function WorkWithUs({
-    mobileImage,
-    tabletImage,
-    desktopImage,
-    alt = "",
+    image,
 }: WorkWithUsProps) {
-    const hasImage = Boolean(
-        mobileImage && tabletImage && desktopImage
-    )
 
     return (
         <section>
-            {hasImage && mobileImage && tabletImage && desktopImage && (
+            {image && (
                 <div
                     className="
                         mt-[70px]
@@ -35,21 +31,21 @@ export function WorkWithUs({
                 >
                     <ImageView
                         mobile={{
-                            src: mobileImage,
+                            src: image.mobile,
                             width: 295,
                             height: 400,
                         }}
                         tablet={{
-                            src: tabletImage,
+                            src: image.tablet,
                             width: 1440,
                             height: 902,
                         }}
                         desktop={{
-                            src: desktopImage,
+                            src: image.desktop,
                             width: 2400,
                             height: 1504,
                         }}
-                        alt={alt}
+                        alt={image.alt}
                         loading="lazy"
                         className="
                             mx-auto
@@ -76,7 +72,7 @@ export function WorkWithUs({
                     px-[5%]
                     text-center
 
-                    ${hasImage
+                    ${image
                         ? `
                             pt-[130px]
                             pb-[135px]
@@ -108,7 +104,7 @@ export function WorkWithUs({
                         mx-auto
                         mt-[var(--label-title-gap)]
 
-                        ${hasImage
+                        ${image
                             ? "work-textbox"
                             : "gallery-work-textbox"
                         }

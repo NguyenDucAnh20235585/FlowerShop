@@ -30,7 +30,7 @@ export function HomeAbout() {
 
             <Button
                 to="/about"
-                className="mt-[var(--title-button-gap)]"
+                className="mt-[var(--title-button-gap)] desktop:mt-8"
             >
                 • &nbsp; ABOUT US
             </Button>

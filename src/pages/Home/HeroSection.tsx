@@ -68,7 +68,7 @@ desktop:pt-[62px]
         tablet:w-[80%]
         tablet:rounded-[28px]
 
-        desktop:w-[88%]
+        desktop:w-[87.5%]
         desktop:rounded-[30px]
     "
             />

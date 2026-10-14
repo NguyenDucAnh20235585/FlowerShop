@@ -96,7 +96,7 @@ export function Header() {
         caption-1
         hidden
         items-center
-        gap-[50px]
+        gap-[42px]
         tablet:flex
     "
                     >
@@ -148,7 +148,6 @@ export function Header() {
                         right-0
                         top-[70px]
                         bg-white
-
                         tablet:hidden
                     "
                 >

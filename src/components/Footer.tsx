@@ -51,7 +51,6 @@ export function Footer() {
 
                 <div
                     className="
-                        pointer-events-none
                         absolute
                         inset-0
                         text-white
@@ -93,7 +92,9 @@ export function Footer() {
                         Miami, FL
                     </span>
 
-                    <span
+                    <a href="https://www.figma.com/sites/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             absolute
                             right-[30px]
@@ -112,7 +113,7 @@ export function Footer() {
                         "
                     >
                         Contact
-                    </span>
+                    </a>
                 </div>
             </div>
         </footer>

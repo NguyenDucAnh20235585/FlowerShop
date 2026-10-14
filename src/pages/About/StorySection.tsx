@@ -24,12 +24,10 @@ export function StorySection() {
                 className="
                     mx-[4%]
                     pb-[var(--about-founded-story)]
-
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
                     tablet:gap-x-5
-
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >
@@ -46,7 +44,6 @@ export function StorySection() {
                             grid
                             grid-cols-1
                             gap-[10px]
-
                             tablet:grid-cols-3
                             tablet:gap-5
                         "
@@ -123,12 +120,10 @@ export function StorySection() {
             <section
                 className="
                     mx-[4%]
-
                     tablet:mx-[3%]
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
                     tablet:gap-x-5
-
                     desktop:grid-cols-[125px_minmax(0,1fr)]
                 "
             >

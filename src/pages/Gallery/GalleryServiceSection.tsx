@@ -23,10 +23,11 @@ export function GalleryServiceSection({
                 py-7
 
                 tablet:grid
-                tablet:grid-cols-2
+                tablet:grid-cols-[370px_370px]
                 tablet:items-start
-                tablet:gap-[30px]
-                tablet:py-[30px]
+                tablet:gap-5
+                tablet:pt-0
+                tablet:pb-[70px]
 
                 desktop:grid-cols-[488.11px_488.11px]
                 desktop:gap-5
@@ -37,9 +38,11 @@ export function GalleryServiceSection({
             <div
                 className="
                     pb-6
+
                     tablet:pb-0
-                    tablet:pt-[6px]
-                    tablet:pr-[10px]
+                    tablet:pt-[34px]
+                    tablet:pr-0
+
                     desktop:pt-[34px]
                     desktop:pr-0
                 "
@@ -52,7 +55,7 @@ export function GalleryServiceSection({
                     className="
                         paragraph-1
                         mt-5
-                        tablet:mt-[22px]
+                        tablet:mt-7
                         desktop:mt-7
                     "
                 >
@@ -89,7 +92,10 @@ export function GalleryServiceSection({
                 className="
                     w-full
                     rounded-[20px]
+
+                    tablet:mt-[30px]
                     tablet:rounded-[24px]
+
                     desktop:mt-[30px]
                     desktop:rounded-[28px]
                 "

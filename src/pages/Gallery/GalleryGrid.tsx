@@ -119,10 +119,9 @@ export function GalleryGrid() {
                 mt-[65px]
                 pb-[70px]
                 tablet:mx-5
-                tablet:mt-20
-                tablet:pb-[90px]
+                tablet:mt-21
+                tablet:pb-[59px]
                 desktop:mx-[3%]
-                desktop:mt-21
                 desktop:pb-0
             "
         >
@@ -138,7 +137,7 @@ export function GalleryGrid() {
                         heading-3
                         mb-10
                         text-muted
-                        tablet:mb-[45px]
+                        tablet:mb-11
                         tablet:text-[14px]
                         desktop:mb-0
                         desktop:w-[170.01px]
@@ -154,7 +153,7 @@ export function GalleryGrid() {
                         gap-x-5
                         gap-y-[18px]
                         tablet:grid-cols-2
-                        tablet:gap-y-15
+                        tablet:gap-y-16
                         desktop:grid-cols-[repeat(3,330px)]
                         desktop:gap-y-16
                     "
@@ -174,7 +173,7 @@ export function GalleryGrid() {
                                     flex
                                     items-baseline
                                     gap-[6px]
-                                    desktop:mb-[19px]
+                                    tablet:mb-[19px]
                                 "
                             >
                                 <h2 className="caption-2 whitespace-nowrap">

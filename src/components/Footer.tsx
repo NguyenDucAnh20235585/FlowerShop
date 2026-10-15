@@ -1,28 +1,36 @@
 import { ImageView } from "./ImageView"
+import { useLocation } from "react-router-dom"
 
 import footerMobile from "../assets/Images/Footer/footer-mobile.webp"
 import footerTablet from "../assets/Images/Footer/footer-tablet.webp"
 import footerDesktop from "../assets/Images/Footer/footer-desktop.webp"
 
 export function Footer() {
+    const { pathname } = useLocation()
+    const isGallery = pathname === "/gallery"
     return (
         <footer id="contact">
             <div
-                className="
-                    relative
-                    mx-auto
-                    mt-0
-                    h-[573px]
-                    w-[263px]
-                    overflow-hidden
-                    rounded-t-[30px]
-                    tablet:h-[579px]
-                    tablet:w-[80%]
-                    tablet:max-w-[640px]
-                    desktop:h-[582px]
-                    desktop:w-[87.5%]
-                    desktop:max-w-[1120px]
-                "
+                className={`
+        relative
+        mx-auto
+        mt-0
+        h-[573px]
+        w-[263px]
+        overflow-hidden
+        rounded-t-[30px]
+
+        tablet:h-[579px]
+
+        ${isGallery
+                        ? "tablet:w-[680px]"
+                        : "tablet:w-[80%] tablet:max-w-[640px]"
+                    }
+
+        desktop:h-[582px]
+        desktop:w-[87.5%]
+        desktop:max-w-[1120px]
+    `}
             >
                 <ImageView
                     mobile={{

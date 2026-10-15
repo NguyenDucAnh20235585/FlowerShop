@@ -240,7 +240,7 @@ body {
 
   .home-about-textbox {
     width: 100%;
-    max-width: 220px;
+    max-width: 215px;
   }
 
   @media (min-width: 800px) {
@@ -293,17 +293,9 @@ body {
   }
 
   .home-service-spacing {
-    --service-number-image: 80px;
-    --service-image-title: 72px;
-    --service-title-text: 20px;
-  }
-
-  @media (min-width: 800px) {
-    .home-service-spacing {
-      --service-number-image: 84px;
-      --service-image-title: 84px;
-      --service-title-text: 34px;
-    }
+    --service-number-image: 84px;
+    --service-image-title: 84px;
+    --service-title-text: 34px;
   }
 
   .work-textbox {
@@ -325,14 +317,7 @@ body {
 
   .cta-stack {
     --label-title-gap: 24px;
-    --title-button-gap: 36px;
-  }
-
-  @media (min-width: 800px) {
-    .cta-stack {
-      --label-title-gap: 24px;
-      --title-button-gap: 44px;
-    }
+    --title-button-gap: 44px;
   }
 
   .flower-wheel-scroll {

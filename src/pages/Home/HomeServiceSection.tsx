@@ -15,7 +15,7 @@ export function HomeServiceSection({
     image,
     alt,
     imageSize = 432,
-    className = "pt-10 tablet:pt-11",
+    className = "pt-11",
 }: HomeServiceSectionProps) {
     return (
         <section
@@ -27,10 +27,9 @@ export function HomeServiceSection({
                 items-center
                 border-b
                 border-black/60
-                pb-[85px]
+                pb-20
                 text-center
                 tablet:mx-[10%]
-                tablet:pb-20
                 desktop:mx-[6%]
                 ${className}
             `}
@@ -45,7 +44,7 @@ export function HomeServiceSection({
                 className="
                     mt-[var(--service-number-image)]
                     aspect-square
-                    w-[145px]
+                    w-[145.14px]
                     overflow-hidden
                     rounded-[28px]
                 "

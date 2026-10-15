@@ -86,7 +86,7 @@ export function Header() {
                             alt=""
                             className="
         w-10
-        tablet:w-[200px]
+        tablet:w-50
     "
                         />
                     </Link>

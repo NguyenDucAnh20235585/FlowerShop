@@ -11,13 +11,11 @@ export function Footer() {
                 className="
                     relative
                     mx-auto
-                    mt-10
-                    h-[560px]
-                    w-[80%]
-                    max-w-[300px]
+                    mt-0
+                    h-[573px]
+                    w-[263px]
                     overflow-hidden
                     rounded-t-[30px]
-                    tablet:mt-0
                     tablet:h-[579px]
                     tablet:w-[80%]
                     tablet:max-w-[640px]
@@ -70,14 +68,13 @@ export function Footer() {
                     <span
                         className="
                             absolute
-                            bottom-6
+                            bottom-5
                             left-[30px]
                             whitespace-nowrap
                             font-outfit
                             text-[18px]
                             font-medium
                             leading-none
-                            tablet:bottom-5
                             tablet:text-[22px]
                         "
                     >
@@ -90,13 +87,12 @@ export function Footer() {
                         className="
                             absolute
                             right-[30px]
-                            bottom-6
+                            bottom-5
                             whitespace-nowrap
                             font-outfit
                             text-[18px]
                             font-medium
                             leading-none
-                            tablet:bottom-5
                             tablet:text-[22px]
                         "
                     >

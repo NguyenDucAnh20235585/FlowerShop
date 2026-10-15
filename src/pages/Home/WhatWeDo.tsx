@@ -3,14 +3,13 @@ export function WhatWeDo() {
         <section
             className="
                 mx-[11%]
-                tablet:mx-[3%]
                 border-b
                 border-black/60
-                pt-[45px]
-                pb-[42px]
+                pt-[41.39px]
+                pb-10
                 text-center
                 tablet:pt-[79px]
-                tablet:pb-10
+                tablet:mx-[3%]
                 desktop:pb-11
             "
         >
@@ -22,8 +21,7 @@ export function WhatWeDo() {
                 className="
         paragraph-1
         mx-auto
-        mt-7
-        tablet:mt-11
+        mt-11
     "
             >
                 We bring a touch of that simple magic into your world.

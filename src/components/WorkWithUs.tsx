@@ -23,10 +23,8 @@ export function WorkWithUs({
             {image && (
                 <div
                     className="
-                        mt-[70px]
-                        px-[10%]
-                        tablet:mt-25
-                        tablet:px-10
+                        mt-25
+                        px-10
                     "
                 >
                     <ImageView

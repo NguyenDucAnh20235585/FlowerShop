@@ -6,9 +6,8 @@ export function HomeAbout() {
             className="
                 cta-stack
                 px-[4%]
-                pt-[115px]
+                pt-31
                 text-center
-                tablet:pt-31
             "
         >
             <p className="heading-3 text-muted">

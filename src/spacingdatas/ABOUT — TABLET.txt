@@ -1,0 +1,80 @@
+ABOUT — TABLET 800px
+
+1. HEADER - same as Gallery
+Header width & height: [BOX]
+Left edge → logo: [BOX]
+Gallery ↔ About: [BOX]
+About ↔ Contact: [BOX]
+Right edge → Contact: [BOX]
+
+
+2. PAGE TITLE
+Header bottom → ABOUT: 44 + 4 [ZONE]
+ABOUT width & height: 760 x 50 [BOX]
+
+
+3. OUR STORY / OWNER INTRO
+
+ABOUT bottom → intro row top: 80 + 4 [ZONE]
+
+Left edge → OUR STORY: 20 [BOX]
+OUR STORY width & height: 152.32 x 20 [BOX]
+
+OUR STORY → portrait: 0 [BOX]
+Portrait width & height: 315.92 x 354.17 [BOX]
+
+Portrait → LILY SMITH block: 20 [BOX]
+LILY SMITH / Owner block width & height: 95 x 45 [BOX]
+
+
+4. FOUNDED SECTION
+
+Portrait bottom → founded heading: ___ + 4 [ZONE]
+
+Founded heading width & height: [BOX]
+
+Founded heading → image row: 70 + 4 [ZONE]
+
+Image 1 width & height: 189.23 x 225.29 [BOX]
+Image 2 width & height: 189.23 x 225.29 [BOX]
+Image 3 width & height: 189.23 x 225.29 [BOX]
+
+Gap image 1 ↔ 2: 20 [BOX]
+Gap image 2 ↔ 3: 20 [BOX]
+
+
+5. STORY TEXT
+
+Image row bottom → Paragraph 1: 70 + 4 [ZONE]
+
+Paragraph 1 width & height: [BOX]
+
+Paragraph 1 → Paragraph 2: ___ + 4 [ZONE]
+
+Paragraph 2 width & height: [BOX]
+
+Paragraph 2 → large image: ___ + 4 [ZONE]
+
+Large image width & height: [BOX]
+
+
+6. ENDING
+
+Large image → Paragraph 3: ___ + 4 [ZONE]
+
+Paragraph 3 width & height: [BOX]
+
+Paragraph 3 → final paragraph: ___ + 4 [ZONE]
+
+Final paragraph width & height: [BOX]
+
+Final paragraph → BOOK A CONSULTATION: ___ + 4 [ZONE]
+
+Button → footer: [BOX]
+
+
+7. FOOTER
+
+Footer width & height: [BOX]
+Footer bottom → MIAMI: [BOX]
+Footer bottom → CONTACT: [BOX]

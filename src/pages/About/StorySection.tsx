@@ -24,13 +24,12 @@ export function StorySection() {
                 className="
                     mx-[4%]
                     pb-[var(--about-founded-story)]
-                    tablet:mx-[3%]
+                    tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-5
+                    tablet:grid-cols-[152.32px_607.68px]
+                    tablet:gap-x-0
                     desktop:grid-cols-[152.32px_1047.68px]
                     desktop:mx-10
-                    desktop:gap-x-0
                 "
             >
 
@@ -149,13 +148,12 @@ export function StorySection() {
             <section
                 className="
                     mx-[4%]
-                    tablet:mx-[3%]
+                    tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-5
+                    tablet:grid-cols-[152.32px_607.68px]
+                    tablet:gap-x-0
                     desktop:grid-cols-[152.32px_1047.68px]
                     desktop:mx-10
-                    desktop:gap-x-0
                 "
             >
 

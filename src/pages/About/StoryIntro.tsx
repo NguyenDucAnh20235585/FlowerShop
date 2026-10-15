@@ -10,16 +10,14 @@ export function StoryIntro() {
             className="
                 mx-[4%]
                 pb-20
-                tablet:mx-[3%]
+                tablet:mx-5
                 tablet:grid
-                tablet:grid-cols-[18%_40%_minmax(0,1fr)]
+                tablet:grid-cols-[152.32px_315.92px_minmax(0,1fr)]
+                tablet:gap-x-0
+                tablet:pb-[74px]
                 tablet:items-start
-                tablet:gap-x-5
-                tablet:pb-20
                 desktop:mx-10
                 desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
-                desktop:gap-x-0
-                desktop:pb-[74px]
             "
         >
             <p className="heading-3 text-muted">
@@ -62,7 +60,7 @@ export function StoryIntro() {
                     mt-[18px]
                     tablet:mt-0
                     tablet:pt-[5px]
-                    desktop:ml-5
+                    tablet:ml-5
                 "
             >
                 <h2

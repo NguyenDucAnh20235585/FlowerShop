@@ -12,9 +12,8 @@ export function HeroSection() {
     return (
         <section
             className="
-                pt-[54px]
-tablet:pt-[58px]
-desktop:pt-[62px]
+                pt-[66px]
+                tablet:pt-17
             "
         >
             <ImageView
@@ -36,9 +35,9 @@ desktop:pt-[62px]
                 alt=""
                 className="
         mx-auto
-        w-[67%]
+        w-[70%]
         tablet:w-[80%]
-        desktop:w-[88%]
+        desktop:w-[87.5%]
     "
             />
 
@@ -61,14 +60,12 @@ desktop:pt-[62px]
                 alt="Rose"
                 className="
         mx-auto
-        mt-10
-        w-[73%]
+        mt-11
+        w-[70%]
         rounded-[20px]
-
         tablet:w-[80%]
         tablet:rounded-[28px]
-
-        desktop:w-[88%]
+        desktop:w-[87.5%]
         desktop:rounded-[30px]
     "
             />

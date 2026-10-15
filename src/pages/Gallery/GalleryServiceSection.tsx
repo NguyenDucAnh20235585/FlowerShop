@@ -9,7 +9,6 @@ type GalleryServiceSectionProps = {
     alt: string
 }
 
-
 export function GalleryServiceSection({
     title,
     description,
@@ -21,36 +20,28 @@ export function GalleryServiceSection({
     return (
         <section
             className="
-        py-7
-        tablet:grid
-        tablet:grid-cols-2
-        tablet:items-start
-        tablet:gap-[30px]
-        tablet:py-[30px]
-        desktop:gap-15
-    "
+                pb-[70px]
+                tablet:grid
+                tablet:grid-cols-[370px_370px]
+                tablet:items-start
+                tablet:gap-5
+                desktop:grid-cols-[488.11px_488.11px]
+            "
         >
             <div
                 className="
-                        pb-6
-                        tablet:pb-0
-                        tablet:pt-[6px]
-                        tablet:pr-[10px]
-                        desktop:pt-[10px]
-                        desktop:pr-5
-                    "
+                    pt-[34px]
+                "
             >
-                <h2 className="heading-1 max-w-[500px]">
+                <h2 className="heading-1 gallery-service-heading">
                     {title}
                 </h2>
 
                 <p
                     className="
-        paragraph-1
-        mt-5
-        tablet:mt-[22px]
-        desktop:mt-6
-    "
+                        paragraph-1
+                        mt-7
+                    "
                 >
                     {description}
                 </p>
@@ -83,11 +74,13 @@ export function GalleryServiceSection({
                 loading="lazy"
                 alt={alt}
                 className="
-        w-full
-        rounded-[20px]
-        tablet:rounded-[24px]
-        desktop:rounded-[28px]
-    "
+                mt-6
+                w-full
+                rounded-[20px]
+                tablet:mt-[30px]
+                tablet:rounded-[24px]
+                desktop:rounded-[28px]
+                "
             />
         </section>
     )

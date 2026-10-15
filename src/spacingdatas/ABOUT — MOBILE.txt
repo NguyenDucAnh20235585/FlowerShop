@@ -1,0 +1,79 @@
+ABOUT — MOBILE
+
+1. HEADER — same as Gallery
+Header width & height: [BOX]
+Left edge → logo: [BOX]
+Gallery ↔ About: [BOX]
+About ↔ Contact: [BOX]
+Right edge → Contact: [BOX]
+
+
+2. PAGE TITLE
+
+Header bottom → ABOUT: 56 + 4 [ZONE]
+
+ABOUT width & height: 343 x 40 [BOX]
+
+
+3. OUR STORY / OWNER INTRO
+
+ABOUT bottom → OUR STORY: 56 + 4 [ZONE]
+
+Left edge → OUR STORY: 16 [BOX]
+OUR STORY width & height: 152.32 x 17 [BOX]
+
+OUR STORY → portrait: 50 + 4 [ZONE]
+
+Portrait width & height: 342.61 x 384.08 [BOX]
+
+Portrait → LILY SMITH block: 20 + 4 [ZONE] this is column spacing, careful
+
+LILY SMITH / Owner block width & height: 95 x 43 [BOX]
+
+
+4. FOUNDED SECTION
+
+LILY SMITH block bottom → founded heading: 70 + 4 [ZONE]
+
+Founded heading width & height: 343 x 78 [BOX]
+
+Founded heading → image 1: 70 + 4 [ZONE]
+
+Image 1 width & height: 343 x 400 [BOX]
+
+Image 1 → image 2: 20 [BOX]
+Image 2 width & height: 343 x 400 [BOX]
+
+Image 2 → image 3: 20 [BOX]
+Image 3 width & height: 343 x 400 [BOX]
+
+
+5. STORY TEXT
+
+Image 3 bottom → Paragraph 1: 70 + 4 [ZONE]
+
+Paragraph 1 & 2 width & height: 343 x 375 [BOX]
+
+Paragraph 1 → Paragraph 2: 24 + 4 [ZONE]
+
+Paragraph 2 → large image: 70 + 4 [ZONE]
+
+Large image width & height: 343 x 400 [BOX]
+
+
+6. ENDING
+
+Large image → Paragraph 3: 70 + 4 [ZONE]
+
+Paragraph 3 block width & height: 343 x 200 [BOX]
+
+Final paragraph → BOOK A CONSULTATION: 70 + 4 [ZONE]
+
+Button → footer: 180 [BOX]
+
+
+7. FOOTER — same as Gallery
+
+Footer width & height: [BOX]
+Footer bottom → MIAMI: [BOX]
+Footer bottom → CONTACT: [BOX]

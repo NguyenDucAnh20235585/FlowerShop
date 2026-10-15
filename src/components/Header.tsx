@@ -67,7 +67,7 @@ export function Header() {
     items-center
     justify-between
     px-4
-    tablet:h-[80px]
+    tablet:h-[82px]
     tablet:px-0
 "
                 >
@@ -86,7 +86,7 @@ export function Header() {
                             alt=""
                             className="
         w-10
-        tablet:w-[200px]
+        tablet:w-50
     "
                         />
                     </Link>
@@ -96,7 +96,7 @@ export function Header() {
         caption-1
         hidden
         items-center
-        gap-[50px]
+        gap-10
         tablet:flex
     "
                     >
@@ -148,7 +148,6 @@ export function Header() {
                         right-0
                         top-[70px]
                         bg-white
-
                         tablet:hidden
                     "
                 >

@@ -108,6 +108,7 @@ const FLOWERS = [
         mobileImage: stillWatersMobile,
         tabletImage: stillWatersTablet,
         desktopImage: stillWatersDesktop,
+        tabletWide: true,
     },
 ]
 
@@ -115,32 +116,30 @@ export function GalleryGrid() {
     return (
         <section
             className="
-                mx-[4%]
-                mt-[65px]
+                mx-4
+                mt-15
                 pb-[70px]
                 tablet:mx-5
-                tablet:mt-20
-                tablet:pb-[90px]
+                tablet:mt-21
+                tablet:pb-[59px]
                 desktop:mx-[3%]
-                desktop:mt-20
-                desktop:pb-25
+                desktop:pb-0
             "
         >
             <div
                 className="
                     desktop:grid
-                    desktop:grid-cols-[150px_minmax(0,1fr)]
+                    desktop:grid-cols-[150px_1030px]
                     desktop:gap-x-5
                 "
             >
                 <div
                     className="
                         heading-3
-                        mb-10
+                        mb-11
                         text-muted
-                        tablet:mb-[45px]
-                        tablet:text-[14px]
                         desktop:mb-0
+                        desktop:w-[170.01px]
                     "
                 >
                     SEASONAL ARRANGEMENTS
@@ -151,29 +150,27 @@ export function GalleryGrid() {
                         grid
                         grid-cols-1
                         gap-x-5
-                        gap-y-[18px]
+                        gap-y-6
                         tablet:grid-cols-2
-                        tablet:gap-y-15
-                        desktop:grid-cols-3
-                        desktop:gap-y-[55px]
+                        tablet:gap-y-16
+                        desktop:grid-cols-[repeat(3,330px)]
                     "
                 >
-                    {FLOWERS.map((flower, index) => (
+                    {FLOWERS.map((flower) => (
                         <article
                             key={flower.name}
                             className={
-                                index === FLOWERS.length - 1
+                                flower.tabletWide
                                     ? "tablet:col-span-2 desktop:col-span-1"
                                     : ""
                             }
                         >
                             <div
                                 className="
-                                    mb-4
+                                    mb-[19px]
                                     flex
                                     items-baseline
                                     gap-[6px]
-                                    desktop:mb-[14px]
                                 "
                             >
                                 <h2 className="caption-2 whitespace-nowrap">
@@ -193,7 +190,7 @@ export function GalleryGrid() {
                                 }}
                                 tablet={{
                                     src: flower.tabletImage,
-                                    width: index === FLOWERS.length - 1 ? 1520 : 740,
+                                    width: flower.tabletWide ? 1520 : 740,
                                     height: 637,
                                 }}
                                 desktop={{
@@ -202,8 +199,19 @@ export function GalleryGrid() {
                                     height: 637,
                                 }}
                                 alt={flower.alt}
-                                className="w-full"
-                                loading="lazy"
+                                className="
+                                    h-[358.33px]
+                                    w-full
+                                    rounded-[20px]
+                                    [&>img]:h-full
+                                    [&>img]:object-cover
+
+                                    tablet:h-auto
+                                    tablet:rounded-[24px]
+                                    tablet:[&>img]:h-auto
+
+                                    desktop:rounded-[28px]
+                                "
                             />
                         </article>
                     ))}

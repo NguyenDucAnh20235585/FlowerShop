@@ -30,14 +30,12 @@ const FLOWERS = [
 export function FlowerWheel() {
     return (
         <section
-
             className="
         flower-wheel-scroll
         mx-auto
         mt-30
         w-[295px]
         overflow-x-auto
-
         tablet:w-[720px]
         desktop:w-[1200px]
     "
@@ -46,8 +44,7 @@ export function FlowerWheel() {
                 className="
                     flex
                     w-max
-                    gap-3
-
+                    gap-[13.35px]
                     tablet:gap-5
                 "
             >
@@ -58,11 +55,10 @@ export function FlowerWheel() {
                         key={flower.src}
                         className={`
                             aspect-square
-                            w-[200px]
+                            w-[200.21px]
                             shrink-0
                             overflow-hidden
                             rounded-[20px]
-
                             tablet:w-[300px]
                             tablet:rounded-[28px]
 

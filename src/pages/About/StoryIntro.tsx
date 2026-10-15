@@ -8,16 +8,14 @@ export function StoryIntro() {
     return (
         <section
             className="
-                mx-[4%]
-                pb-20
-                tablet:mx-[3%]
+                mx-4
+                pb-[74px]
+                tablet:mx-5
                 tablet:grid
-                tablet:grid-cols-[18%_40%_minmax(0,1fr)]
+                tablet:grid-cols-[152.32px_315.92px_minmax(0,1fr)]
                 tablet:items-start
-                tablet:gap-x-5
-                tablet:pb-20
-                desktop:grid-cols-[125px_460px_minmax(0,1fr)]
-                desktop:pb-25
+                desktop:mx-10
+                desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
             "
         >
             <p className="heading-3 text-muted">
@@ -26,10 +24,13 @@ export function StoryIntro() {
 
             <div
                 className="
+                    mt-[54px]
                     w-full
                     overflow-hidden
                     rounded-[20px]
+                    tablet:mt-0
                     tablet:rounded-[28px]
+                    desktop:h-[500px]     
                 "
             >
                 <ImageView
@@ -55,9 +56,10 @@ export function StoryIntro() {
 
             <div
                 className="
-                    mt-[18px]
+                    mt-6
                     tablet:mt-0
                     tablet:pt-[5px]
+                    tablet:ml-5
                 "
             >
                 <h2

@@ -17,25 +17,45 @@ import about04Desktop from "../../assets/Images/About/about-04-desktop.webp"
 import about04Tablet from "../../assets/Images/About/about-04-tablet.webp"
 import about04Mobile from "../../assets/Images/About/about-04-mobile.webp"
 
+const FOUNDED_IMAGES = [
+    {
+        mobile: { src: about01Mobile, width: 379, height: 451 },
+        tablet: { src: about01Tablet, width: 672, height: 800 },
+        desktop: { src: about01Desktop, width: 686, height: 800 },
+        alt: "Bouquette of peonies",
+    },
+    {
+        mobile: { src: about02Mobile, width: 379, height: 451 },
+        tablet: { src: about02Tablet, width: 672, height: 800 },
+        desktop: { src: about02Desktop, width: 686, height: 800 },
+        alt: "Pink flower",
+    },
+    {
+        mobile: { src: about03Mobile, width: 379, height: 451 },
+        tablet: { src: about03Tablet, width: 672, height: 800 },
+        desktop: { src: about03Desktop, width: 686, height: 800 },
+        alt: "White flower",
+    },
+]
+
 export function StorySection() {
     return (
         <div className="about-spacing">
             <section
                 className="
-                    mx-[4%]
+                    mx-4
                     pb-[var(--about-founded-story)]
 
-                    tablet:mx-[3%]
+                    tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-5
+                    tablet:grid-cols-[152.32px_607.68px]
 
-                    desktop:grid-cols-[125px_minmax(0,1fr)]
+                    desktop:mx-10
+                    desktop:grid-cols-[152.32px_1047.68px]
                 "
             >
-
                 <div className="tablet:col-start-2">
-                    <h2 className="heading-2 max-w-[980px]">
+                    <h2 className="heading-2">
                         Our Blooms was founded in honor of Lily Smith’s loving
                         aunts, Teresa and Beth.
                     </h2>
@@ -45,96 +65,54 @@ export function StorySection() {
                             mt-[var(--about-founded-images)]
                             grid
                             grid-cols-1
-                            gap-[10px]
-
+                            gap-5
                             tablet:grid-cols-3
-                            tablet:gap-5
                         "
                     >
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
-                            <ImageView
-                                mobile={{
-                                    src: about01Mobile,
-                                    width: 379,
-                                    height: 451,
-                                }}
-                                tablet={{
-                                    src: about01Tablet,
-                                    width: 672,
-                                    height: 800,
-                                }}
-                                desktop={{
-                                    src: about01Desktop,
-                                    width: 686,
-                                    height: 800,
-                                }}
-                                alt="Bouquette of peonies"
-                                loading="lazy"
-                            />
-                        </div>
+                        {FOUNDED_IMAGES.map((image) => (
+                            <div
+                                key={image.mobile.src}
+                                className="
+                                    h-[400px]
+                                    overflow-hidden
+                                    rounded-[20px]
+                                    [&>img]:h-full
+                                    [&>img]:object-cover
 
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
-                            <ImageView
-                                mobile={{
-                                    src: about02Mobile,
-                                    width: 379,
-                                    height: 451,
-                                }}
-                                tablet={{
-                                    src: about02Tablet,
-                                    width: 672,
-                                    height: 800,
-                                }}
-                                desktop={{
-                                    src: about02Desktop,
-                                    width: 686,
-                                    height: 800,
-                                }}
-                                alt="Pink flower"
-                                loading="lazy"
-                            />
-                        </div>
+                                    tablet:h-auto
+                                    tablet:rounded-[28px]
+                                    tablet:[&>img]:h-auto
 
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
-                            <ImageView
-                                mobile={{
-                                    src: about03Mobile,
-                                    width: 379,
-                                    height: 451,
-                                }}
-                                tablet={{
-                                    src: about03Tablet,
-                                    width: 672,
-                                    height: 800,
-                                }}
-                                desktop={{
-                                    src: about03Desktop,
-                                    width: 686,
-                                    height: 800,
-                                }}
-                                alt="White flower"
-                                loading="lazy"
-                            />
-                        </div>
+                                    desktop:h-[400px]
+                                    desktop:[&>img]:h-full
+                                "
+                            >
+                                <ImageView
+                                    mobile={image.mobile}
+                                    tablet={image.tablet}
+                                    desktop={image.desktop}
+                                    alt={image.alt}
+                                    loading="lazy"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             <section
                 className="
-                    mx-[4%]
+                    mx-4
 
-                    tablet:mx-[3%]
+                    tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[18%_minmax(0,1fr)]
-                    tablet:gap-x-5
+                    tablet:grid-cols-[152.32px_607.68px]
 
-                    desktop:grid-cols-[125px_minmax(0,1fr)]
+                    desktop:mx-10
+                    desktop:grid-cols-[152.32px_1047.68px]
                 "
             >
-
                 <div className="tablet:col-start-2">
-
                     <div className="paragraph-2 about-story-textbox">
                         <p>
                             Lily's journey with flowers began in the heart of Oregon,

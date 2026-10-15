@@ -1,0 +1,80 @@
+GALLERY — MOBILE
+
+Rule:
+[BOX]  = giữ nguyên số Figma
+[ZONE] = số Figma + 4px
+
+
+1. HEADER — same as Home Mobile
+Header width & height: 343 x 70 [BOX]
+Left edge → logo: 32 [BOX]
+Right edge → menu icon: 32 [BOX]
+
+
+2. GALLERY INTRO
+Header bottom → heading: 56 + 4 [ZONE]
+Heading width & height: 343 x 40 [BOX]
+
+Heading → paragraph: 56 + 4 [ZONE]
+Paragraph width & height: 343 x 17 [BOX]
+
+Paragraph → first image name & price: 40 + 4 [ZONE]
+Paragraph → first image: 59 + 4 [BOX]
+
+
+3. GALLERY GRID
+Grid width & height: 343 x 3384.98 [BOX]
+(including paragraph and spaces from STILL WATERS to the end of the Gallery block)
+
+Image/card width & height: 343 x 358.33 [BOX]
+Column gap: [BOX] 1 column only
+Row gap: 20 + 4 [ZONE]
+
+Caption/title → image: 15 + 4 [ZONE]
+
+
+4. GALLERY SERVICES
+
+SERVICE SECTION
+Last gallery grid row → SERVICES: 100 + 4 [ZONE]
+
+Left edge → SERVICES: 16 [BOX]
+SERVICES width & height: 203.78 x 17 [BOX]
+
+SERVICES → top border: 40 [BOX]
+
+SERVICE 1 — FLORAL INSTALLATIONS
+
+Top border → heading: 30 + 4 [ZONE]
+Heading width & height: 343 x 80 [BOX]
+
+Heading → paragraph: 24 + 4 [ZONE]
+Paragraph width & height: 343 x 66 [BOX]
+
+Paragraph → image: 20 + 4 [ZONE]
+Image width & height: 343 x 295.84 [BOX]
+
+Image → bottom border: 70 [BOX]
+
+
+5. SERVICE 2
+Same structure as Service 1
+
+
+6. SERVICE 3
+Same structure as Service 1
+
+7. WORK WITH US
+Bottom of final service image → WORK WITH US: 180 + 4 [ZONE]
+
+WORK WITH US → heading: 20 + 4 [ZONE]
+Heading width & height: 263 x 78 [BOX]
+
+Heading → ABOUT US button: 40 + 4 [ZONE]
+Button → footer: 150 [BOX]
+
+
+8. FOOTER 
+Footer width & height: 311 X 573 [BOX]
+Footer bottom → MIAMI: 20 [BOX]
+Footer bottom → CONTACT: 20 [BOX]

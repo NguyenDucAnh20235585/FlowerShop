@@ -4,7 +4,6 @@ type HomeServiceSectionProps = {
     description: string
     image: string
     alt: string
-    imageSize?: number
     className?: string
 }
 
@@ -14,8 +13,7 @@ export function HomeServiceSection({
     description,
     image,
     alt,
-    imageSize = 432,
-    className = "pt-10",
+    className = "pt-11",
 }: HomeServiceSectionProps) {
     return (
         <section
@@ -27,26 +25,22 @@ export function HomeServiceSection({
                 items-center
                 border-b
                 border-black/60
-                pb-[85px]
+                pb-20
                 text-center
                 tablet:mx-[10%]
-                tablet:pb-20
                 desktop:mx-[6%]
-                desktop:pb-[90px]
                 ${className}
             `}
         >
-            {number && (
-                <p className="heading-1">
-                    {number}
-                </p>
-            )}
+            <p className="heading-1">
+                {number}
+            </p>
 
             <div
                 className="
                     mt-[var(--service-number-image)]
                     aspect-square
-                    w-[145px]
+                    w-[145.14px]
                     overflow-hidden
                     rounded-[28px]
                 "
@@ -54,8 +48,8 @@ export function HomeServiceSection({
                 <img
                     src={image}
                     alt={alt}
-                    width={imageSize}
-                    height={imageSize}
+                    width={432}
+                    height={432}
                     loading="lazy"
                     className="h-full w-full object-cover"
                 />

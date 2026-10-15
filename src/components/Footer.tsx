@@ -16,16 +16,15 @@ export function Footer() {
         mx-auto
         mt-0
         h-[573px]
-        w-[263px]
         overflow-hidden
         rounded-t-[30px]
 
-        tablet:h-[579px]
-
         ${isGallery
-                        ? "tablet:w-[680px]"
-                        : "tablet:w-[80%] tablet:max-w-[640px]"
+                        ? "w-[311px] tablet:w-[680px]"
+                        : "w-[263px] tablet:w-[80%] tablet:max-w-[640px]"
                     }
+
+        tablet:h-[579px]
 
         desktop:h-[582px]
         desktop:w-[87.5%]

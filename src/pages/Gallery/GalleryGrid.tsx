@@ -115,8 +115,8 @@ export function GalleryGrid() {
     return (
         <section
             className="
-                mx-[4%]
-                mt-[65px]
+                mx-4
+                mt-15
                 pb-[70px]
                 tablet:mx-5
                 tablet:mt-21
@@ -135,9 +135,8 @@ export function GalleryGrid() {
                 <div
                     className="
                         heading-3
-                        mb-10
+                        mb-11
                         text-muted
-                        tablet:mb-11
                         tablet:text-[14px]
                         desktop:mb-0
                         desktop:w-[170.01px]
@@ -151,7 +150,7 @@ export function GalleryGrid() {
                         grid
                         grid-cols-1
                         gap-x-5
-                        gap-y-[18px]
+                        gap-y-6
                         tablet:grid-cols-2
                         tablet:gap-y-16
                         desktop:grid-cols-[repeat(3,330px)]
@@ -169,11 +168,10 @@ export function GalleryGrid() {
                         >
                             <div
                                 className="
-                                    mb-4
+                                    mb-[19px]
                                     flex
                                     items-baseline
                                     gap-[6px]
-                                    tablet:mb-[19px]
                                 "
                             >
                                 <h2 className="caption-2 whitespace-nowrap">
@@ -202,7 +200,13 @@ export function GalleryGrid() {
                                     height: 637,
                                 }}
                                 alt={flower.alt}
-                                className="w-full"
+                                className="h-[358.33px]
+                                w-full
+                                [&>img]:h-full
+                                [&>img]:object-cover
+
+                                tablet:h-auto
+                                tablet:[&>img]:h-auto"
                                 loading="lazy"
                             />
                         </article>

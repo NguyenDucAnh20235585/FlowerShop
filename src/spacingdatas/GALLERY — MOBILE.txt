@@ -45,16 +45,16 @@ SERVICES → top border: 40 [BOX]
 
 SERVICE 1 — FLORAL INSTALLATIONS
 
-Top border → heading: ___ + 4 [ZONE]
-Heading width & height: [BOX]
+Top border → heading: 30 + 4 [ZONE]
+Heading width & height: 343 x 80 [BOX]
 
-Heading → paragraph: ___ + 4 [ZONE]
-Paragraph width & height: [BOX]
+Heading → paragraph: 24 + 4 [ZONE]
+Paragraph width & height: 343 x 66 [BOX]
 
-Paragraph → image: ___ + 4 [ZONE]
-Image width & height: [BOX]
+Paragraph → image: 20 + 4 [ZONE]
+Image width & height: 343 x 295.84 [BOX]
 
-Image → bottom border: [BOX]
+Image → bottom border: 70 [BOX]
 
 
 5. SERVICE 2
@@ -65,16 +65,16 @@ Same structure as Service 1
 Same structure as Service 1
 
 7. WORK WITH US
-Bottom of final service image → WORK WITH US: ___ + 4 [ZONE]
+Bottom of final service image → WORK WITH US: 180 + 4 [ZONE]
 
-WORK WITH US → heading: ___ + 4 [ZONE]
-Heading width & height: [BOX]
+WORK WITH US → heading: 20 + 4 [ZONE]
+Heading width & height: 263 x 78 [BOX]
 
-Heading → ABOUT US button: ___ + 4 [ZONE]
-Button → footer: [BOX]
+Heading → ABOUT US button: 40 + 4 [ZONE]
+Button → footer: 150 [BOX]
 
 
-8. FOOTER — same as Home Mobile
-Footer width & height: [BOX]
-Footer bottom → MIAMI: [BOX]
-Footer bottom → CONTACT: [BOX]
+8. FOOTER 
+Footer width & height: 311 X 573 [BOX]
+Footer bottom → MIAMI: 20 [BOX]
+Footer bottom → CONTACT: 20 [BOX]

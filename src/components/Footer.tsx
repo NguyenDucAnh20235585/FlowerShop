@@ -55,7 +55,7 @@ export function Footer() {
                         className="
                             absolute
                             inset-x-0
-                            top-[380px]
+                            top-100
                             text-center
                             font-caprasimo
                             text-[112px]

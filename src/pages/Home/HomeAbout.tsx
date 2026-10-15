@@ -8,7 +8,7 @@ export function HomeAbout() {
                 px-[4%]
                 pt-[115px]
                 text-center
-                desktop:pt-31
+                tablet:pt-31
             "
         >
             <p className="heading-3 text-muted">

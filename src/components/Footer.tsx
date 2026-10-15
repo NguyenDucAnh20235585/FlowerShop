@@ -17,9 +17,10 @@ export function Footer() {
                     max-w-[300px]
                     overflow-hidden
                     rounded-t-[30px]
-                    tablet:h-[570px]
-                    tablet:w-[82%]
-                    tablet:max-w-[660px]
+                    tablet:mt-0
+                    tablet:h-[579px]
+                    tablet:w-[80%]
+                    tablet:max-w-[640px]
                     desktop:h-[582px]
                     desktop:w-[87.5%]
                     desktop:max-w-[1120px]
@@ -76,9 +77,8 @@ export function Footer() {
                             text-[18px]
                             font-medium
                             leading-none
-                            tablet:bottom-[25px]
+                            tablet:bottom-5
                             tablet:text-[22px]
-                            desktop:bottom-[27px]
                         "
                     >
                         Miami, FL
@@ -96,9 +96,8 @@ export function Footer() {
                             text-[18px]
                             font-medium
                             leading-none
-                            tablet:bottom-[25px]
+                            tablet:bottom-5
                             tablet:text-[22px]
-                            desktop:bottom-[27px]
                         "
                     >
                         Contact

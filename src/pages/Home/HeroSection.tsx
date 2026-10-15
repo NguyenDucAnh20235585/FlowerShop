@@ -13,8 +13,7 @@ export function HeroSection() {
         <section
             className="
                 pt-[54px]
-tablet:pt-[58px]
-desktop:pt-17
+tablet:pt-17
             "
         >
             <ImageView
@@ -62,7 +61,7 @@ desktop:pt-17
                 className="
         mx-auto
         mt-10
-        desktop:mt-11
+        tablet:mt-11
         w-[73%]
         rounded-[20px]
         tablet:w-[80%]

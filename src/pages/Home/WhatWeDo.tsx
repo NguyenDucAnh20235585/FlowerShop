@@ -9,9 +9,8 @@ export function WhatWeDo() {
                 pt-[45px]
                 pb-[42px]
                 text-center
-                tablet:pt-[55px]
-                tablet:pb-[50px]
-                desktop:pt-[79px]
+                tablet:pt-[79px]
+                tablet:pb-10
                 desktop:pb-11
             "
         >
@@ -24,8 +23,7 @@ export function WhatWeDo() {
         paragraph-1
         mx-auto
         mt-7
-        tablet:mt-7.5
-        desktop:mt-11
+        tablet:mt-11
     "
             >
                 We bring a touch of that simple magic into your world.

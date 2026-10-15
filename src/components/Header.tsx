@@ -67,8 +67,7 @@ export function Header() {
     items-center
     justify-between
     px-4
-    tablet:h-[80px]
-    desktop:h-[82px]
+    tablet:h-[82px]
     tablet:px-0
 "
                 >

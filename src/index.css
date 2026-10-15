@@ -245,7 +245,7 @@ body {
 
   @media (min-width: 800px) {
     .home-about-textbox {
-      max-width: 430px;
+      max-width: 412px;
     }
   }
 
@@ -300,13 +300,6 @@ body {
 
   @media (min-width: 800px) {
     .home-service-spacing {
-      --service-image-title: 76px;
-      --service-title-text: 22px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .home-service-spacing {
       --service-number-image: 84px;
       --service-image-title: 84px;
       --service-title-text: 34px;
@@ -337,14 +330,7 @@ body {
 
   @media (min-width: 800px) {
     .cta-stack {
-      --label-title-gap: 28px;
-      --title-button-gap: 42px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .cta-stack {
-      --label-title-gap: 34px;
+      --label-title-gap: 24px;
       --title-button-gap: 44px;
     }
   }

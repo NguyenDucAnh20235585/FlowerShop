@@ -14,6 +14,36 @@ import customFloralConceptsMobile from "../../assets/Images/Gallery/custom-flora
 import customFloralConceptsTablet from "../../assets/Images/Gallery/custom-floral-concepts-gallery-tablet.webp"
 import customFloralConceptsDesktop from "../../assets/Images/Gallery/custom-floral-concepts-gallery-desktop.webp"
 
+const SERVICES = [
+    {
+        title: "FLORAL INSTALLATIONS",
+        description:
+            "We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events.",
+        mobileImage: floralInstallationsMobile,
+        tabletImage: floralInstallationsTablet,
+        desktopImage: floralInstallationsDesktop,
+        alt: "Person making bouquet",
+    },
+    {
+        title: "NATIVE PLANT ARRANGEMENTS",
+        description:
+            "Our selection of locally sourced flora brings natural resilience and effortless elegance to your home.",
+        mobileImage: nativePlantArrangementsMobile,
+        tabletImage: nativePlantArrangementsTablet,
+        desktopImage: nativePlantArrangementsDesktop,
+        alt: "Person making bouquet",
+    },
+    {
+        title: "CUSTOM\u00A0FLORAL CONCEPTS",
+        description:
+            "Your vision, our blooms. We build arrangements that are both personal and exquisitely simple.",
+        mobileImage: customFloralConceptsMobile,
+        tabletImage: customFloralConceptsTablet,
+        desktopImage: customFloralConceptsDesktop,
+        alt: "Pink tulips",
+    },
+]
+
 export function GalleryPage() {
     return (
         <>
@@ -47,14 +77,14 @@ export function GalleryPage() {
             >
                 <p
                     className="
-        heading-3
-        mb-10
-        text-muted
-        tablet:mb-[30px]
-        desktop:mb-0
-        desktop:pt-[10px]
-        desktop:text-black
-    "
+                        heading-3
+                        mb-10
+                        text-muted
+                        tablet:mb-[30px]
+                        desktop:mb-0
+                        desktop:pt-[10px]
+                        desktop:text-black
+                    "
                 >
                     SERVICES
                 </p>
@@ -67,40 +97,20 @@ export function GalleryPage() {
                         divide-black/60
                     "
                 >
-                    <GalleryServiceSection
-                        title="FLORAL INSTALLATIONS"
-                        description="We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events."
-                        mobileImage={floralInstallationsMobile}
-                        tabletImage={floralInstallationsTablet}
-                        desktopImage={floralInstallationsDesktop}
-                        alt="Person making Bouquette"
-                    />
-
-                    <GalleryServiceSection
-                        title="NATIVE PLANT ARRANGEMENTS"
-                        description="Our selection of locally sourced flora brings natural resilience and effortless elegance to your home."
-                        mobileImage={nativePlantArrangementsMobile}
-                        tabletImage={nativePlantArrangementsTablet}
-                        desktopImage={nativePlantArrangementsDesktop}
-                        alt="Person making Bouquette"
-                    />
-
-                    <GalleryServiceSection
-                        title={"CUSTOM\u00A0FLORAL CONCEPTS"}
-                        description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple."
-                        mobileImage={customFloralConceptsMobile}
-                        tabletImage={customFloralConceptsTablet}
-                        desktopImage={customFloralConceptsDesktop}
-                        alt="Pink tulips"
-                    />
+                    {SERVICES.map((service) => (
+                        <GalleryServiceSection
+                            key={service.title}
+                            {...service}
+                        />
+                    ))}
                 </div>
             </section>
 
             <WorkWithUs
                 className="
-        pt-[114px]
-        pb-[150px]
-    "
+                    pt-[114px]
+                    pb-[150px]
+                "
                 textClassName="gallery-work-textbox"
             />
         </>

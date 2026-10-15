@@ -108,6 +108,7 @@ const FLOWERS = [
         mobileImage: stillWatersMobile,
         tabletImage: stillWatersTablet,
         desktopImage: stillWatersDesktop,
+        tabletWide: true,
     },
 ]
 
@@ -137,7 +138,6 @@ export function GalleryGrid() {
                         heading-3
                         mb-11
                         text-muted
-                        tablet:text-[14px]
                         desktop:mb-0
                         desktop:w-[170.01px]
                     "
@@ -154,14 +154,13 @@ export function GalleryGrid() {
                         tablet:grid-cols-2
                         tablet:gap-y-16
                         desktop:grid-cols-[repeat(3,330px)]
-                        desktop:gap-y-16
                     "
                 >
-                    {FLOWERS.map((flower, index) => (
+                    {FLOWERS.map((flower) => (
                         <article
                             key={flower.name}
                             className={
-                                index === FLOWERS.length - 1
+                                flower.tabletWide
                                     ? "tablet:col-span-2 desktop:col-span-1"
                                     : ""
                             }
@@ -191,7 +190,7 @@ export function GalleryGrid() {
                                 }}
                                 tablet={{
                                     src: flower.tabletImage,
-                                    width: index === FLOWERS.length - 1 ? 1520 : 740,
+                                    width: flower.tabletWide ? 1520 : 740,
                                     height: 637,
                                 }}
                                 desktop={{
@@ -200,16 +199,19 @@ export function GalleryGrid() {
                                     height: 637,
                                 }}
                                 alt={flower.alt}
-                                className="h-[358.33px]
-                                w-full
-                                overflow-hidden
-    rounded-[20px]
-                                [&>img]:h-full
-                                [&>img]:object-cover
+                                className="
+                                    h-[358.33px]
+                                    w-full
+                                    rounded-[20px]
+                                    [&>img]:h-full
+                                    [&>img]:object-cover
 
-                                tablet:h-auto
-                                tablet:[&>img]:h-auto"
-                                loading="lazy"
+                                    tablet:h-auto
+                                    tablet:rounded-[24px]
+                                    tablet:[&>img]:h-auto
+
+                                    desktop:rounded-[28px]
+                                "
                             />
                         </article>
                     ))}

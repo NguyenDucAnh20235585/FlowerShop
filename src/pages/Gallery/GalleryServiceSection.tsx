@@ -20,22 +20,17 @@ export function GalleryServiceSection({
     return (
         <section
             className="
-                pt-0
                 pb-[70px]
                 tablet:grid
                 tablet:grid-cols-[370px_370px]
                 tablet:items-start
                 tablet:gap-5
                 desktop:grid-cols-[488.11px_488.11px]
-                desktop:gap-5
             "
         >
             <div
                 className="
-                    pb-0
                     pt-[34px]
-                    tablet:pr-0
-                    desktop:pr-0
                 "
             >
                 <h2 className="heading-1 gallery-service-heading">
@@ -84,7 +79,6 @@ export function GalleryServiceSection({
                 rounded-[20px]
                 tablet:mt-[30px]
                 tablet:rounded-[24px]
-                desktop:mt-[30px]
                 desktop:rounded-[28px]
                 "
             />

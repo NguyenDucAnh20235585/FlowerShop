@@ -28,12 +28,14 @@ export function StorySection() {
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
                     tablet:gap-x-5
-                    desktop:grid-cols-[125px_minmax(0,1fr)]
+                    desktop:grid-cols-[152.32px_1047.68px]
+                    desktop:mx-10
+                    desktop:gap-x-0
                 "
             >
 
                 <div className="tablet:col-start-2">
-                    <h2 className="heading-2 max-w-[980px]">
+                    <h2 className="heading-2 max-w-[980px] desktop:max-w-none">
                         Our Blooms was founded in honor of Lily Smith’s loving
                         aunts, Teresa and Beth.
                     </h2>
@@ -48,7 +50,16 @@ export function StorySection() {
                             tablet:gap-5
                         "
                     >
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                        <div
+                            className="
+        overflow-hidden
+        rounded-[20px]
+        tablet:rounded-[28px]
+        desktop:h-[400px]
+        desktop:[&>img]:h-full
+        desktop:[&>img]:object-cover
+    "
+                        >
                             <ImageView
                                 mobile={{
                                     src: about01Mobile,
@@ -70,7 +81,16 @@ export function StorySection() {
                             />
                         </div>
 
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                        <div
+                            className="
+        overflow-hidden
+        rounded-[20px]
+        tablet:rounded-[28px]
+        desktop:h-[400px]
+        desktop:[&>img]:h-full
+        desktop:[&>img]:object-cover
+    "
+                        >
                             <ImageView
                                 mobile={{
                                     src: about02Mobile,
@@ -92,7 +112,16 @@ export function StorySection() {
                             />
                         </div>
 
-                        <div className="overflow-hidden rounded-[20px] tablet:rounded-[28px]">
+                        <div
+                            className="
+        overflow-hidden
+        rounded-[20px]
+        tablet:rounded-[28px]
+        desktop:h-[400px]
+        desktop:[&>img]:h-full
+        desktop:[&>img]:object-cover
+    "
+                        >
                             <ImageView
                                 mobile={{
                                     src: about03Mobile,
@@ -124,7 +153,9 @@ export function StorySection() {
                     tablet:grid
                     tablet:grid-cols-[18%_minmax(0,1fr)]
                     tablet:gap-x-5
-                    desktop:grid-cols-[125px_minmax(0,1fr)]
+                    desktop:grid-cols-[152.32px_1047.68px]
+                    desktop:mx-10
+                    desktop:gap-x-0
                 "
             >
 

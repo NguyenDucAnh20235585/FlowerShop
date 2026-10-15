@@ -1,0 +1,75 @@
+ABOUT — DESKTOP
+
+Rule:
+[BOX]  = giữ nguyên số Figma
+[ZONE] = số Figma + 4px
+
+
+1. HEADER - same as Home & Gallery
+Header width & height: [BOX]
+Left edge → logo: [BOX]
+Gallery ↔ About: [BOX]
+About ↔ Contact: [BOX]
+Right edge → Contact: [BOX]
+
+
+2. PAGE TITLE
+Header bottom → ABOUT: 44 + 4 [ZONE]
+ABOUT width & height: 820.09 x 55 [BOX]
+
+
+3. OUR STORY / OWNER INTRO
+
+ABOUT bottom → intro row top: 80 + 4 [ZONE]
+
+Left edge → OUR STORY: 40 [BOX]
+OUR STORY width & height: 152.32 x 20 [BOX]
+
+OUR STORY → portrait: 0 [BOX]
+Portrait width & height: 446.01 x 500 [BOX]
+
+Portrait → LILY SMITH block: 20 [BOX]
+LILY SMITH / Owner block width & height: 95 x 46 [BOX]
+
+
+4. FOUNDED SECTION
+
+Portrait bottom → founded heading: 70 + 4 [ZONE]
+
+Founded heading width & height: 1047.68 x 88 [BOX]
+
+Founded heading → image row: 70 + 4 [ZONE]
+
+Image 1 width & height: 335.89 x 400 [BOX]
+Image 2 width & height: 335.89 x 400 [BOX]
+Image 3 width & height: 335.89 x 400 [BOX]
+
+Gap image 1 ↔ 2: 20 [BOX]
+Gap image 2 ↔ 3: 20 [BOX]
+
+
+5. STORY TEXT
+
+Image row bottom → first paragraph: 70 + 4 [ZONE]
+
+Paragraph block 1 & 2 width & height: 600 x 408 [BOX]
+
+Paragraph 1 → Paragraph 2: 24 + 4 [ZONE]
+
+Paragraph 2 → large image: 70 + 4 [ZONE]
+
+Large image width & height: 1047.68 x 400 [BOX]
+
+Image -> Paragraph 3: 70 + 4 [ZONE]
+
+Paragraph 3 width & height: 600 x 238 [BOX]
+
+Paragraph 3 → button: 70 + 4 [ZONE]
+
+Button → footer: 180 [BOX]
+
+7. FOOTER - same as Home & Gallery
+
+Footer width & height: [BOX]
+Footer bottom → MIAMI: [BOX]
+Footer bottom → CONTACT: [BOX]

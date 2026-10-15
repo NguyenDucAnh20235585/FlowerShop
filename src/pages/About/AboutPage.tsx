@@ -9,13 +9,11 @@ export function AboutPage() {
         mx-[4%]
         pt-10
         pb-[55px]
-
         tablet:mx-[3%]
         tablet:pt-[45px]
         tablet:pb-[75px]
-
-        desktop:pt-[55px]
-        desktop:pb-[90px]
+        desktop:pt-12
+        desktop:pb-21
     "
             >
                 <h1 className="heading-1">

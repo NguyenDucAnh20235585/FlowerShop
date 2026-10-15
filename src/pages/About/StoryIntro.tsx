@@ -16,8 +16,10 @@ export function StoryIntro() {
                 tablet:items-start
                 tablet:gap-x-5
                 tablet:pb-20
-                desktop:grid-cols-[125px_460px_minmax(0,1fr)]
-                desktop:pb-25
+                desktop:mx-10
+                desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
+                desktop:gap-x-0
+                desktop:pb-[74px]
             "
         >
             <p className="heading-3 text-muted">
@@ -30,6 +32,8 @@ export function StoryIntro() {
                     overflow-hidden
                     rounded-[20px]
                     tablet:rounded-[28px]
+                    desktop:h-[500px]
+                    desktop:w-[446.01px]        
                 "
             >
                 <ImageView
@@ -58,6 +62,7 @@ export function StoryIntro() {
                     mt-[18px]
                     tablet:mt-0
                     tablet:pt-[5px]
+                    desktop:ml-5
                 "
             >
                 <h2

@@ -13,7 +13,6 @@ export function StoryIntro() {
                 tablet:mx-5
                 tablet:grid
                 tablet:grid-cols-[152.32px_315.92px_minmax(0,1fr)]
-                tablet:gap-x-0
                 tablet:items-start
                 desktop:mx-10
                 desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
@@ -31,8 +30,7 @@ export function StoryIntro() {
                     rounded-[20px]
                     tablet:mt-0
                     tablet:rounded-[28px]
-                    desktop:h-[500px]
-                    desktop:w-[446.01px]        
+                    desktop:h-[500px]     
                 "
             >
                 <ImageView

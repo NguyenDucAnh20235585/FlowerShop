@@ -7,19 +7,19 @@ import footerDesktop from "../assets/Images/Footer/footer-desktop.webp"
 
 export function Footer() {
     const { pathname } = useLocation()
-    const isGallery = pathname === "/gallery"
+    const useWideFooter =
+        pathname === "/gallery" || pathname === "/about"
     return (
         <footer id="contact">
             <div
                 className={`
         relative
         mx-auto
-        mt-0
         h-[573px]
         overflow-hidden
         rounded-t-[30px]
 
-        ${isGallery
+        ${useWideFooter
                         ? "w-[311px] tablet:w-[680px]"
                         : "w-[263px] tablet:w-[80%] tablet:max-w-[640px]"
                     }

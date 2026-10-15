@@ -23,7 +23,7 @@ body {
 
   .about-story-textbox {
     width: 100%;
-    max-width: 375px;
+    max-width: 330px;
   }
 
   @media (min-width: 800px) {

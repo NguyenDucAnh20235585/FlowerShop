@@ -38,7 +38,7 @@ export function GalleryServiceSection({
                     desktop:pr-0
                 "
             >
-                <h2 className="heading-1">
+                <h2 className="heading-1 gallery-service-heading">
                     {title}
                 </h2>
 

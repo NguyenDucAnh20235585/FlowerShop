@@ -323,4 +323,8 @@ body {
   .flower-wheel-scroll::-webkit-scrollbar {
     display: none;
   }
+
+  .gallery-service-heading {
+    line-height: 1.4;
+  }
 }

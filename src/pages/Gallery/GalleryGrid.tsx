@@ -202,6 +202,8 @@ export function GalleryGrid() {
                                 alt={flower.alt}
                                 className="h-[358.33px]
                                 w-full
+                                overflow-hidden
+    rounded-[20px]
                                 [&>img]:h-full
                                 [&>img]:object-cover
 

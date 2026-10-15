@@ -122,14 +122,14 @@ export function GalleryGrid() {
                 tablet:mt-20
                 tablet:pb-[90px]
                 desktop:mx-[3%]
-                desktop:mt-20
-                desktop:pb-25
+                desktop:mt-21
+                desktop:pb-0
             "
         >
             <div
                 className="
                     desktop:grid
-                    desktop:grid-cols-[150px_minmax(0,1fr)]
+                    desktop:grid-cols-[150px_1030px]
                     desktop:gap-x-5
                 "
             >
@@ -141,6 +141,7 @@ export function GalleryGrid() {
                         tablet:mb-[45px]
                         tablet:text-[14px]
                         desktop:mb-0
+                        desktop:w-[170.01px]
                     "
                 >
                     SEASONAL ARRANGEMENTS
@@ -154,8 +155,8 @@ export function GalleryGrid() {
                         gap-y-[18px]
                         tablet:grid-cols-2
                         tablet:gap-y-15
-                        desktop:grid-cols-3
-                        desktop:gap-y-[55px]
+                        desktop:grid-cols-[repeat(3,330px)]
+                        desktop:gap-y-16
                     "
                 >
                     {FLOWERS.map((flower, index) => (
@@ -173,7 +174,7 @@ export function GalleryGrid() {
                                     flex
                                     items-baseline
                                     gap-[6px]
-                                    desktop:mb-[14px]
+                                    desktop:mb-[19px]
                                 "
                             >
                                 <h2 className="caption-2 whitespace-nowrap">

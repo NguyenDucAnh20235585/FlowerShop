@@ -1,0 +1,68 @@
+GALLERY — DESKTOP 1280px
+
+Rule:
+[BOX]  = giữ nguyên số Figma
+[ZONE] = số Figma + 4px
+
+1. HEADER - same as home, i guess
+Header width & height: [BOX]
+Left edge → logo: [BOX]
+Gallery ↔ About: [BOX]
+About ↔ Contact: [BOX]
+Right edge → Contact: [BOX]
+
+
+2. GALLERY INTRO
+Header bottom → heading: 44 [BOX]
+Heading width & height: 820.00 x 55 [BOX]
+Heading → paragraph: 80 + 4 [ZONE]
+Paragraph width & height: 170.01 x 40 [BOX]
+Paragraph → first grid/image: 0 [BOX]
+
+3. GALLERY GRID
+Grid width & height: 1030x1195 [BOX] (including paragraph and spaces from still waters to the (so called end border))
+Image/card width & height: 330 x 318.33 [BOX]
+Column gap: 20 [BOX] k/c giua cac cot
+Row gap: 60 + 4 [ZONE] k/c giua cac hang
+Image → caption/title: 15 + 4 [ZONE]
+
+4. GALLERY SERVICES — DESKTOP
+
+SERVICE SECTION
+Last gallery grid row → services: 200 [BOX]
+
+Left edge → SERVICES: 40 [BOX]
+SERVICES width & height: 203.78 x 20 [BOX]
+
+
+SERVICE 1 — FLORAL INSTALLATIONS
+
+Top border → heading: 30 + 4 [ZONE]
+Heading width & height: 488.11 x 110 [BOX]
+
+Heading → paragraph: 24 + 4 [ZONE]
+Paragraph width & height: 488.11 x 48 [BOX]
+
+Top border → image: 30 [BOX]
+Image width & height: 488.11 x 421 [BOX]
+
+Text column ↔ image column: 20 [BOX]
+
+Image bottom → bottom border: 70 [BOX]
+Paragraph bottom → bottom border: 309 [BOX]
+
+5. GALLERY SERVICE 2 - same as 1
+
+6. GALLERY SERVICE 3 - same as 1
+
+7. WORK WITH US
+image -> work with us: 180 + 4 [ZONE]
+WORK WITH US → heading: 20 + 4 [ZONE]
+Heading width & height: 400 x 176 [BOX]
+Heading → ABOUT US button: 40 + 4 [ZONE]
+Button → footer: 150 [BOX]
+
+8. FOOTER - same as desktop home
+Footer width & height: [BOX]
+Footer bottom → MIAMI: [BOX]
+Footer bottom → CONTACT: [BOX]

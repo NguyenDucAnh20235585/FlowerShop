@@ -4,7 +4,6 @@ Rule:
 [BOX]  = giữ nguyên số Figma
 [ZONE] = số Figma + 4px
 
-
 1. HEADER
 Header width & height: 295 x 70 [BOX]
 Left edge → logo: 56 [BOX]
@@ -25,18 +24,15 @@ Heading width & height: 215 x 104 [BOX]
 Heading → ABOUT US button: 40 + 4 [ZONE]
 Button → FlowerWheel: 120 [BOX]
 
-
 4. FLOWER WHEEL
 FlowerWheel width & height: 295 x 200 [BOX]
 Card width & height: 200.21 x 200.21 [BOX]
 Gap between cards: 13.35 [BOX]
 FlowerWheel bottom → WHAT WE DO: 37.39 + 4 [ZONE]
 
-
 5. WHAT WE DO
 WHAT WE DO → paragraph: 40 + 4 [ZONE]
 Paragraph → bottom border: 40 [BOX]
-
 
 6. SERVICE 1 — FLORAL INSTALLATIONS
 Border/top → number 1: 100 + 4 [ZONE]

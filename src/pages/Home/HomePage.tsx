@@ -14,6 +14,33 @@ import workDesktop from "../../assets/Images/Home/work-with-us-desktop.webp"
 import workTablet from "../../assets/Images/Home/work-with-us-tablet.webp"
 import workMobile from "../../assets/Images/Home/work-with-us-mobile.webp"
 
+const HOME_SERVICES = [
+    {
+        number: 1,
+        title: "FLORAL INSTALLATIONS",
+        description: "Living art for homes, businesses, and events.",
+        image: floralInstallation,
+        alt: "Person with bouquet of flowers",
+        className: "pt-26",
+    },
+    {
+        number: 2,
+        title: "NATIVE PLANT ARRANGEMENTS",
+        description:
+            "Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations.",
+        image: nativePlant,
+        alt: "Person making a bouquet of flowers",
+    },
+    {
+        number: 3,
+        title: "CUSTOM FLORAL CONCEPTS",
+        description:
+            "Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations.",
+        image: customFloral,
+        alt: "Pink tulips",
+    },
+]
+
 export function HomePage() {
     return (
         <>
@@ -25,30 +52,12 @@ export function HomePage() {
 
             <WhatWeDo />
 
-            <HomeServiceSection
-                number={1}
-                title="FLORAL INSTALLATIONS"
-                description="Living art for homes, businesses, and events."
-                image={floralInstallation}
-                alt="Person with Bouquette of flowers"
-                className="pt-26"
-            />
-
-            <HomeServiceSection
-                number={2}
-                title="NATIVE PLANT ARRANGEMENTS"
-                description="Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
-                image={nativePlant}
-                alt="Person making a Bouquette of flowers"
-            />
-
-            <HomeServiceSection
-                number={3}
-                title="CUSTOM FLORAL CONCEPTS"
-                description="Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations."
-                image={customFloral}
-                alt="Pink tulips"
-            />
+            {HOME_SERVICES.map((service) => (
+                <HomeServiceSection
+                    key={service.number}
+                    {...service}
+                />
+            ))}
 
             <WorkWithUs
                 image={{

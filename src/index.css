@@ -39,14 +39,14 @@ body {
   }
 
   .about-spacing {
-    --about-founded-images: 24px;
-    --about-founded-story: 55px;
-    --about-story-paragraph: 26px;
-    --about-story-image: 35px;
-    --about-image-ending: 35px;
+    --about-founded-images: 74px;
+    --about-founded-story: 74px;
+    --about-story-paragraph: 28px;
+    --about-story-image: 74px;
+    --about-image-ending: 74px;
     --about-ending-paragraph: 26px;
-    --about-ending-button: 35px;
-    --about-ending-footer: 160px;
+    --about-ending-button: 74px;
+    --about-ending-footer: 180px;
   }
 
   @media (min-width: 800px) {

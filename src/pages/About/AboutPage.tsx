@@ -6,12 +6,13 @@ export function AboutPage() {
         <>
             <section
                 className="
-        mx-[4%]
-        pt-10
-        pb-[55px]
+        mx-4
+        pt-15
+        pb-15
         tablet:mx-5
         tablet:pt-12
         tablet:pb-21
+        desktop:mx-10
     "
             >
                 <h1 className="heading-1">

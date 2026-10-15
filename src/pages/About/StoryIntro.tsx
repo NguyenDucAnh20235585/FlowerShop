@@ -8,13 +8,12 @@ export function StoryIntro() {
     return (
         <section
             className="
-                mx-[4%]
-                pb-20
+                mx-4
+                pb-[74px]
                 tablet:mx-5
                 tablet:grid
                 tablet:grid-cols-[152.32px_315.92px_minmax(0,1fr)]
                 tablet:gap-x-0
-                tablet:pb-[74px]
                 tablet:items-start
                 desktop:mx-10
                 desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
@@ -26,9 +25,11 @@ export function StoryIntro() {
 
             <div
                 className="
+                    mt-[54px]
                     w-full
                     overflow-hidden
                     rounded-[20px]
+                    tablet:mt-0
                     tablet:rounded-[28px]
                     desktop:h-[500px]
                     desktop:w-[446.01px]        
@@ -57,7 +58,7 @@ export function StoryIntro() {
 
             <div
                 className="
-                    mt-[18px]
+                    mt-6
                     tablet:mt-0
                     tablet:pt-[5px]
                     tablet:ml-5

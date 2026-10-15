@@ -29,9 +29,9 @@ LILY SMITH / Owner block width & height: 95 x 45 [BOX]
 
 4. FOUNDED SECTION
 
-Portrait bottom → founded heading: ___ + 4 [ZONE]
+Portrait bottom → founded heading: 70 + 4 [ZONE]
 
-Founded heading width & height: [BOX]
+Founded heading width & height: 607.68 x 120 [BOX]
 
 Founded heading → image row: 70 + 4 [ZONE]
 
@@ -47,33 +47,25 @@ Gap image 2 ↔ 3: 20 [BOX]
 
 Image row bottom → Paragraph 1: 70 + 4 [ZONE]
 
-Paragraph 1 width & height: [BOX]
+Paragraph 1 & 2 width & height: 600 x 310 [BOX]
 
-Paragraph 1 → Paragraph 2: ___ + 4 [ZONE]
+Paragraph 1 → Paragraph 2: 24 + 4 [ZONE]
 
-Paragraph 2 width & height: [BOX]
-
-Paragraph 2 → large image: ___ + 4 [ZONE]
-
-Large image width & height: [BOX]
+Large image width & height: [BOX]: 607.68 x 400
 
 
 6. ENDING
 
-Large image → Paragraph 3: ___ + 4 [ZONE]
+Large image → Paragraph 3: 70 + 4 [ZONE]
 
-Paragraph 3 width & height: [BOX]
+Paragraph 3 width & height: 600 x 186 [BOX]
 
-Paragraph 3 → final paragraph: ___ + 4 [ZONE]
+Final paragraph → BOOK A CONSULTATION: 70 + 4 [ZONE]
 
-Final paragraph width & height: [BOX]
-
-Final paragraph → BOOK A CONSULTATION: ___ + 4 [ZONE]
-
-Button → footer: [BOX]
+Button → footer: 180 [BOX]
 
 
-7. FOOTER
+7. FOOTER - same as gallery
 
 Footer width & height: [BOX]
 Footer bottom → MIAMI: [BOX]

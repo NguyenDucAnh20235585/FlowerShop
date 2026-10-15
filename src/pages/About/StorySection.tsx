@@ -22,7 +22,7 @@ export function StorySection() {
         <div className="about-spacing">
             <section
                 className="
-                    mx-[4%]
+                    mx-4
                     pb-[var(--about-founded-story)]
                     tablet:mx-5
                     tablet:grid
@@ -44,20 +44,26 @@ export function StorySection() {
                             mt-[var(--about-founded-images)]
                             grid
                             grid-cols-1
-                            gap-[10px]
+                            gap-5
                             tablet:grid-cols-3
                             tablet:gap-5
                         "
                     >
                         <div
                             className="
-        overflow-hidden
-        rounded-[20px]
-        tablet:rounded-[28px]
-        desktop:h-[400px]
-        desktop:[&>img]:h-full
-        desktop:[&>img]:object-cover
-    "
+    h-[400px]
+    overflow-hidden
+    rounded-[20px]
+    [&>img]:h-full
+    [&>img]:object-cover
+
+    tablet:h-auto
+    tablet:rounded-[28px]
+    tablet:[&>img]:h-auto
+
+    desktop:h-[400px]
+    desktop:[&>img]:h-full
+"
                         >
                             <ImageView
                                 mobile={{
@@ -82,13 +88,19 @@ export function StorySection() {
 
                         <div
                             className="
-        overflow-hidden
-        rounded-[20px]
-        tablet:rounded-[28px]
-        desktop:h-[400px]
-        desktop:[&>img]:h-full
-        desktop:[&>img]:object-cover
-    "
+    h-[400px]
+    overflow-hidden
+    rounded-[20px]
+    [&>img]:h-full
+    [&>img]:object-cover
+
+    tablet:h-auto
+    tablet:rounded-[28px]
+    tablet:[&>img]:h-auto
+
+    desktop:h-[400px]
+    desktop:[&>img]:h-full
+"
                         >
                             <ImageView
                                 mobile={{
@@ -113,13 +125,19 @@ export function StorySection() {
 
                         <div
                             className="
-        overflow-hidden
-        rounded-[20px]
-        tablet:rounded-[28px]
-        desktop:h-[400px]
-        desktop:[&>img]:h-full
-        desktop:[&>img]:object-cover
-    "
+    h-[400px]
+    overflow-hidden
+    rounded-[20px]
+    [&>img]:h-full
+    [&>img]:object-cover
+
+    tablet:h-auto
+    tablet:rounded-[28px]
+    tablet:[&>img]:h-auto
+
+    desktop:h-[400px]
+    desktop:[&>img]:h-full
+"
                         >
                             <ImageView
                                 mobile={{
@@ -147,7 +165,7 @@ export function StorySection() {
 
             <section
                 className="
-                    mx-[4%]
+                    mx-4
                     tablet:mx-5
                     tablet:grid
                     tablet:grid-cols-[152.32px_607.68px]

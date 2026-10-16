@@ -1,5 +1,5 @@
 type HomeServiceSectionProps = {
-    number?: number
+    number: number
     title: string
     description: string
     image: string

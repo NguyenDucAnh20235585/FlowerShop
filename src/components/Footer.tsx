@@ -25,7 +25,6 @@ export function Footer() {
                     }
 
         tablet:h-[579px]
-
         desktop:h-[582px]
         desktop:w-[87.5%]
         desktop:max-w-[1120px]

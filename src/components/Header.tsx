@@ -134,6 +134,7 @@ export function Header() {
               src={isMenuOpen ? closeIcon : menuIcon}
               width={60}
               height={60}
+              alt=""
               className="block h-auto w-6"
             />
           </button>

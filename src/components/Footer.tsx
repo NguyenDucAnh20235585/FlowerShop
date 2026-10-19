@@ -7,7 +7,7 @@ import footerDesktop from "../assets/Images/Footer/footer-desktop.webp";
 
 export function Footer() {
   const { pathname } = useLocation();
-  const useWideFooter = pathname === "/gallery" || pathname === "/about";
+  const useWideFooter = pathname !== "/";
   return (
     <footer id="contact">
       <div

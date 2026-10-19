@@ -4,8 +4,8 @@ type GalleryServiceSectionProps = {
   title: string;
   description: string;
   mobileImage: string;
-  tabletImage?: string;
-  desktopImage?: string;
+  tabletImage: string;
+  desktopImage: string;
   alt: string;
 };
 
@@ -51,24 +51,16 @@ export function GalleryServiceSection({
           width: 686,
           height: 592,
         }}
-        tablet={
-          tabletImage
-            ? {
-                src: tabletImage,
-                width: 740,
-                height: 1237,
-              }
-            : undefined
-        }
-        desktop={
-          desktopImage
-            ? {
-                src: desktopImage,
-                width: 977,
-                height: 842,
-              }
-            : undefined
-        }
+        tablet={{
+          src: tabletImage,
+          width: 740,
+          height: 1237,
+        }}
+        desktop={{
+          src: desktopImage,
+          width: 977,
+          height: 842,
+        }}
         loading="lazy"
         alt={alt}
         className="

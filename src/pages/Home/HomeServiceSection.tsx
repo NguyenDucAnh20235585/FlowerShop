@@ -1,23 +1,23 @@
 type HomeServiceSectionProps = {
-    number: number
-    title: string
-    description: string
-    image: string
-    alt: string
-    className?: string
-}
+  number: number;
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+  className?: string;
+};
 
 export function HomeServiceSection({
-    number,
-    title,
-    description,
-    image,
-    alt,
-    className = "pt-11",
+  number,
+  title,
+  description,
+  image,
+  alt,
+  className,
 }: HomeServiceSectionProps) {
-    return (
-        <section
-            className={`
+  return (
+    <section
+      className={`
                 home-service-spacing
                 mx-[16%]
                 flex
@@ -31,51 +31,49 @@ export function HomeServiceSection({
                 desktop:mx-[6%]
                 ${className}
             `}
-        >
-            <p className="heading-1">
-                {number}
-            </p>
+    >
+      <p className="heading-1">{number}</p>
 
-            <div
-                className="
+      <div
+        className="
                     mt-[var(--service-number-image)]
                     aspect-square
                     w-[145.14px]
                     overflow-hidden
                     rounded-[28px]
                 "
-            >
-                <img
-                    src={image}
-                    alt={alt}
-                    width={432}
-                    height={432}
-                    loading="lazy"
-                    className="h-full w-full object-cover"
-                />
-            </div>
+      >
+        <img
+          src={image}
+          alt={alt}
+          width={432}
+          height={432}
+          loading="lazy"
+          className="h-full w-full object-cover"
+        />
+      </div>
 
-            <h2
-                className="
+      <h2
+        className="
                     heading-1
                     home-service-heading
                     mx-auto
                     mt-[var(--service-image-title)]
                 "
-            >
-                {title}
-            </h2>
+      >
+        {title}
+      </h2>
 
-            <p
-                className="
+      <p
+        className="
                     paragraph-1
                     home-service-textbox
                     mx-auto
                     mt-[var(--service-title-text)]
                 "
-            >
-                {description}
-            </p>
-        </section>
-    )
+      >
+        {description}
+      </p>
+    </section>
+  );
 }

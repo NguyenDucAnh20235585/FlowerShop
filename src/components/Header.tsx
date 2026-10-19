@@ -25,25 +25,41 @@ export function Header() {
         setIsMenuOpen((current) => !current)
     }
 
-    useEffect(() => {
-        if (!isMenuOpen) return
+    
+useEffect(() => {
+    if (!isMenuOpen) return
 
-        const previousOverflow = document.body.style.overflow
+    const previousOverflow = document.body.style.overflow
+    const mq = window.matchMedia("(min-width: 800px)")
 
-        const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Escape") {
-                setIsMenuOpen(false)
-            }
+    const closeOnTablet = () => {
+        if (mq.matches) {
+            setIsMenuOpen(false)
         }
+    }
 
+    const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === "Escape") {
+            setIsMenuOpen(false)
+        }
+    }
+
+    closeOnTablet()
+
+    if (!mq.matches) {
         document.body.style.overflow = "hidden"
-        document.addEventListener("keydown", handleKeyDown)
+    }
 
-        return () => {
-            document.body.style.overflow = previousOverflow
-            document.removeEventListener("keydown", handleKeyDown)
-        }
-    }, [isMenuOpen])
+    document.addEventListener("keydown", handleKeyDown)
+    mq.addEventListener("change", closeOnTablet)
+
+    return () => {
+        document.body.style.overflow = previousOverflow
+        document.removeEventListener("keydown", handleKeyDown)
+        mq.removeEventListener("change", closeOnTablet)
+    }
+}, [isMenuOpen])
+
 
     return (
         <header className="sticky top-0 z-50 bg-white">

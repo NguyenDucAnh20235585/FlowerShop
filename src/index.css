@@ -51,27 +51,13 @@ body {
 
   @media (min-width: 800px) {
     .about-spacing {
-      --about-founded-images: 74px;
-      --about-founded-story: 74px;
-      --about-story-paragraph: 28px;
-      --about-story-image: 74px;
-      --about-image-ending: 74px;
       --about-ending-paragraph: 32px;
-      --about-ending-button: 74px;
-      --about-ending-footer: 180px;
     }
   }
 
   @media (min-width: 1280px) {
     .about-spacing {
-      --about-founded-images: 74px;
-      --about-founded-story: 74px;
-      --about-story-paragraph: 28px;
-      --about-story-image: 74px;
-      --about-image-ending: 74px;
       --about-ending-paragraph: 38px;
-      --about-ending-button: 74px;
-      --about-ending-footer: 180px;
     }
   }
 

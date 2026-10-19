@@ -83,7 +83,7 @@ export function Header() {
                                 width: 384,
                                 height: 49,
                             }}
-                            alt=""
+                            alt="Our Blooms homepage"
                             className="
         w-10
         tablet:w-50

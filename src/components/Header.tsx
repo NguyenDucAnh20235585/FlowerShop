@@ -1,83 +1,75 @@
-import { ImageView } from "./ImageView"
-import { useState, useEffect } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { ImageView } from "./ImageView";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import logoDesktop from "../assets/Images/Header/our-blooms.png"
-import logoMobile from "../assets/Images/Header/o-b.png"
-import menuIcon from "../assets/Images/Header/hamburger-icon.png"
-import closeIcon from "../assets/Images/Header/cancel-icon.png"
+import logoDesktop from "../assets/Images/Header/our-blooms.png";
+import logoMobile from "../assets/Images/Header/o-b.png";
+import menuIcon from "../assets/Images/Header/hamburger-icon.png";
+import closeIcon from "../assets/Images/Header/cancel-icon.png";
 
 const NAV_LINKS = [
-    { to: "/gallery", label: "GALLERY" },
-    { to: "/about", label: "ABOUT" },
-]
+  { to: "/gallery", label: "GALLERY" },
+  { to: "/about", label: "ABOUT" },
+];
 
 export function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const { pathname } = useLocation()
-    const isHome = pathname === "/"
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
-    const closeMenu = () => {
-        setIsMenuOpen(false)
-    }
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
-    const toggleMenu = () => {
-        setIsMenuOpen((current) => !current)
-    }
+  const toggleMenu = () => {
+    setIsMenuOpen((current) => !current);
+  };
 
-    
-useEffect(() => {
-    if (!isMenuOpen) return
+  useEffect(() => {
+    if (!isMenuOpen) return;
 
-    const previousOverflow = document.body.style.overflow
-    const mq = window.matchMedia("(min-width: 800px)")
+    const previousOverflow = document.body.style.overflow;
+    const mq = window.matchMedia("(min-width: 800px)");
 
     const closeOnTablet = () => {
-        if (mq.matches) {
-            setIsMenuOpen(false)
-        }
-    }
+      if (mq.matches) {
+        setIsMenuOpen(false);
+      }
+    };
 
     const handleKeyDown = (event: KeyboardEvent) => {
-        if (event.key === "Escape") {
-            setIsMenuOpen(false)
-        }
-    }
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    };
 
-    closeOnTablet()
+    closeOnTablet();
 
     if (!mq.matches) {
-        document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     }
 
-    document.addEventListener("keydown", handleKeyDown)
-    mq.addEventListener("change", closeOnTablet)
+    document.addEventListener("keydown", handleKeyDown);
+    mq.addEventListener("change", closeOnTablet);
 
     return () => {
-        document.body.style.overflow = previousOverflow
-        document.removeEventListener("keydown", handleKeyDown)
-        mq.removeEventListener("change", closeOnTablet)
-    }
-}, [isMenuOpen])
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", handleKeyDown);
+      mq.removeEventListener("change", closeOnTablet);
+    };
+  }, [isMenuOpen]);
 
+  return (
+    <header className="sticky top-0 z-50 bg-white">
+      <div
+        className={`
+        ${isHome ? "mx-10" : "mx-4 tablet:mx-5 desktop:mx-10"}
 
-    return (
-        <header className="sticky top-0 z-50 bg-white">
-            <div
-                className={`
-        ${isHome
-                        ? "mx-10"
-                        : "mx-4 tablet:mx-5 desktop:mx-10"
-                    }
-
-        ${isMenuOpen
-                        ? ""
-                        : "border-b border-black/60"
-                    }
+        ${isMenuOpen ? "" : "border-b border-black/60"}
     `}
-            >
-                <div
-                    className="
+      >
+        <div
+          className="
     flex
     h-[70px]
     items-center
@@ -86,79 +78,71 @@ useEffect(() => {
     tablet:h-[82px]
     tablet:px-0
 "
-                >
-                    <Link to="/" onClick={closeMenu}>
-                        <ImageView
-                            mobile={{
-                                src: logoMobile,
-                                width: 78,
-                                height: 29,
-                            }}
-                            tablet={{
-                                src: logoDesktop,
-                                width: 384,
-                                height: 49,
-                            }}
-                            alt="Our Blooms homepage"
-                            className="
+        >
+          <Link to="/" onClick={closeMenu}>
+            <ImageView
+              mobile={{
+                src: logoMobile,
+                width: 78,
+                height: 29,
+              }}
+              tablet={{
+                src: logoDesktop,
+                width: 384,
+                height: 49,
+              }}
+              alt="Our Blooms homepage"
+              className="
         w-10
         tablet:w-50
     "
-                        />
-                    </Link>
+            />
+          </Link>
 
-                    <nav
-                        className="
+          <nav
+            className="
         caption-1
         hidden
         items-center
         gap-10
         tablet:flex
     "
-                    >
-                        {NAV_LINKS.map((link) => (
-                            <Link
-                                key={link.to}
-                                to={link.to}
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
+          >
+            {NAV_LINKS.map((link) => (
+              <Link key={link.to} to={link.to}>
+                {link.label}
+              </Link>
+            ))}
 
-                        <a
-                            href="mailto:hello@figma.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            CONTACT
-                        </a>
+            <a
+              href="mailto:hello@figma.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CONTACT
+            </a>
+          </nav>
 
-                    </nav>
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className="tablet:hidden"
+            aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            <img
+              src={isMenuOpen ? closeIcon : menuIcon}
+              width={60}
+              height={60}
+              className="block h-auto w-6"
+            />
+          </button>
+        </div>
+      </div>
 
-                    <button
-                        type="button"
-                        onClick={toggleMenu}
-                        className="tablet:hidden"
-                        aria-expanded={isMenuOpen}
-                        aria-label={
-                            isMenuOpen
-                                ? "Close menu"
-                                : "Open menu"
-                        }
-                    >
-                        <img
-                            src={isMenuOpen ? closeIcon : menuIcon}
-                            width={60}
-                            height={60}
-                            className="block h-auto w-6"
-                        />
-                    </button>
-                </div>
-            </div>
-
-            {isMenuOpen && (
-                <div
-                    className="
+      {isMenuOpen && (
+        <div
+          className="
                         absolute
                         left-0
                         right-0
@@ -166,9 +150,9 @@ useEffect(() => {
                         bg-white
                         tablet:hidden
                     "
-                >
-                    <nav
-                        className={`
+        >
+          <nav
+            className={`
         caption-1
         ${isHome ? "mx-10" : "mx-4"}
         flex
@@ -181,29 +165,24 @@ useEffect(() => {
         pt-[45px]
         pb-[65px]
     `}
-                    >
-                        {NAV_LINKS.map((link) => (
-                            <Link
-                                key={link.to}
-                                to={link.to}
-                                onClick={closeMenu}
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
+          >
+            {NAV_LINKS.map((link) => (
+              <Link key={link.to} to={link.to} onClick={closeMenu}>
+                {link.label}
+              </Link>
+            ))}
 
-                        <a
-                            href="mailto:hello@figma.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={closeMenu}
-                        >
-                            CONTACT
-                        </a>
-
-                    </nav>
-                </div>
-            )}
-        </header>
-    )
+            <a
+              href="mailto:hello@figma.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              CONTACT
+            </a>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
 }

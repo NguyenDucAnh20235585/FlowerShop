@@ -10,6 +10,7 @@ import closeIcon from "../assets/Images/Header/cancel-icon.png";
 const NAV_LINKS = [
   { to: "/gallery", label: "GALLERY" },
   { to: "/about", label: "ABOUT" },
+  { to: "mailto:hello@figma.com", label: "CONTACT" },
 ];
 
 export function Header() {
@@ -32,15 +33,11 @@ export function Header() {
     const mq = window.matchMedia("(min-width: 800px)");
 
     const closeOnTablet = () => {
-      if (mq.matches) {
-        setIsMenuOpen(false);
-      }
+      if (mq.matches) setIsMenuOpen(false);
     };
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setIsMenuOpen(false);
-      }
+      if (event.key === "Escape") setIsMenuOpen(false);
     };
 
     closeOnTablet();
@@ -63,22 +60,11 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white">
       <div
         className={`
-        ${isHome ? "mx-10" : "mx-4 tablet:mx-5 desktop:mx-10"}
-
-        ${isMenuOpen ? "" : "border-b border-black/60"}
-    `}
+          ${isHome ? "mx-10" : "mx-4 tablet:mx-5 desktop:mx-10"}
+          ${isMenuOpen ? "" : "border-b border-black/60"}
+        `}
       >
-        <div
-          className="
-    flex
-    h-[70px]
-    items-center
-    justify-between
-    px-4
-    tablet:h-[82px]
-    tablet:px-0
-"
-        >
+        <div className="flex h-[70px] items-center justify-between px-4 tablet:h-[82px] tablet:px-0">
           <Link to="/" onClick={closeMenu}>
             <ImageView
               mobile={{
@@ -92,35 +78,22 @@ export function Header() {
                 height: 49,
               }}
               alt="Our Blooms homepage"
-              className="
-        w-10
-        tablet:w-50
-    "
+              className="w-10 tablet:w-50"
             />
           </Link>
 
-          <nav
-            className="
-        caption-1
-        hidden
-        items-center
-        gap-10
-        tablet:flex
-    "
-          >
-            {NAV_LINKS.map((link) => (
-              <Link key={link.to} to={link.to}>
-                {link.label}
-              </Link>
-            ))}
-
-            <a
-              href="mailto:hello@figma.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CONTACT
-            </a>
+          <nav className="caption-1 hidden items-center gap-10 tablet:flex">
+            {NAV_LINKS.map((link) =>
+              link.to.startsWith("mailto:") ? (
+                <a key={link.to} href={link.to}>
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.to} to={link.to}>
+                  {link.label}
+                </Link>
+              ),
+            )}
           </nav>
 
           <button
@@ -132,9 +105,9 @@ export function Header() {
           >
             <img
               src={isMenuOpen ? closeIcon : menuIcon}
+              alt=""
               width={60}
               height={60}
-              alt=""
               className="block h-auto w-6"
             />
           </button>
@@ -142,45 +115,27 @@ export function Header() {
       </div>
 
       {isMenuOpen && (
-        <div
-          className="
-                        absolute
-                        left-0
-                        right-0
-                        top-[70px]
-                        bg-white
-                        tablet:hidden
-                    "
-        >
+        <div className="absolute top-[70px] right-0 left-0 bg-white tablet:hidden">
           <nav
             className={`
-        caption-1
-        ${isHome ? "mx-10" : "mx-4"}
-        flex
-        flex-col
-        items-start
-        gap-[38px]
-        border-b
-        border-black/60
-        px-4
-        pt-[45px]
-        pb-[65px]
-    `}
+              caption-1
+              ${isHome ? "mx-10" : "mx-4"}
+              flex flex-col items-start gap-[38px]
+              border-b border-black/60
+              px-4 pt-[45px] pb-[65px]
+            `}
           >
-            {NAV_LINKS.map((link) => (
-              <Link key={link.to} to={link.to} onClick={closeMenu}>
-                {link.label}
-              </Link>
-            ))}
-
-            <a
-              href="mailto:hello@figma.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-            >
-              CONTACT
-            </a>
+            {NAV_LINKS.map((link) =>
+              link.to.startsWith("mailto:") ? (
+                <a key={link.to} href={link.to} onClick={closeMenu}>
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.to} to={link.to} onClick={closeMenu}>
+                  {link.label}
+                </Link>
+              ),
+            )}
           </nav>
         </div>
       )}

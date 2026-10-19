@@ -119,9 +119,11 @@ export function GalleryGrid() {
                 mx-4
                 mt-15
                 pb-[70px]
+                
                 tablet:mx-5
                 tablet:mt-21
                 tablet:pb-[59px]
+
                 desktop:mx-[3%]
                 desktop:pb-0
             "
@@ -138,6 +140,7 @@ export function GalleryGrid() {
                         heading-3
                         mb-11
                         text-muted
+
                         desktop:mb-0
                         desktop:w-[170.01px]
                     "
@@ -151,8 +154,10 @@ export function GalleryGrid() {
                         grid-cols-1
                         gap-x-5
                         gap-y-6
+
                         tablet:grid-cols-2
                         tablet:gap-y-16
+                        
                         desktop:grid-cols-[repeat(3,330px)]
                     "
                 >

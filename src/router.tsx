@@ -3,6 +3,7 @@ import { AppLayout } from "./AppLayout"
 import { HomePage } from "./pages/Home/HomePage"
 import { GalleryPage } from "./pages/Gallery/GalleryPage"
 import { AboutPage } from "./pages/About/AboutPage"
+import { NotFound } from "./pages/NotFound"
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
                 path: "/about",
                 element: <AboutPage />,
             },
+            {
+                path: "*",
+                element: <NotFound/>,
+            }
         ],
     },
 ])

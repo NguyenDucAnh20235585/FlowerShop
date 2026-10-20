@@ -48,10 +48,9 @@ export function StorySection() {
 
                     tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[152.32px_607.68px]
+                    tablet:grid-cols-[152.32px_minmax(0,1fr)]
 
                     desktop:mx-10
-                    desktop:grid-cols-[152.32px_1047.68px]
                 "
       >
         <div className="tablet:col-start-2">
@@ -73,19 +72,23 @@ export function StorySection() {
               <div
                 key={image.mobile.src}
                 className="
-                                    h-[400px]
-                                    overflow-hidden
-                                    rounded-[20px]
-                                    [&>img]:h-full
-                                    [&>img]:object-cover
+                h-[400px]
+                overflow-hidden
+                rounded-[20px]
 
-                                    tablet:h-auto
-                                    tablet:rounded-[28px]
-                                    tablet:[&>img]:h-auto
+                [&_picture]:h-full
+                [&_img]:h-full
+                [&_img]:object-cover
 
-                                    desktop:h-[400px]
-                                    desktop:[&>img]:h-full
-                                "
+                tablet:h-[clamp(200px,calc(15vw+90px),280px)]
+                tablet:rounded-[28px]
+                tablet:[&_picture]:h-full
+                tablet:[&_img]:h-full
+
+                desktop:h-[400px]
+                desktop:[&_picture]:h-full
+                desktop:[&_img]:h-full
+              "
               >
                 <ImageView
                   mobile={image.mobile}
@@ -106,10 +109,8 @@ export function StorySection() {
 
                     tablet:mx-5
                     tablet:grid
-                    tablet:grid-cols-[152.32px_607.68px]
-
+                    tablet:grid-cols-[152.32px_minmax(0,1fr)]
                     desktop:mx-10
-                    desktop:grid-cols-[152.32px_1047.68px]
                 "
       >
         <div className="tablet:col-start-2">

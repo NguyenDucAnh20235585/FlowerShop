@@ -103,10 +103,14 @@ export function GalleryPage() {
 
       <WorkWithUs
         className="
-                    pt-[114px]
-                    pb-[150px]
-                "
-        textClassName="gallery-work-textbox"
+    pt-[114px]
+    pb-[150px]
+  "
+        textClassName="
+    w-full
+    max-w-[230px]
+    tablet:max-w-[400px]
+  "
       />
     </>
   );

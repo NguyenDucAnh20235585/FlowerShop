@@ -33,7 +33,7 @@ export function GalleryServiceSection({
                     pt-[34px]
                 "
       >
-        <h2 className="heading-1 gallery-service-heading">{title}</h2>
+        <h2 className="heading-1 leading-[1.4]">{title}</h2>
 
         <p
           className="

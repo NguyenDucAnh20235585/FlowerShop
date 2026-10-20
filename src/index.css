@@ -144,17 +144,6 @@ body {
 
 
 @layer components {
-  .gallery-work-textbox {
-    width: 100%;
-    max-width: 230px;
-  }
-
-  @media (min-width: 800px) {
-    .gallery-work-textbox {
-      max-width: 400px;
-    }
-  }
-
   .home-about-textbox {
     width: 100%;
     max-width: 215px;
@@ -245,7 +234,4 @@ body {
     display: none;
   }
 
-  .gallery-service-heading {
-    line-height: 1.4;
-  }
 }

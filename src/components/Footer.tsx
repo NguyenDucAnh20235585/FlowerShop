@@ -21,9 +21,8 @@ export function Footer() {
         ${
           useWideFooter
             ? "w-[calc(100%-64px)] tablet:w-[calc(100%-120px)]"
-            : "w-[calc(100%-112px)] tablet:w-[calc(100%-160px)]"
+            : "w-[70%] tablet:w-[calc(100%-160px)]"
         }
-
 tablet:h-[579px]
 desktop:h-[582px]
 desktop:w-[calc(100%-160px)]
@@ -47,13 +46,20 @@ desktop:w-[calc(100%-160px)]
           }}
           alt="Orange Flower"
           loading="lazy"
+          className="
+    h-full
+    w-full
+    [&_img]:h-full
+    [&_img]:object-cover
+  "
         />
 
         <div
           className="
                         absolute
-                        inset-0
-                        text-white
+inset-0
+z-10
+text-white
                     "
         >
           <p
@@ -74,10 +80,10 @@ desktop:w-[calc(100%-160px)]
             className="
                             absolute
                             bottom-5
-                            left-[30px]
+                            left-3 min-[375px]:left-[30px]
+                            text-[14px] min-[375px]:text-[18px]
                             whitespace-nowrap
-                            font-outfit
-                            text-[18px]
+                            font-outfit 
                             font-medium
                             leading-none
                             tablet:text-[22px]
@@ -92,11 +98,11 @@ desktop:w-[calc(100%-160px)]
             rel="noopener noreferrer"
             className="
                             absolute
-                            right-[30px]
+                            right-3 min-[375px]:right-[30px]
+                            text-[14px] min-[375px]:text-[18px] 
                             bottom-5
                             whitespace-nowrap
                             font-outfit
-                            text-[18px]
                             font-medium
                             leading-none
                             tablet:text-[22px]

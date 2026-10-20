@@ -21,21 +21,28 @@ export function Button(props: ButtonProps) {
   const { children, className = "" } = props;
 
   const styles = `
-        heading-4
-        inline-block
-        rounded-[5px]
-        bg-primary
-        px-3
-        py-1.5
-        desktop:px-3.5
-        desktop:py-2
-        ${className}
-    `;
+    heading-4
+    inline-block
+    rounded-[5px]
+    bg-primary
+    px-3
+    py-1.5
+    desktop:px-3.5
+    desktop:py-2
+    ${className}
+  `;
+
+  const content = (
+    <span className="inline-flex items-center gap-2">
+      <span aria-hidden="true">•</span>
+      <span>{children}</span>
+    </span>
+  );
 
   if (props.to !== undefined) {
     return (
       <Link to={props.to} className={styles}>
-        {children}
+        {content}
       </Link>
     );
   }
@@ -44,10 +51,10 @@ export function Button(props: ButtonProps) {
     <a
       href={props.href}
       target={props.target}
-      className={styles}
       rel={props.rel}
+      className={styles}
     >
-      {children}
+      {content}
     </a>
   );
 }

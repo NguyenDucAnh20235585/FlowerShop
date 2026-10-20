@@ -26,7 +26,7 @@ export function HomeAbout() {
       </h2>
 
       <Button to="/about" className="mt-[44px]">
-        • &nbsp; ABOUT US
+        ABOUT US
       </Button>
     </section>
   );

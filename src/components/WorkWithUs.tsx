@@ -82,7 +82,7 @@ export function WorkWithUs({
         </h2>
 
         <Button to="/about" className="mt-[44px]">
-          • &nbsp; ABOUT US
+          ABOUT US
         </Button>
       </div>
     </section>

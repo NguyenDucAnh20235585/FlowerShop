@@ -207,7 +207,7 @@ export function StorySection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              • &nbsp; BOOK A CONSULTATION
+              BOOK A CONSULTATION
             </Button>
           </div>
         </div>

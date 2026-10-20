@@ -21,23 +21,6 @@ body {
 
 @layer components {
 
-  .about-story-textbox {
-    width: 100%;
-    max-width: 330px;
-  }
-
-  @media (min-width: 800px) {
-    .about-story-textbox {
-      max-width: 580px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .about-story-textbox {
-      max-width: 1015px;
-    }
-  }
-
   .about-spacing {
     --about-founded-images: 74px;
     --about-founded-story: 74px;

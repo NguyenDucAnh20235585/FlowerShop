@@ -113,7 +113,15 @@ export function StorySection() {
                 "
       >
         <div className="tablet:col-start-2">
-          <div className="paragraph-2 about-story-textbox">
+          <div
+            className="
+    paragraph-2
+    w-full
+    max-w-[330px]
+    tablet:max-w-[580px]
+    desktop:max-w-[1015px]
+  "
+          >
             <p>
               Lily's journey with flowers began in the heart of Oregon, amidst
               the flourishing fields of her aunts' flower farm. It was there,
@@ -165,7 +173,15 @@ export function StorySection() {
                             pb-[var(--about-ending-footer)]
                         "
           >
-            <p className="paragraph-2 about-story-textbox">
+            <p
+              className="
+    paragraph-2
+    w-full
+    max-w-[330px]
+    tablet:max-w-[580px]
+    desktop:max-w-[1015px]
+  "
+            >
               From humble beginnings, Bloom&Co has grown into a beloved local
               destination, known for its artistic arrangements, personal
               service, and commitment to quality.
@@ -173,10 +189,13 @@ export function StorySection() {
 
             <p
               className="
-                                paragraph-2
-                                about-story-textbox
-                                mt-[var(--about-ending-paragraph)]
-                            "
+    paragraph-2
+    w-full
+    max-w-[330px]
+    mt-[var(--about-ending-paragraph)]
+    tablet:max-w-[580px]
+    desktop:max-w-[1015px]
+  "
             >
               Discover how we can add a touch of natural beauty to your next
               event.

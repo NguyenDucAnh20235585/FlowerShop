@@ -20,16 +20,18 @@ export function StoryIntro() {
                 desktop:grid-cols-[152.32px_446.01px_minmax(0,1fr)]
             "
     >
-      <p className="heading-3 text-muted">OUR STORY</p>
+      <p className="caption-1 text-muted">OUR STORY</p>
 
       <div
         className="
                     mt-[54px]
                     w-full
+                    max-w-[342.61px]
                     overflow-hidden
                     rounded-[20px]
 
                     tablet:mt-0
+                    tablet:max-w-none
                     tablet:rounded-[28px]
 
                     desktop:h-[500px]     
@@ -65,31 +67,9 @@ export function StoryIntro() {
                     tablet:ml-5
                 "
       >
-        <h2
-          className="
-                    font-outfit
-                    text-[16px]
-                    font-bold
-                    leading-[1.4]
+        <h2 className="caption-2">LILY SMITH</h2>
 
-                    desktop:text-[18px]
-                "
-        >
-          LILY SMITH
-        </h2>
-
-        <p
-          className="
-                    mt-[2px]
-                    font-outfit
-                    text-[14px]
-                    font-medium
-                    leading-[1.4]
-                    text-muted
-                "
-        >
-          Owner
-        </p>
+        <p className="heading-4 mt-[2px] text-muted">Owner</p>
       </div>
     </section>
   );

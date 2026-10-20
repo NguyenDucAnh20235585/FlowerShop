@@ -19,6 +19,130 @@ body {
   min-height: 100vh;
 }
 
+@utility heading-display {
+  font-family: var(--font-caprasimo);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+
+  @variant tablet {
+    font-size: 28px;
+  }
+
+  @variant desktop {
+    font-size: 30px;
+  }
+}
+
+@utility heading-1 {
+  font-family: var(--font-outfit);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  @variant tablet {
+    font-size: 45px;
+  }
+
+  @variant desktop {
+    font-size: 50px;
+  }
+}
+
+@utility heading-2 {
+  font-family: var(--font-outfit);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+
+  @variant tablet {
+    font-size: 36px;
+  }
+
+  @variant desktop {
+    font-size: 40px;
+  }
+}
+
+@utility heading-3 {
+  font-family: var(--font-outfit);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  @variant desktop {
+    font-size: 14px;
+  }
+}
+
+@utility heading-4 {
+  font-family: var(--font-outfit);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+
+  @variant tablet {
+    font-size: 14px;
+  }
+
+  @variant desktop {
+    font-size: 15px;
+  }
+}
+
+@utility paragraph-1 {
+  font-family: var(--font-outfit);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+
+  @variant desktop {
+    font-size: 17px;
+  }
+}
+
+@utility paragraph-2 {
+  font-family: var(--font-outfit);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+
+  @variant tablet {
+    font-size: 22px;
+  }
+
+  @variant desktop {
+    font-size: 24px;
+  }
+}
+
+@utility caption-1 {
+  font-family: var(--font-outfit);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  @variant tablet {
+    font-size: 14px;
+  }
+}
+
+@utility caption-2 {
+  font-family: var(--font-outfit);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
 @layer components {
   .gallery-work-textbox {
     width: 100%;
@@ -29,156 +153,6 @@ body {
     .gallery-work-textbox {
       max-width: 400px;
     }
-  }
-
-  .heading-display {
-    font-family: var(--font-caprasimo);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 0.92;
-    letter-spacing: -0.03em;
-  }
-
-  @media (min-width: 800px) {
-    .heading-display {
-      font-size: 28px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .heading-display {
-      font-size: 30px;
-    }
-  }
-
-  .heading-1 {
-    font-family: var(--font-outfit);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-  }
-
-  @media (min-width: 800px) {
-    .heading-1 {
-      font-size: 45px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .heading-1 {
-      font-size: 50px;
-    }
-  }
-
-  .heading-2 {
-    font-family: var(--font-outfit);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-  }
-
-  @media (min-width: 800px) {
-    .heading-2 {
-      font-size: 36px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .heading-2 {
-      font-size: 40px;
-    }
-  }
-
-  .heading-3 {
-    font-family: var(--font-outfit);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-  }
-
-  @media (min-width: 800px) {
-    .heading-3 {
-      font-size: 14px;
-    }
-  }
-
-  .heading-4 {
-    font-family: var(--font-outfit);
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: -0.025em;
-  }
-
-  @media (min-width: 800px) {
-    .heading-4 {
-      font-size: 14px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .heading-4 {
-      font-size: 15px;
-    }
-  }
-
-  .paragraph-1 {
-    font-family: var(--font-outfit);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: -0.025em;
-  }
-
-  @media (min-width: 1280px) {
-    .paragraph-1 {
-      font-size: 17px;
-    }
-  }
-
-  .paragraph-2 {
-    font-family: var(--font-outfit);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-  }
-
-  @media (min-width: 800px) {
-    .paragraph-2 {
-      font-size: 22px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .paragraph-2 {
-      font-size: 24px;
-    }
-  }
-
-  .caption-1 {
-    font-family: var(--font-outfit);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-  }
-
-  @media (min-width: 800px) {
-    .caption-1 {
-      font-size: 14px;
-    }
-  }
-
-  .caption-2 {
-    font-family: var(--font-outfit);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0;
   }
 
   .home-about-textbox {

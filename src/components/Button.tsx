@@ -1,29 +1,26 @@
-import type { ReactNode } from "react"
-import { Link } from "react-router-dom"
+import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 type ButtonProps =
-    | {
-        children: ReactNode
-        to: string
-        href?: never
-        className?: string
+  | {
+      children: ReactNode;
+      to: string;
+      href?: never;
+      className?: string;
     }
-    | {
-        children: ReactNode
-        href: string
-        to?: never
-        className?: string
-        target?: "_blank"
-        rel?: string
-    }
+  | {
+      children: ReactNode;
+      href: string;
+      to?: never;
+      className?: string;
+      target?: "_blank";
+      rel?: string;
+    };
 
 export function Button(props: ButtonProps) {
-    const {
-        children,
-        className = "",
-    } = props
+  const { children, className = "" } = props;
 
-    const styles = `
+  const styles = `
         heading-4
         inline-block
         rounded-[5px]
@@ -33,27 +30,24 @@ export function Button(props: ButtonProps) {
         desktop:px-3.5
         desktop:py-2
         ${className}
-    `
+    `;
 
-    if (props.to !== undefined) {
-        return (
-            <Link
-                to={props.to}
-                className={styles}
-            >
-                {children}
-            </Link>
-        )
-    }
-
+  if (props.to !== undefined) {
     return (
-        <a
-            href={props.href}
-            target={props.target}
-            className={styles}
-            rel={props.rel}
-        >
-            {children}
-        </a>
-    )
+      <Link to={props.to} className={styles}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      href={props.href}
+      target={props.target}
+      className={styles}
+      rel={props.rel}
+    >
+      {children}
+    </a>
+  );
 }

@@ -40,11 +40,11 @@ const FOUNDED_IMAGES = [
 
 export function StorySection() {
   return (
-    <div className="about-spacing">
+    <div>
       <section
         className="
                     mx-4
-                    pb-[var(--about-founded-story)]
+                    pb-[74px]
 
                     tablet:mx-5
                     tablet:grid
@@ -62,7 +62,7 @@ export function StorySection() {
 
           <div
             className="
-                            mt-[var(--about-founded-images)]
+                            mt-[74px]
                             grid
                             grid-cols-1
                             gap-5
@@ -131,7 +131,7 @@ export function StorySection() {
               the artistry of flowers like the rich Oregon soil.
             </p>
 
-            <p className="mt-[var(--about-story-paragraph)]">
+            <p className="mt-[28px]">
               Bloom & Co. is the expression of that lifelong passion, a place
               where her love for flowers translates into beautifully curated
               arrangements that bring joy and elegance to your spaces.
@@ -140,7 +140,7 @@ export function StorySection() {
 
           <div
             className="
-                            mt-[var(--about-story-image)]
+                            mt-[74px]
                             overflow-hidden
                             rounded-[20px]
                             tablet:rounded-[28px]
@@ -169,8 +169,8 @@ export function StorySection() {
 
           <div
             className="
-                            pt-[var(--about-image-ending)]
-                            pb-[var(--about-ending-footer)]
+                            pt-[74px]
+                            pb-[180px]
                         "
           >
             <p
@@ -192,7 +192,7 @@ export function StorySection() {
     paragraph-2
     w-full
     max-w-[330px]
-    mt-[var(--about-ending-paragraph)]
+    mt-[26px] tablet:mt-[32px] desktop:mt-[38px]
     tablet:max-w-[580px]
     desktop:max-w-[1015px]
   "
@@ -203,7 +203,7 @@ export function StorySection() {
 
             <Button
               href="https://www.figma.com/sites/"
-              className="mt-[var(--about-ending-button)]"
+              className="mt-[74px]"
               target="_blank"
               rel="noopener noreferrer"
             >

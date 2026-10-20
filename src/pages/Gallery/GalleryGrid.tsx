@@ -131,7 +131,7 @@ export function GalleryGrid() {
       <div
         className="
                     desktop:grid
-                    desktop:grid-cols-[150px_1030px]
+                    desktop:grid-cols-[150px_minmax(0,1fr)]
                     desktop:gap-x-5
                 "
       >
@@ -158,14 +158,16 @@ export function GalleryGrid() {
                         tablet:grid-cols-2
                         tablet:gap-y-16
                         
-                        desktop:grid-cols-[repeat(3,330px)]
+                        min-[1055px]:grid-cols-3
                     "
         >
           {FLOWERS.map((flower) => (
             <article
               key={flower.name}
               className={
-                flower.tabletWide ? "tablet:col-span-2 desktop:col-span-1" : ""
+                flower.tabletWide
+                  ? "tablet:col-span-2 min-[1055px]:col-span-1"
+                  : ""
               }
             >
               <div
@@ -200,19 +202,22 @@ export function GalleryGrid() {
                   height: 637,
                 }}
                 alt={flower.alt}
-                className="
-                                    h-[358.33px]
-                                    w-full
-                                    rounded-[20px]
-                                    [&>img]:h-full
-                                    [&>img]:object-cover
+                className={`
+  h-[358.33px] w-full overflow-hidden rounded-[20px]
+  [&_img]:h-full [&_img]:w-full [&_img]:object-cover
 
-                                    tablet:h-auto
-                                    tablet:rounded-[24px]
-                                    tablet:[&>img]:h-auto
+  tablet:aspect-[740/637]
+  tablet:h-auto
+  tablet:rounded-[24px]
 
-                                    desktop:rounded-[28px]
-                                "
+  desktop:rounded-[28px]
+
+  ${
+    flower.tabletWide
+      ? "tablet:aspect-[1520/637] min-[1055px]:aspect-[740/637]"
+      : ""
+  }
+`}
               />
             </article>
           ))}

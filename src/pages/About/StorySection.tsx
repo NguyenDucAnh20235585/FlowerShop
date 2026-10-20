@@ -114,15 +114,7 @@ export function StorySection() {
                 "
       >
         <div className="tablet:col-start-2">
-          <div
-            className="
-    paragraph-2
-    w-full
-    max-w-[330px]
-    tablet:max-w-[580px]
-    desktop:max-w-[1015px]
-  "
-          >
+          <div className="paragraph-2 w-full">
             <p>
               Lily's journey with flowers began in the heart of Oregon, amidst
               the flourishing fields of her aunts' flower farm. It was there,
@@ -141,11 +133,19 @@ export function StorySection() {
 
           <div
             className="
-                            mt-[74px]
-                            overflow-hidden
-                            rounded-[20px]
-                            tablet:rounded-[28px]
-                        "
+    mt-[74px]
+    h-[400px]
+    overflow-hidden
+    rounded-[20px]
+
+    [&_picture]:h-full
+    [&_img]:h-full
+    [&_img]:object-cover
+
+    tablet:h-[400px]
+    tablet:rounded-[28px]
+    desktop:h-[400px]
+  "
           >
             <ImageView
               mobile={{
@@ -174,15 +174,7 @@ export function StorySection() {
                             pb-[180px]
                         "
           >
-            <p
-              className="
-    paragraph-2
-    w-full
-    max-w-[330px]
-    tablet:max-w-[580px]
-    desktop:max-w-[1015px]
-  "
-            >
+            <p className="paragraph-2 w-full">
               From humble beginnings, Bloom&Co has grown into a beloved local
               destination, known for its artistic arrangements, personal
               service, and commitment to quality.
@@ -190,13 +182,12 @@ export function StorySection() {
 
             <p
               className="
-    paragraph-2
-    w-full
-    max-w-[330px]
-    mt-[26px] tablet:mt-[32px] desktop:mt-[38px]
-    tablet:max-w-[580px]
-    desktop:max-w-[1015px]
-  "
+  paragraph-2
+  w-full
+  mt-[26px]
+  tablet:mt-[32px]
+  desktop:mt-[38px]
+"
             >
               Discover how we can add a touch of natural beauty to your next
               event.

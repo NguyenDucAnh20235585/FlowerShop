@@ -20,14 +20,13 @@ export function Footer() {
 
         ${
           useWideFooter
-            ? "w-[311px] tablet:w-[680px]"
-            : "w-[263px] tablet:w-[80%] tablet:max-w-[640px]"
+            ? "w-[calc(100%-64px)] tablet:w-[calc(100%-120px)]"
+            : "w-[calc(100%-112px)] tablet:w-[calc(100%-160px)]"
         }
 
-        tablet:h-[579px]
-        desktop:h-[582px]
-        desktop:w-[87.5%]
-        desktop:max-w-[1120px]
+tablet:h-[579px]
+desktop:h-[582px]
+desktop:w-[calc(100%-160px)]
     `}
       >
         <ImageView

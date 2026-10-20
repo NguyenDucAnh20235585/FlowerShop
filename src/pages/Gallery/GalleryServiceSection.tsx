@@ -22,10 +22,9 @@ export function GalleryServiceSection({
       className="
                 pb-[70px]
                 tablet:grid
-                tablet:grid-cols-[370px_370px]
+                tablet:grid-cols-2
                 tablet:items-start
                 tablet:gap-5
-                desktop:grid-cols-[488.11px_488.11px]
             "
     >
       <div

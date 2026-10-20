@@ -62,7 +62,6 @@ export function WorkWithUs({
 
       <div
         className={`
-                    cta-stack
                     px-[5%]
                     text-center
                     ${className}
@@ -74,7 +73,7 @@ export function WorkWithUs({
           className={`
                         heading-2
                         mx-auto
-                        mt-[var(--label-title-gap)]
+                        mt-[24px]
                         ${textClassName}
 
                     `}
@@ -82,7 +81,7 @@ export function WorkWithUs({
           Discover how we can add a touch of natural beauty to your next event.
         </h2>
 
-        <Button to="/about" className="mt-[var(--title-button-gap)]">
+        <Button to="/about" className="mt-[44px]">
           • &nbsp; ABOUT US
         </Button>
       </div>

@@ -72,7 +72,12 @@ export function HomePage() {
                     desktop:pt-51
                     desktop:pb-50
                 "
-        textClassName="work-textbox"
+        textClassName="
+  w-full
+  max-w-[200px]
+  tablet:max-w-[400px]
+  desktop:max-w-[650px]
+"
       />
     </>
   );

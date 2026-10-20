@@ -1,8 +1,8 @@
 import { ImageView } from "../../components/ImageView";
 
-import logoDesktop from "../../assets/Images/Home/logo-image-desktop.png";
-import logoTablet from "../../assets/Images/Home/logo-image-tablet.png";
-import logoMobile from "../../assets/Images/Home/logo-image-mobile.png";
+import logoDesktop from "../../assets/Images/Home/logo-image-desktop.svg";
+import logoTablet from "../../assets/Images/Home/logo-image-tablet.svg";
+import logoMobile from "../../assets/Images/Home/logo-image-mobile.svg";
 
 import heroDesktop from "../../assets/Images/Home/hero-image-desktop.webp";
 import heroTablet from "../../assets/Images/Home/hero-image-tablet.webp";

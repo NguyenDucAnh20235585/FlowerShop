@@ -2,10 +2,10 @@ import { ImageView } from "./ImageView";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import logoDesktop from "../assets/Images/Header/our-blooms.png";
-import logoMobile from "../assets/Images/Header/o-b.png";
-import menuIcon from "../assets/Images/Header/hamburger-icon.png";
-import closeIcon from "../assets/Images/Header/cancel-icon.png";
+import logoDesktop from "../assets/Images/Header/our-blooms.svg";
+import logoMobile from "../assets/Images/Header/o-b.svg";
+import menuIcon from "../assets/Images/Header/hamburger-icon.svg";
+import closeIcon from "../assets/Images/Header/cancel-icon.svg";
 
 const NAV_LINKS = [
   { to: "/gallery", label: "GALLERY" },

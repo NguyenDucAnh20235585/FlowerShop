@@ -1,7 +1,7 @@
 export function WhatWeDo() {
-    return (
-        <section
-            className="
+  return (
+    <section
+      className="
                 mx-[11%]
                 border-b
                 border-black/60
@@ -12,20 +12,18 @@ export function WhatWeDo() {
                 tablet:mx-[3%]
                 desktop:pb-11
             "
-        >
-            <h2 className="heading-1">
-                WHAT WE DO
-            </h2>
+    >
+      <h2 className="heading-1">WHAT WE DO</h2>
 
-            <p
-                className="
+      <p
+        className="
         paragraph-1
         mx-auto
         mt-11
     "
-            >
-                We bring a touch of that simple magic into your world.
-            </p>
-        </section>
-    )
+      >
+        We bring a touch of that simple magic into your world.
+      </p>
+    </section>
+  );
 }

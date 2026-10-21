@@ -13,14 +13,14 @@ export function HomeAbout() {
 
       <h2
         className="
-          heading-2
-          mx-auto
-          mt-[24px]
-          w-full
-          max-w-[215px]
-          tablet:max-w-[412px]
-          desktop:max-w-[740px]
-        "
+  heading-2
+  mx-auto
+  mt-[24px]
+  w-full
+  max-w-[215px]
+  tablet:max-w-[412px]
+  desktop:max-w-[740px]
+"
       >
         We're Our Blooms® and we're here to help you find your floral story.
       </h2>

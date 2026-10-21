@@ -37,10 +37,9 @@ export function FlowerWheel() {
         flower-wheel-scroll
         mx-auto
         mt-30
-        w-[295px]
+        w-[calc(100%-80px)]
+        tablet:w-[calc(100%-80px)]
         overflow-x-auto
-        tablet:w-[720px]
-        desktop:w-[1200px]
     "
     >
       <div
@@ -49,10 +48,9 @@ export function FlowerWheel() {
                     w-max
                     gap-[13.35px]
                     tablet:gap-5
+                    min-[1700px]:mx-auto
                 "
       >
-        {/* First card intentionally overflows on desktop to match figma's design */}
-
         {FLOWERS.map((flower, index) => (
           <div
             key={flower.src}
@@ -65,7 +63,11 @@ export function FlowerWheel() {
                             tablet:w-[300px]
                             tablet:rounded-[28px]
 
-                            ${index === 0 ? "desktop:ml-[-200px]" : ""}
+                            ${
+                              index === 0
+                                ? "desktop:ml-[-200px] min-[1700px]:ml-0"
+                                : ""
+                            }
                         `}
           >
             <img

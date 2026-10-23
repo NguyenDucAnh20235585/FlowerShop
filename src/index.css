@@ -142,7 +142,6 @@ body {
   line-height: 1.4;
 }
 
-
 @layer components {
   .flower-wheel-scroll {
     scrollbar-width: none;
@@ -151,5 +150,4 @@ body {
   .flower-wheel-scroll::-webkit-scrollbar {
     display: none;
   }
-
 }
